@@ -16,7 +16,9 @@ class TremoloCell: UICollectionViewCell {
     @IBOutlet weak var pianissimo: UILabel!//contetnt
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        layer.masksToBounds = true
+        neapolitan.masklingColrm(clore: 20, isO: true)
+        self.layer.cornerRadius = 20
     }
     
     @IBOutlet weak var melisma: UIImageView!

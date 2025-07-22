@@ -35,9 +35,7 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white // 文字和转圈颜色
         giocoso.label.text = "loading..."
-//        let techniqueExchange = WKWebView(frame: UIScreen.main.bounds, configuration: self.conceptualArt())
-        
-       
+      
     
        
         unison.configuration.mediaTypesRequiringUserActionForPlayback = []

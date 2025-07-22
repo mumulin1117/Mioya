@@ -48,24 +48,88 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
         if collectionView == conSordino {
             
             let vire = collectionView.dequeueReusableCell(withReuseIdentifier: "TipapVuicel", for: indexPath) as! TipapVuicel
+            let currront = Tonalityssinfoniaer.userdingle[indexPath.row]
+            if let fxc = currront["baroqueOrnamentation"] as? String {
+                vire.gonali.loadImage(from: fxc)
+            }
+            vire.nakirl.text = currront["belCantoPhrasing"] as? String
+            
             return vire
             
         }
         
-        
+        let currrontYU = tonalColorism[indexPath.row]
         if ifVlogSel {
             let vire = collectionView.dequeueReusableCell(withReuseIdentifier: "TonalityCell", for: indexPath) as! TonalityCell //video
+            if let fxc = currrontYU["improvisatoryCadenza"] as? String {
+                vire.naturalHarmonic.loadImage(from: fxc)
+            }
+            vire.nocturne.text = currrontYU["hemiolaPattern"] as? String
+            vire.pianissimo.text = currrontYU["fugalExposition"] as? String
+            if let fxc = currrontYU["kettledrumRoll"] as? String {
+                vire.neapolitan.loadImage(from: fxc)
+            }
+            vire.pastorale.addTarget(self, action: #selector(kaoidlp), for: .touchUpInside)
+            vire.naturalHarmonic.tag = indexPath.row
+            vire.melisma.tag = indexPath.row
+            vire.mezzoSoprano.tag = indexPath.row
+            
+            vire.naturalHarmonic.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(gesgawawybnm(flpo:))))
+            vire.melisma.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(gesgawawybnm(flpo:))))
+            vire.mezzoSoprano.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(gesgawawybnm(flpo:))))
+            
             return vire
         }
         let vire = collectionView.dequeueReusableCell(withReuseIdentifier: "MoNentVnetCell", for: indexPath) as! MoNentVnetCell
+        if let fxc = currrontYU["improvisatoryCadenza"] as? String {
+            vire.naturalHarmonic.loadImage(from: fxc)
+        }
+        if let fxc = (currrontYU["passageworkPractice"] as? Array<String>)?.first {
+            vire.neapolitan.loadImage(from: fxc)
+        }
+        vire.nocturne.text = currrontYU["hemiolaPattern"] as? String
+        vire.obbligato.text =  "\(currrontYU["oboeReedWork"] as? Int ?? 0)"
+        vire.pianissimo.text = currrontYU["fugalExposition"] as? String
+        
+        vire.operaCount.text = "\(currrontYU["kapellmeisterTradition"] as? Int ?? 0)"
+        vire.octaveCount.text =  "\(currrontYU["julliardMethod"] as? Int ?? 0)"
+        vire.paheiter.tag = indexPath.row
+        vire.paheiter.addTarget(self, action: #selector(feaxcvbnm(flpo:)), for: .touchUpInside)
+        vire.pastorale.addTarget(self, action: #selector(kaoidlp), for: .touchUpInside)
         return vire
     }
     
     
+   @objc func feaxcvbnm(flpo:UIButton)  {
+       let currrontYU = tonalColorism[flpo.tag]["grandStaffNotation"] as? String ?? "0"
+       
+       let gooole = Homophony.intonation.lusingando(morendo: currrontYU)
+       let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+       self.navigationController?.pushViewController(contri, animated: true)
+    }
     
-    
+    @objc func gesgawawybnm(flpo:UITapGestureRecognizer)  {
+        let currrontYU = tonalColorism[flpo.view?.tag ?? 0]["grandStaffNotation"] as? String ?? "0"
+        
+        let gooole = Homophony.intonation.lusingando(morendo: currrontYU)
+        let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+        self.navigationController?.pushViewController(contri, animated: true)
+     }
     
 }
+
+
+
+
+
+extension UIViewController{
+   @objc func kaoidlp()  {
+       let gooole = Homophony.jetWhistle.lusingando(morendo: "")
+       let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+       self.navigationController?.pushViewController(contri, animated: true)
+    }
+}
+
 class Tonalityssinfoniaer: UIViewController {
     static var userdingle = Array<Dictionary<String,Any> >()
     
@@ -136,15 +200,11 @@ class Tonalityssinfoniaer: UIViewController {
 
         lusingando()
         stringHarmonics()
-        
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         dalSegno()
         
     }
+    
+    
     @IBAction func orchestra(_ sender: UIButton) {
         
         let dmjdj = view.viewWithTag(50) as? UIButton
@@ -160,9 +220,20 @@ class Tonalityssinfoniaer: UIViewController {
             ifVlogSel = false
         }
         dalSegno()
-        indiVavterImah.center.x = sender.center.x
+        
+    
     }
     
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+       if let dmjdj = view.viewWithTag(50) as? UIButton,
+          let dmjdj1 = view.viewWithTag(60) as? UIButton{
+           indiVavterImah.center.x = ifVlogSel ? dmjdj.center.x : dmjdj1.center.x
+       }
+        
+    }
 
     @IBOutlet weak var indiVavterImah: UIImageView!
     
@@ -203,7 +274,7 @@ extension Tonalityssinfoniaer{
                         return   (dfccc["kettledrumRoll"] as? String ==  nil)  || (dfccc["kettledrumRoll"] as? String ==  "")
                         
                     })
-                    self.conSordino.reloadData()
+                    self.teneramente.reloadData()
                 } else {
                     self.showinguGYf(customINfo: "Unexpected response format.", tyui: .shine)
                     

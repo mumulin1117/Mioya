@@ -31,6 +31,7 @@
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0JU-qI-ZQ8">
                         <rect key="frame" x="12" y="3" width="44" height="44"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="44" id="GNd-4v-MHy"/>
                             <constraint firstAttribute="height" constant="44" id="KxY-E3-zSV"/>
@@ -49,8 +50,9 @@
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
                     </button>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nnH-G8-y4I">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nnH-G8-y4I">
                         <rect key="frame" x="10" y="59.333333333333343" width="367" height="200.00000000000003"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="200" id="LAg-lR-14y"/>
                         </constraints>
@@ -133,6 +135,7 @@
                 <outlet property="obbligato" destination="SCY-ep-Cnf" id="uzx-vd-VFG"/>
                 <outlet property="octaveCount" destination="ujV-fx-sjF" id="ktZ-9W-rdn"/>
                 <outlet property="operaCount" destination="cyY-sk-gZk" id="NMw-CD-nGz"/>
+                <outlet property="paheiter" destination="AXH-BN-kO0" id="Vdx-9c-rSI"/>
                 <outlet property="pastorale" destination="cAw-Gk-2zi" id="xa8-pz-OUH"/>
                 <outlet property="pianissimo" destination="gOX-U9-rIk" id="7sd-vO-eLJ"/>
             </connections>

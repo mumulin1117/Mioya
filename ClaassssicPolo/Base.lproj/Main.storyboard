@@ -50,6 +50,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" backgroundImage="laogjuBif"/>
+                                <connections>
+                                    <action selector="tomenfaggert:" destination="Auf-bt-uef" eventType="touchUpInside" id="6oM-Ol-LSb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recently Active Friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhD-Lo-ney">
                                 <rect key="frame" x="12" y="126" width="131" height="14.5"/>
@@ -181,7 +184,7 @@
                                     <action selector="sforzando:" destination="9n4-Kv-Dcz" eventType="touchUpInside" id="SVs-j3-LKr"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dQA-zd-Bz7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="geojs" translatesAutoresizingMaskIntoConstraints="NO" id="dQA-zd-Bz7">
                                 <rect key="frame" x="132.5" y="106" width="110" height="110"/>
                                 <color key="backgroundColor" red="0.50196078430000002" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -198,7 +201,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2pX-Fs-xRL">
                                 <rect key="frame" x="15" y="308.5" width="345" height="90"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7v-AN-gpa">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7v-AN-gpa">
                                         <rect key="frame" x="0.0" y="0.0" width="108.5" height="90"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="concertato"/>
@@ -206,7 +209,7 @@
                                             <action selector="perfectPitch:" destination="9n4-Kv-Dcz" eventType="touchUpInside" id="Yuu-oJ-xcK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dD-NJ-2SP">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dD-NJ-2SP">
                                         <rect key="frame" x="118.5" y="0.0" width="108" height="90"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="brassEnsemble"/>
@@ -214,7 +217,7 @@
                                             <action selector="perfectPitch:" destination="9n4-Kv-Dcz" eventType="touchUpInside" id="63V-fe-Gsc"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5I-mH-QPD">
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5I-mH-QPD">
                                         <rect key="frame" x="236.5" y="0.0" width="108.5" height="90"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="baoinglert"/>
@@ -307,6 +310,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" backgroundImage="belCanto"/>
+                                <connections>
+                                    <action selector="tomenfaggert:" destination="p66-A1-C1W" eventType="touchUpInside" id="oEg-u3-oG6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classical CDs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dn-IS-fZV">
                                 <rect key="frame" x="12" y="285" width="128" height="24"/>
@@ -348,8 +354,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="quaion2" selectedImage="quaion2gg" id="Zfy-p9-uei"/>
                     <connections>
+                        <outlet property="HarmonicCipher" destination="DLT-d8-W41" id="RAT-fc-tBZ"/>
                         <outlet property="crescendoAI" destination="TKq-6s-i24" id="reI-fO-q7w"/>
-                        <outlet property="homophony" destination="DLT-d8-W41" id="RAT-fc-tBZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LwZ-hK-cWH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -449,7 +455,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JJLaingr" translatesAutoresizingMaskIntoConstraints="NO" id="hyv-Mf-WYO">
-                                <rect key="frame" x="7.5" y="257" width="173" height="2"/>
+                                <rect key="frame" x="0.0" y="257" width="187.5" height="2"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="yFe-fk-J0h"/>
                                 </constraints>
@@ -464,7 +470,7 @@
                             <constraint firstItem="1uT-Lv-8Kd" firstAttribute="top" secondItem="C91-qW-OeF" secondAttribute="top" id="BR6-Fy-4NL"/>
                             <constraint firstItem="wdw-lM-ME8" firstAttribute="trailing" secondItem="9il-kl-dcv" secondAttribute="trailing" id="FfS-cI-lhw"/>
                             <constraint firstItem="hyv-Mf-WYO" firstAttribute="centerX" secondItem="QxL-d3-bWG" secondAttribute="centerX" id="GJJ-Np-Trq"/>
-                            <constraint firstItem="hyv-Mf-WYO" firstAttribute="width" secondItem="QxL-d3-bWG" secondAttribute="width" multiplier="0.922667" id="HHw-oo-PJ8"/>
+                            <constraint firstItem="hyv-Mf-WYO" firstAttribute="width" secondItem="QxL-d3-bWG" secondAttribute="width" id="HHw-oo-PJ8"/>
                             <constraint firstItem="bVJ-0e-pe2" firstAttribute="trailing" secondItem="wdw-lM-ME8" secondAttribute="trailing" id="IQD-Ik-itV"/>
                             <constraint firstItem="bVJ-0e-pe2" firstAttribute="leading" secondItem="C91-qW-OeF" secondAttribute="leading" id="O5s-Il-nyT"/>
                             <constraint firstItem="OzB-2N-nnT" firstAttribute="leading" secondItem="wdw-lM-ME8" secondAttribute="leading" constant="16" id="R7T-RV-q7a"/>
@@ -537,6 +543,7 @@
         <image name="concertato" width="105" height="90"/>
         <image name="conductor" width="151" height="74"/>
         <image name="counterpoint" width="151" height="74"/>
+        <image name="geojs" width="110" height="110"/>
         <image name="laogjuBif" width="375" height="68"/>
         <image name="minepoji" width="58.5" height="26.5"/>
         <image name="quaion0" width="28" height="28"/>

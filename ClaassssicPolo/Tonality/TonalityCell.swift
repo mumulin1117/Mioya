@@ -21,7 +21,11 @@ class TonalityCell: UICollectionViewCell {
     @IBOutlet weak var pianissimo: UILabel!//contetnt
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        neapolitan.masklingColrm(clore: 20, isO: true)
+        self.layer.cornerRadius = 20
+        self.layer.masksToBounds = true
+        
+        self.naturalHarmonic.masklingColrm(clore: 20, isO: true)
     }
     @IBOutlet weak var pastorale: UIButton!
     

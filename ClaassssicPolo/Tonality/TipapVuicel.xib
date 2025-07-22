@@ -18,27 +18,27 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2n-o0-d6e">
-                        <rect key="frame" x="95.666666666666671" y="76" width="36.000000000000014" height="17"/>
+                        <rect key="frame" x="95.666666666666671" y="86" width="36.000000000000014" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="1" alpha="0.81377551020408168" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nab-Jp-j5I">
-                        <rect key="frame" x="84.666666666666671" y="1" width="58.000000000000014" height="58"/>
+                        <rect key="frame" x="84.666666666666671" y="11" width="58.000000000000014" height="58"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="58" id="0Hm-VK-VmC"/>
                             <constraint firstAttribute="height" constant="58" id="Ogr-Ao-e5h"/>
                         </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="geojs" translatesAutoresizingMaskIntoConstraints="NO" id="pNH-d6-TL4">
-                        <rect key="frame" x="83.666666666666671" y="0.0" width="60.000000000000014" height="60"/>
+                        <rect key="frame" x="83.666666666666671" y="10" width="60.000000000000014" height="60"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="7oy-4E-Ff3"/>
                             <constraint firstAttribute="width" constant="60" id="H5U-uH-cke"/>
                         </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icJBDhb" translatesAutoresizingMaskIntoConstraints="NO" id="2vn-bq-42Y">
-                        <rect key="frame" x="99.666666666666671" y="50" width="28" height="18"/>
+                        <rect key="frame" x="99.666666666666671" y="60" width="28" height="18"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="28" id="KSP-jq-mZq"/>
                             <constraint firstAttribute="height" constant="18" id="SmC-rV-QJC"/>
@@ -54,7 +54,7 @@
                 <constraint firstItem="2vn-bq-42Y" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="dV1-AL-kFG"/>
                 <constraint firstItem="nab-Jp-j5I" firstAttribute="centerY" secondItem="pNH-d6-TL4" secondAttribute="centerY" id="fG0-wX-tfr"/>
                 <constraint firstItem="pNH-d6-TL4" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ihY-XO-Cjp"/>
-                <constraint firstItem="pNH-d6-TL4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="szO-dE-8m6"/>
+                <constraint firstItem="pNH-d6-TL4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="szO-dE-8m6"/>
                 <constraint firstItem="X2n-o0-d6e" firstAttribute="top" secondItem="pNH-d6-TL4" secondAttribute="bottom" constant="16" id="vdM-9Q-4X0"/>
             </constraints>
             <size key="customSize" width="227" height="125"/>

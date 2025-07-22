@@ -81,12 +81,17 @@ class Unisonessinfoniaer: UIViewController {
             showinguGYf(customINfo: "Please enter your account and password first ", tyui:.shine)
             return
         }
+        
+        guard self.zweifacher == true else {
+            showinguGYf(customINfo: "Please read and agreen our terms first!", tyui:.shine)
+            return
+        }
         let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
         giocoso.bezelView.style = .solidColor
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white // 文字和转圈颜色
         giocoso.label.text = "loging..."
-        AppDelegate.acousticResonance(        belCantoPhrasing: "/hqettpdrotiz/esclhg", amentation: ["volante":obliqueMotion,"zart":nachschlag,"anglaise":"49251069"]) { baert in
+        AppDelegate.acousticResonance(        belCantoPhrasing: "/hqettpdrotiz/esclhg", amentation: ["volante":nachschlag,"zart": obliqueMotion ,"anglaise":"49251069"]) { baert in
             MBProgressHUD.hide(for: self.view, animated: true)
             if let dict = baert as? [String: Any],
                               
@@ -95,7 +100,7 @@ class Unisonessinfoniaer: UIViewController {
                 
                 UserDefaults.standard.set(conSordino, forKey: "conSordino")
                 
-                let semplice = data["semplice"] as? Int//tokn
+                let semplice = data["semplice"] as? String//tokn
                 
                 UserDefaults.standard.set(semplice, forKey: "semplice")
                  
