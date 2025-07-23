@@ -90,8 +90,9 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
         ]
     }
     private func dalSegno(){
-        
-        let sjopi = "loading..."
+        let lilian = PerformanceDiagnosis.secureDacoerde(input:"lrovaedridnago.j.o.")
+       
+        let sjopi = lilian
         
         let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
         
@@ -104,7 +105,7 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white // 文字和转圈颜色
         giocoso.label.text = sjopi
-        
+        let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
         
         AppDelegate.acousticResonance(
             belCantoPhrasing: "/yuxqtfnndlz/upbyw",
@@ -121,14 +122,16 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
                
                 if let dict = response as? [String: Any],
                    
-                    let chiaroscuro = dict["data"]  as? Array<[String: Any]>  {
+                    let chiaroscuro = dict[sevure]  as? Array<[String: Any]>  {
                     self.pureibutton.titleLabel?.textAlignment = .center
                     
                     self.tonalColorism = chiaroscuro
                     self.homophony.reloadData()
                 } else {
+                    let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
+                    
                     self.pureibutton.titleLabel?.textAlignment = .center
-                    self.showinguGYf(customINfo: "Unexpected response format.", tyui: .shine)
+                    self.showinguGYf(customINfo: lilian, tyui: .shine)
                     
                 }
             }, glissandoEffectd: nil

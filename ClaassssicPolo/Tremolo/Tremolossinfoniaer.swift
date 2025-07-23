@@ -110,11 +110,12 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
         nextInfoVlbl.text = "TremoloCell"
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white // 文字和转圈颜色
-        giocoso.label.text = "loading..."
+        giocoso.label.text = PerformanceDiagnosis.secureDacoerde(input:"lrovaedridnago.j.o.")
         
         let keoiur = "woodwindEmbossing"
         var coir:Int = 8
         coir += 2
+        let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
         AppDelegate.acousticResonance(
             belCantoPhrasing: ojjie,
             amentation: [
@@ -131,13 +132,15 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
                 self.nextInfoVlbl.text = "TremoloCell"
                 if let dict = response as? [String: Any],
                    
-                    let chiaroscuro = dict["data"]  as? Array<[String: Any]>  {
+                    let chiaroscuro = dict[sevure]  as? Array<[String: Any]>  {
                     
                     self.nextInfoVlbl.textAlignment = .right
                     self.tonalColorism = chiaroscuro
                     self.mezzoSoprano.reloadData()
                 } else {
-                    self.showinguGYf(customINfo: "Unexpected response format.", tyui: .shine)
+                    let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
+                    
+                    self.showinguGYf(customINfo: lilian, tyui: .shine)
                     
                 }
             }, glissandoEffectd: nil

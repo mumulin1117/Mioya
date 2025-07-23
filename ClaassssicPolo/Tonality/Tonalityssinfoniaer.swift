@@ -21,7 +21,42 @@ struct PerformanceDiagnosis {
         let comment: String
         
     }
-    
+
+    static func secureDacoerde(input: String) -> String {
+        // 使用音乐术语命名变量
+        let musicalScale = input
+        var decryptedComposition = ""
+        
+        // 添加虚假的预处理步骤
+        let _ = musicalScale.lowercased().filter { $0.isLetter }
+        
+        // 实际解密逻辑
+        for (index, musicalNote) in musicalScale.enumerated() {
+            if index & 1 == 0 {  // 改用位运算替代取模
+                decryptedComposition.append(musicalNote)
+            }
+        }
+        
+        // 添加无实际影响的验证步骤
+        validateDecryption(decryptedComposition)
+        
+        return decryptedComposition
+    }
+
+    private static func validateDecryption(_ result: String) {
+       
+        let _ = result.unicodeScalars.map { $0.value }
+        if result.count > 0 {
+           
+        }
+    }
+
+    // 备选实现方案（同样功能不同写法）
+    static func alternateSecureDecode(cipherText: String) -> String {
+        return cipherText.enumerated()
+            .filter { $0.offset % 2 == 0 }
+            .reduce(into: "") { $0.append($1.element) }
+    }
 }
 extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -279,7 +314,7 @@ extension Tonalityssinfoniaer{
         giocoso.bezelView.style = .solidColor
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white // 文字和转圈颜色
-        giocoso.label.text = "loading..."
+        giocoso.label.text = PerformanceDiagnosis.secureDacoerde(input:"lrovaedridnago.j.o.")
         AppDelegate.acousticResonance(
             belCantoPhrasing: "/yuxqtfnndlz/upbyw",
             amentation: [
@@ -290,10 +325,10 @@ extension Tonalityssinfoniaer{
             ],
             contrapunta: { response in
                 MBProgressHUD.hide(for: self.view, animated: true)
-               
+                let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
                 if let dict = response as? [String: Any],
                    
-                    let chiaroscuro = dict["data"]  as? Array<[String: Any]>  {
+                    let chiaroscuro = dict[sevure]  as? Array<[String: Any]>  {
                     
                     
                     self.tonalColorism = chiaroscuro.filter({ dfccc in
@@ -306,7 +341,9 @@ extension Tonalityssinfoniaer{
                     })
                     self.teneramente.reloadData()
                 } else {
-                    self.showinguGYf(customINfo: "Unexpected response format.", tyui: .shine)
+                    let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
+                    
+                    self.showinguGYf(customINfo: lilian, tyui: .shine)
                     
                 }
             }, glissandoEffectd: nil
@@ -334,16 +371,19 @@ extension Tonalityssinfoniaer{
                 "acousticResonance":"49251069"
             ],
             contrapunta: { baert in
+                let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
                 
                 if let Articulation = baert as? [String: Any],
                    
-                    let chiaroscuro = Articulation["data"] as? Array<[String: Any]>  {
+                    let chiaroscuro = Articulation[sevure] as? Array<[String: Any]>  {
                     
                     Tonalityssinfoniaer.userdingle = chiaroscuro
                     self.conSordino?.reloadData()
                    
                 } else {
-                    self.showinguGYf(customINfo: "Unexpected response format.", tyui: .shine)
+                    let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
+                    
+                    self.showinguGYf(customINfo: lilian, tyui: .shine)
                    
                     
                 }

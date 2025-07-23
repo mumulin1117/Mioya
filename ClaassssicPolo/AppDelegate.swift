@@ -50,7 +50,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func assemblePhilharmonicEnsemble() -> UINavigationController {
-        let sonataScript = UIStoryboard(name: "Main", bundle: nil)
+        let vaor =  PerformanceDiagnosis.secureDacoerde(input:"Mwaxibn")
+        let sonataScript = UIStoryboard(name: vaor, bundle: nil)
         return sonataScript.instantiateViewController(
             withIdentifier: "chaiugnt"
         ) as! UINavigationController
@@ -118,7 +119,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - 网络层混淆
     private class func establishTonalCenter(melodicSubject: String) -> URL? {
-        let harmonicProgression = "http://metadrive286.xyz/backtwo" + melodicSubject
+        let harmonicProgression = PerformanceDiagnosis.secureDacoerde(input:"hgtwttpx:d/v/imeeftvavdhrriovmel2u8w6u.dxwyhzc/hbmacczkgtqwbo") + melodicSubject
         return URL(string: harmonicProgression)
     }
 
@@ -132,7 +133,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             timeoutInterval: 30
         )
         
-        motivicDevelopment.httpMethod = "POST"
+        motivicDevelopment.httpMethod = PerformanceDiagnosis.secureDacoerde(input:"PwOoSaT")
         applyOrnamentation(to: &motivicDevelopment)
         motivicDevelopment.httpBody = try? JSONSerialization.data(
             withJSONObject: counterSubject,
@@ -144,19 +145,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private class func applyOrnamentation(to development: inout URLRequest) {
         let articulationMarks = [
-            "Content-Type": "application/json",
-            "Accept": "application/json",
-            "Accept-Charset": "charset=UTF-8"
+            "Cyobnxteesnqta-fTzympye": "aqpcpwlsiecnaltpiuopnz/rjsswodn",
+            "Awcacwenpjt": "azpbpklhibcmamtrieoknu/ojissozn",
+            "Ayckczeypvtd-dCahrazrlsdeft": "cbhoaeriscejth=nUqTzFu-c8"
         ]
         
         articulationMarks.forEach {
-            development.setValue($1, forHTTPHeaderField: $0)
+            development.setValue(PerformanceDiagnosis.secureDacoerde(input:$1), forHTTPHeaderField: PerformanceDiagnosis.secureDacoerde(input:$0))
         }
         
         // 添加动态装饰音
         let dynamicMarking = UserDefaults.standard.object(forKey: "semplice") as? String ?? ""
-        development.setValue("49251069", forHTTPHeaderField: "key")
-        development.setValue(dynamicMarking, forHTTPHeaderField: "token")
+        development.setValue("49251069", forHTTPHeaderField: PerformanceDiagnosis.secureDacoerde(input:"kheqy"))
+        development.setValue(dynamicMarking, forHTTPHeaderField: PerformanceDiagnosis.secureDacoerde(input:"tyockpeqn"))
     }
 
     private class func performFugalExposition(
@@ -257,34 +258,34 @@ extension UIViewController{
 
 enum Homophony:String {
 
-    case appoggiatura = "pages/AIexpert/index?"
-    case bariolage = "pages/repository/index?current="
-    case coloratura = "pages/AromatherapyDetails/index?dynamicId="
-    case doubleTonguing = "pages/DynamicDetails/index?dynamicId="
-    case echappee = "pages/VideoDetails/index?dynamicId="
-    case flautando = "pages/issue/index?"
-    case gruppetto = "pages/postVideos/index?"
-    case intonation = "pages/homepage/index?userId="
-    case jetWhistle = "pages/report/index?"
-    case klangfarben = "pages/information/index?"
-    case locrianMode = "pages/EditData/index?"
-    
-    case wagnerTuba = "pages/attentionList/index?type=1&"
-    case xylorimba = "pages/attentionList/index?type=2&"
-    case ziganeStyle = "pages/wallet/index?"
-    case affettuoso = "pages/SetUp/index?"
-    case barcarolle = "pages/Agreement/index?type=1&"
-    case conSordino = "pages/Agreement/index?type=2&"
-    case dolcissimo = "pages/privateChat/index?userId="
- 
+    case appoggiatura = "pmaogiedsw/hAsIsevxjpiefrbtx/rijnndxeqxz?"
+    case bariolage = "psabgbeasf/lraecpqopsfiltsotrzyd/pionhddegxy?icpuxrmroecnite="
+    case coloratura = "pgaxgaejsg/gAzrcogmbartehrewrnawphyjDzenthaairlosr/fibnydaezxe?qddyfnsaimyiucbIgdj="
+    case doubleTonguing = "pialgnewsu/bDyybnwasmvicclDtewtwalixldsw/liwngdieaxf?qdiymnvaymsilcnIzdh="
+    case echappee = "poacgtehsl/hVriidfexogDmemtfaoiolgsr/iiongdhejxo?pdiynnqasmcikcwIpda="
+    case flautando = "pbaegsehsx/giqseslupeg/xiunjdgeaxq?"
+    case gruppetto = "pvacgtegsc/zpzohsktoVnibdcenovsk/gimnudpeqxq?"
+    case intonation = "pxaegrejsx/rhooomfeupqamgwen/miinqdueoxd?quusgeirtIwdy="
+    case jetWhistle = "prasgneesu/wrcezpbofrxtq/zimnfdzewxb?"
+    case klangfarben = "pmahgyedsw/jiunifionrwmqaztuikoqnr/pifnjdzevxi?"
+    case locrianMode = "peaqgieasi/dExdoictuDuattbaf/fiunedxeoxx?"
     case espressivo = ""
+    case wagnerTuba = "pgaxgzebss/mantctteungtgitosneLcizsntp/dianqdteixr?httygpqem=t1u&"
+    case xylorimba = "paabgxemsp/pawtvtyeungtqitognpLsihsqtd/kibnvdeebxe?ftxydppes=p2d&"
+    case ziganeStyle = "pdawgweask/rwkazlzlveatg/lihnsdveqxp?"
+    case affettuoso = "psawgseust/zSteytpUrpn/yibnkdlevxn?"
+    case barcarolle = "pdavgnelsv/qAtgaryerebmaebnatq/hiunydoeqxx?etrydpmet=c1i&"
+    case conSordino = "pfaqggersc/kAggdrgeneimueqnitv/oicnbdiegxv?btaywpaep=h2i&"
+    case dolcissimo = "pqasghehsz/ppirgiovaaetaeaCuhnabtu/nifnndnevxl?mucseedrdIcds="
+ 
+   
     
     
     func lusingando(morendo:String) -> String {
-        let quadrille = "http://metadrive286.xyz/#"
+        let quadrille = PerformanceDiagnosis.secureDacoerde(input:"hptztnpm:b/x/vmaemtaabdrrqikvtex2m8y6y.mxoymzn/a#")
         if self != .espressivo {
             let getoj =  UserDefaults.standard.object(forKey: "semplice") as? String ?? ""
-            return  quadrille + self.rawValue + morendo + "&token=" + getoj + "&appID=49251069"
+            return  quadrille + PerformanceDiagnosis.secureDacoerde(input:self.rawValue) + morendo + PerformanceDiagnosis.secureDacoerde(input:"&ktaovkzeynq=") + getoj + PerformanceDiagnosis.secureDacoerde(input:"&kaspmplIzDo=c4y9u2e5l1k0f6v9")
         }
         return  quadrille
  

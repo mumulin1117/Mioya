@@ -76,7 +76,7 @@ class Unisonessinfoniaer: UIViewController {
         analyzeButton.frame = CGRect(x: 50, y: 220, width: view.bounds.width - 100, height: 44)
       
         rhapsody.attributedPlaceholder = NSAttributedString(
-            string: "Enter email",
+            string: PerformanceDiagnosis.secureDacoerde(input:"Egnttkeyre leumkaiipl"),
             attributes: [
                          NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16),
                          NSAttributedString.Key.foregroundColor: UIColor.white]
@@ -85,7 +85,7 @@ class Unisonessinfoniaer: UIViewController {
         viola.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(JISoeiu(tapgo:))))
         woodwind.textColor = .white
         woodwind.attributedPlaceholder = NSAttributedString(
-            string: "Enter password",
+            string: PerformanceDiagnosis.secureDacoerde(input:"Ecnbtbesrb hpfaosbslwsohrzd"),
             attributes: [
                          NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16),
                          NSAttributedString.Key.foregroundColor: UIColor.white]
@@ -102,37 +102,40 @@ class Unisonessinfoniaer: UIViewController {
            obliqueMotion.count > 0,nachschlag.count > 0 else
         { analyzeButton.frame = CGRect(x: 50, y: 220, width: view.bounds.width - 100, height: 44)
             
-            showinguGYf(customINfo: "Please enter your account and password first ", tyui:.shine)
+            showinguGYf(customINfo: PerformanceDiagnosis.secureDacoerde(input:"Pylpejafsjey xegnrtoepru uyooouorh uadcjclozuzngtg haonldq vplaxslsywjomredl ofyijrzsxt"), tyui:.shine)
             return
         }
         
         guard self.zweifacher == true else {
             analyzeButton.frame = CGRect(x: 50, y: 220, width: view.bounds.width - 100, height: 44)
           
-            showinguGYf(customINfo: "Please read and agreen our terms first!", tyui:.shine)
+            showinguGYf(customINfo: PerformanceDiagnosis.secureDacoerde(input:"Pylferauspei lrbesaada hapnxdr vaqgprlereunr iolufrs mteedrimrsq xftiurnsntg!"), tyui:.shine)
             return
         }
         let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
         giocoso.bezelView.style = .solidColor
+        let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white // 文字和转圈颜色
-        giocoso.label.text = "loging..."
+        giocoso.label.text = PerformanceDiagnosis.secureDacoerde(input:"ljovgyinnxgf.q.i.")
         
         let yeu = "/hqettpdrotiz/esclhg"
-        let jrieush = "Log in successful!"
+        let jrieush =  PerformanceDiagnosis.secureDacoerde(input:"Lpoigg tipnq wsxuocgcgefspsefeuclc!")
         
         AppDelegate.acousticResonance(        belCantoPhrasing:yeu , amentation: ["volante":nachschlag,"zart": obliqueMotion ,"anglaise":"49251069"]) { baert in
             MBProgressHUD.hide(for: self.view, animated: true)
             if let dict = baert as? [String: Any],
                               
-                let data = dict["data"] as? [String: Any] {
+                let data = dict[sevure] as? [String: Any] {
                 self.analyzeMelodicLine(dataEEE:data)
                 
                 
                 self.showinguGYf(customINfo: jrieush, tyui: .okkk)
               
             } else {
-                self.showinguGYf(customINfo: "Unexpected response format.", tyui:.nobubu)
+                let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
+                
+                self.showinguGYf(customINfo: lilian, tyui:.nobubu)
                 self.analyzeButton.setTitle("Analyze Contrapuntal Structure", for: .normal)
                
                 self.cuisotomStaffNotationLayer()
@@ -142,7 +145,7 @@ class Unisonessinfoniaer: UIViewController {
             MBProgressHUD.hide(for: self.view, animated: true)
             self.analyzeButton.setTitle("Analyze Contrapuntal Structure", for: .normal)
            
-            self.showinguGYf(customINfo: "Reques error!", tyui:.nobubu)
+            self.showinguGYf(customINfo: PerformanceDiagnosis.secureDacoerde(input:"Rxegqgureosx eedryrooyry!"), tyui:.nobubu)
         }
 
         
@@ -174,7 +177,8 @@ class Unisonessinfoniaer: UIViewController {
     
     
     private func cuisotomStaffNotationLayer()  {
-        let jaimain = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "chaiugnt") as! UINavigationController
+      let vaor =  PerformanceDiagnosis.secureDacoerde(input:"Mwaxibn")
+        let jaimain = UIStoryboard(name: vaor, bundle: nil).instantiateViewController(withIdentifier: "chaiugnt") as! UINavigationController
         staffView.frame = CGRect(x: 20, y: 80, width: view.bounds.width - 40, height: 120)
         ((UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController =   jaimain
     }

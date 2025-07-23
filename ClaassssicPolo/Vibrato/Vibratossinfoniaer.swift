@@ -98,7 +98,7 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
         unison.configuration.preferences.javaScriptCanOpenWindowsAutomatically = true
         giocoso.contentColor = .white // 文字和转圈颜色
         characterDesign.append("diminuendo")
-        giocoso.label.text = "loading..."
+        giocoso.label.text = PerformanceDiagnosis.secureDacoerde(input:"lrovaedridnago.j.o.")
         rinforzando()
         
         leitmotifDevelopment()
@@ -217,8 +217,8 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
             giocoso.bezelView.style = .solidColor
             giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
             giocoso.contentColor = .white // 文字和转圈颜色
-            giocoso.label.text = "paying..."
-            self.quadrupleStop(later: piece, dhu: "pay successful!")
+            giocoso.label.text = PerformanceDiagnosis.secureDacoerde(input:"pbaqynirnsgy.o.w.")
+            self.quadrupleStop(later: piece, dhu:PerformanceDiagnosis.secureDacoerde(input:"pvamyx ksbubcjcseesisbfcumla!"))
         case "doubleStop":
             kettledrumRoll(meaid:message)
         case "ensemble":

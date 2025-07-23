@@ -83,8 +83,8 @@ class Tuttionessinfoniaer: UIViewController {
         giocoso.bezelView.style = .solidColor
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white // 文字和转圈颜色
-        giocoso.label.text = "loading..."
-        
+        giocoso.label.text = PerformanceDiagnosis.secureDacoerde(input:"lrovaedridnago.j.o.")
+        let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
         let ggg = UserDefaults.standard.object(forKey: "conSordino") as? Int
         self.sextet.text = "UID: \(ggg ?? 0)"
         AppDelegate.acousticResonance(
@@ -97,11 +97,13 @@ class Tuttionessinfoniaer: UIViewController {
                
                 if let dict = response as? [String: Any],
                    
-                    let chiaroscuro = dict["data"]  as? [String: Any]  {
+                    let chiaroscuro = dict[sevure]  as? [String: Any]  {
                     self.interpretSonataForm(chiaroscuro)
                     
                 } else {
-                    self.showinguGYf(customINfo: "Unexpected response format.", tyui: .shine)
+                    let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
+                    
+                    self.showinguGYf(customINfo: lilian, tyui: .shine)
                     
                 }
             }, glissandoEffectd: nil
