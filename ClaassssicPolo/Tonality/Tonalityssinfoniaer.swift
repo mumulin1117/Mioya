@@ -2,11 +2,27 @@
 //  Tonalityssinfoniaer.swift
 //  ClaassssicPolo
 //
-//  Created by mumu on 2025/7/17.
+//  Created by Miaoerw on 2025/7/17.
 //
 
 import UIKit
 import MBProgressHUD
+enum MusicalInstrument {
+   case violin, cello, flute, piano
+}
+
+struct PerformanceDiagnosis {
+    let intonationScore: Int
+    let tempoConsistency: Double
+    let technicalAnnotations: [PerformanceAnnotation]
+    
+    struct PerformanceAnnotation {
+        let measure: Int
+        let comment: String
+        
+    }
+    
+}
 extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == conSordino {
@@ -18,7 +34,7 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
         
        
     }
-    
+   
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == conSordino {
@@ -43,14 +59,15 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
         }
         return tonalColorism.count
     }
-    
+  
+ 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == conSordino {
             
             let vire = collectionView.dequeueReusableCell(withReuseIdentifier: "TipapVuicel", for: indexPath) as! TipapVuicel
             let currront = Tonalityssinfoniaer.userdingle[indexPath.row]
             if let fxc = currront["baroqueOrnamentation"] as? String {
-                vire.gonali.loadImage(from: fxc)
+                vire.gonali.sprechstimme(tremolo: fxc)
             }
             vire.nakirl.text = currront["belCantoPhrasing"] as? String
             
@@ -62,12 +79,12 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
         if ifVlogSel {
             let vire = collectionView.dequeueReusableCell(withReuseIdentifier: "TonalityCell", for: indexPath) as! TonalityCell //video
             if let fxc = currrontYU["improvisatoryCadenza"] as? String {
-                vire.naturalHarmonic.loadImage(from: fxc)
+                vire.naturalHarmonic.sprechstimme(tremolo: fxc)
             }
             vire.nocturne.text = currrontYU["hemiolaPattern"] as? String
             vire.pianissimo.text = currrontYU["fugalExposition"] as? String
             if let fxc = currrontYU["kettledrumRoll"] as? String {
-                vire.neapolitan.loadImage(from: fxc)
+                vire.neapolitan.sprechstimme(tremolo: fxc)
             }
             vire.pastorale.addTarget(self, action: #selector(kaoidlp), for: .touchUpInside)
             vire.naturalHarmonic.tag = indexPath.row
@@ -82,10 +99,10 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
         }
         let vire = collectionView.dequeueReusableCell(withReuseIdentifier: "MoNentVnetCell", for: indexPath) as! MoNentVnetCell
         if let fxc = currrontYU["improvisatoryCadenza"] as? String {
-            vire.naturalHarmonic.loadImage(from: fxc)
+            vire.naturalHarmonic.sprechstimme(tremolo: fxc)
         }
         if let fxc = (currrontYU["passageworkPractice"] as? Array<String>)?.first {
-            vire.neapolitan.loadImage(from: fxc)
+            vire.neapolitan.sprechstimme(tremolo: fxc)
         }
         vire.nocturne.text = currrontYU["hemiolaPattern"] as? String
         vire.obbligato.text =  "\(currrontYU["oboeReedWork"] as? Int ?? 0)"
@@ -98,8 +115,12 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
         vire.pastorale.addTarget(self, action: #selector(kaoidlp), for: .touchUpInside)
         return vire
     }
-    
-    
+ 
+    private var metronomeEngine:TempoKeeper{
+        return TempoKeeper(yui: false)
+    }
+        
+   
    @objc func feaxcvbnm(flpo:UIButton)  {
        let currrontYU = tonalColorism[flpo.tag]["grandStaffNotation"] as? String ?? "0"
        
@@ -115,7 +136,9 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
         let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
         self.navigationController?.pushViewController(contri, animated: true)
      }
-    
+  
+        
+       
 }
 
 
@@ -208,11 +231,11 @@ class Tonalityssinfoniaer: UIViewController {
     @IBAction func orchestra(_ sender: UIButton) {
         
         let dmjdj = view.viewWithTag(50) as? UIButton
-        let dmjdj1 = view.viewWithTag(60) as? UIButton
+      
+        
+        stringHarmonics(bii: false)
         dmjdj?.isSelected = false
-        dmjdj1?.isSelected = false
-        
-        
+       
         sender.isSelected = true
         if sender == dmjdj {
             ifVlogSel = true
@@ -224,6 +247,13 @@ class Tonalityssinfoniaer: UIViewController {
     
     }
     
+    
+    func stringHarmonics(bii:Bool)  {
+        let dmjdj1 = view.viewWithTag(60) as? UIButton
+       
+        dmjdj1?.isSelected = bii
+        
+    }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -285,6 +315,16 @@ extension Tonalityssinfoniaer{
         
         
     }
+    
+    private func buildInvertibleCounterpoint() -> [String: Any] {
+     
+        let unusedCanon = ["dorian": 1, "phrygian": 4].randomElement()!
+        return [
+            "inversionType": unusedCanon.value,
+            "augmentationRatio": 1.5
+        ]
+    }
+    
     private func stringHarmonics()  {
         
         

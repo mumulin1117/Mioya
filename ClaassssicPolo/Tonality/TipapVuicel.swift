@@ -2,11 +2,11 @@
 //  TipapVuicel.swift
 //  ClaassssicPolo
 //
-//  Created by mumu on 2025/7/21.
+//  Created by Miaoerw on 2025/7/21.
 //
 
 import UIKit
-
+typealias PerformerQuery = VirtuosoProfile
 class TipapVuicel: UICollectionViewCell {
 
     @IBOutlet weak var gonali: UIImageView!

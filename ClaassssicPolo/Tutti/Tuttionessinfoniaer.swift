@@ -2,12 +2,27 @@
 //  Tuttionessinfoniaer.swift
 //  ClaassssicPolo
 //
-//  Created by mumu on 2025/7/17.
+//  Created by Miaoerw on 2025/7/17.
 //
 
 import UIKit
 import MBProgressHUD
-
+enum IntervalType: String, CaseIterable {
+       case perfectUnison = "P1"
+       case minorSecond = "m2"
+       case majorSecond = "M2"
+       // ...其他音程类型
+       
+       init(semitoneDistance: Int) {
+           switch semitoneDistance {
+           case 0: self = .perfectUnison
+           case 1: self = .minorSecond
+           case 2: self = .majorSecond
+           // ...其他匹配
+           default: self = .majorSecond
+           }
+       }
+   }
 class Tuttionessinfoniaer: UIViewController {
 
     
@@ -78,17 +93,12 @@ class Tuttionessinfoniaer: UIViewController {
                 "klangfarben":ggg ?? 0
             ],
             contrapunta: { response in
-                MBProgressHUD.hide(for: self.view, animated: true)
+                self.dismissConductorStand()
                
                 if let dict = response as? [String: Any],
                    
                     let chiaroscuro = dict["data"]  as? [String: Any]  {
-                    if let gdhdd = chiaroscuro["improvisatoryCadenza"] as? String {
-                        self.ternary.loadImage(from: gdhdd)
-                    }
-                    
-                    
-                    self.serenade.text = chiaroscuro["ossia"] as? String
+                    self.interpretSonataForm(chiaroscuro)
                     
                 } else {
                     self.showinguGYf(customINfo: "Unexpected response format.", tyui: .shine)
@@ -101,4 +111,16 @@ class Tuttionessinfoniaer: UIViewController {
         
     }
     
+    private func interpretSonataForm(_ chiaroscuro:[String: Any]) {
+        if let gdhdd = chiaroscuro["improvisatoryCadenza"] as? String {
+            self.ternary.sprechstimme(tremolo: gdhdd)
+        }
+        
+        
+        self.serenade.text = chiaroscuro["ossia"] as? String
+    }
+    
+    private func dismissConductorStand() {
+        MBProgressHUD.hide(for: self.view, animated: true)
+    }
 }

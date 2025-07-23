@@ -2,13 +2,17 @@
 //  AppDelegate.swift
 //  ClaassssicPolo
 //
-//  Created by mumu on 2025/7/17.
+//  Created by Miaoerw on 2025/7/17.
 //
 
 import UIKit
 import SwiftyStoreKit
 import MBProgressHUD
-
+struct IntervalAnalysis {
+        let consonantCount: Int
+        let dissonantCount: Int
+        let uniqueIntervalTypes: Set<IntervalType>
+    }
 @main
 
 

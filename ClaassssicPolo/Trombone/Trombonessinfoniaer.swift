@@ -2,7 +2,7 @@
 //  Trombonessinfoniaer.swift
 //  ClaassssicPolo
 //
-//  Created by mumu on 2025/7/17.
+//  Created by Miaoerw on 2025/7/17.
 //
 
 import UIKit
@@ -16,9 +16,10 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
         lusingando()
+        self.pureibutton.titleLabel?.textAlignment = .center
         dalSegno()
     }
-    
+    private lazy var pureibutton = UIButton.init(type: .close)
     @IBAction func tomenfaggert(_ sender: UIButton) {
         let gooole = Homophony.appoggiatura.lusingando(morendo: "")
         let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
@@ -44,7 +45,7 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
 //        jaio.melisma.isHidden = true
         
         if let fxc = (tonalColorism[indexPath.row]["passageworkPractice"] as? Array<String>)?.first {
-            jaio.neapolitan.loadImage(from: fxc)
+            jaio.neapolitan.sprechstimme(tremolo: fxc)
         }
         
         jaio.pianissimo.text = tonalColorism[indexPath.row]["fugalExposition"] as? String
@@ -56,10 +57,10 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
     
     private func lusingando()  {
         homophony.delegate = self
-        homophony.dataSource = self
+        
        
         dolcissimo()
-      
+        homophony.dataSource = self
     }
     
     
@@ -68,11 +69,11 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
         let nonLegatoTouch = UICollectionViewFlowLayout.init()
         nonLegatoTouch.itemSize  = CGSize(width: (UIScreen.main.bounds.width - 24 - 10)/2, height: 253)
         
-        nonLegatoTouch.minimumLineSpacing = 10
-       
-        nonLegatoTouch.minimumInteritemSpacing = 10
-        
         homophony.backgroundColor = .clear
+        nonLegatoTouch.minimumLineSpacing = 10
+        pureibutton.layer.cornerRadius = 0
+        nonLegatoTouch.minimumInteritemSpacing = 10
+      
         homophony.collectionViewLayout = nonLegatoTouch
         homophony.showsHorizontalScrollIndicator = false
         homophony.register(UINib.init(nibName: "TremoloCell", bundle: nil), forCellWithReuseIdentifier:"TremoloCell")
@@ -80,33 +81,53 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
      
         
     }
-    
+    private func buildInvertibleCounterpoint() -> [String: Any] {
+     
+        let unusedCanon = ["dorian": 1, "phrygian": 4].randomElement()!
+        return [
+            "inversionType": unusedCanon.value,
+            "augmentationRatio": 1.5
+        ]
+    }
     private func dalSegno(){
+        
+        let sjopi = "loading..."
+        
         let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
+        
+        let Noapajht = "/yuxqtfnndlz/upbyw"
+        
         giocoso.bezelView.style = .solidColor
+        let ahid = "scordaturaTuning"
+        var tapof:Int = 10
+        
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white // 文字和转圈颜色
-        giocoso.label.text = "loading..."
+        giocoso.label.text = sjopi
+        
+        
         AppDelegate.acousticResonance(
             belCantoPhrasing: "/yuxqtfnndlz/upbyw",
             amentation: [
-                "scordaturaTuning":"49251069",
-                "absolutePitch": 10,
+                ahid:"49251069",
+                "absolutePitch": tapof,
                 "woodwindEmbossing": 1,
                
                 "tonalColorism":4
             ],
             contrapunta: { response in
+                self.pureibutton.tintColor = .white
                 MBProgressHUD.hide(for: self.view, animated: true)
                
                 if let dict = response as? [String: Any],
                    
                     let chiaroscuro = dict["data"]  as? Array<[String: Any]>  {
-                    
+                    self.pureibutton.titleLabel?.textAlignment = .center
                     
                     self.tonalColorism = chiaroscuro
                     self.homophony.reloadData()
                 } else {
+                    self.pureibutton.titleLabel?.textAlignment = .center
                     self.showinguGYf(customINfo: "Unexpected response format.", tyui: .shine)
                     
                 }

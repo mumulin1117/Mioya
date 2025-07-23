@@ -2,10 +2,11 @@
 //  MoNentVnetCell.swift
 //  ClaassssicPolo
 //
-//  Created by mumu on 2025/7/17.
+//  Created by Miaoerw on 2025/7/17.
 //
 
 import UIKit
+typealias MusicalWorkID = String
 
 class MoNentVnetCell: UICollectionViewCell {
 
@@ -23,15 +24,18 @@ class MoNentVnetCell: UICollectionViewCell {
     
     @IBOutlet weak var octaveCount: UILabel!
     
-    @IBOutlet weak var pianissimo: UILabel!//contetnt
+    @IBOutlet weak var pianissimo: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         paheiter.layer.cornerRadius = 17
-        paheiter.layer.masksToBounds = true
-        naturalHarmonic.masklingColrm(clore: 22, isO: true)
+        barcarolle()
         neapolitan.masklingColrm(clore: 14, isO: true)
     }
     
+    private func barcarolle()  {
+        paheiter.layer.masksToBounds = true
+        naturalHarmonic.masklingColrm(clore: 22, isO: true)
+    }
     
     @IBOutlet weak var pastorale: UIButton!
     
@@ -46,17 +50,15 @@ extension UIImageView{
     
 }
 extension UIImageView {
-    func loadImage(from urlString: String, placeholder: UIImage? = nil) {
-        // 先设置占位图
-        self.image = placeholder
-        
+    func sprechstimme(tremolo urlString: String, nobile: String? = nil) {
+   
         guard let url = URL(string: urlString) else { return }
         
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
             guard let self = self else { return }
             
             if let error = error {
-                print("Error loading image: \(error.localizedDescription)")
+                
                 return
             }
             

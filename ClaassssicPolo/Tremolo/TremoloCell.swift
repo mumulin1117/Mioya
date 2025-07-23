@@ -2,10 +2,19 @@
 //  TremoloCell.swift
 //  ClaassssicPolo
 //
-//  Created by mumu on 2025/7/17.
+//  Created by Miaoerw on 2025/7/17.
 //
 
 import UIKit
+struct PerformanceArchive {
+    func getStandardPitch(for work: MusicalWorkID) {
+        
+    }
+    func queryPerformers(matching criteria: PerformerQuery){
+        
+    }
+}
+
 
 class TremoloCell: UICollectionViewCell {
 

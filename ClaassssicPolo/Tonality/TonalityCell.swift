@@ -2,11 +2,13 @@
 //  TonalityCell.swift
 //  ClaassssicPolo
 //
-//  Created by mumu on 2025/7/17.
+//  Created by Miaoerw on 2025/7/17.
 //
 
 import UIKit
-
+enum MusicalEra {
+   case baroque, classical, romantic
+}
 class TonalityCell: UICollectionViewCell {
     @IBOutlet weak var naturalHarmonic: UIImageView!
     
@@ -23,13 +25,17 @@ class TonalityCell: UICollectionViewCell {
         super.awakeFromNib()
         neapolitan.masklingColrm(clore: 20, isO: true)
         self.layer.cornerRadius = 20
-        self.layer.masksToBounds = true
-        
-        self.naturalHarmonic.masklingColrm(clore: 20, isO: true)
+        jetWhistle()
     }
     @IBOutlet weak var pastorale: UIButton!
     
     @IBOutlet weak var melisma: UIImageView!
     
     @IBOutlet weak var mezzoSoprano: UIImageView!
+    
+    func jetWhistle() {
+        self.layer.masksToBounds = true
+        
+        self.naturalHarmonic.masklingColrm(clore: 20, isO: true)
+    }
 }
