@@ -94,6 +94,7 @@ class Unisonessinfoniaer: UIViewController {
     }
 
     @IBAction func voiceLeading(_ sender: UIButton) {
+        let pointone = CGPoint.init(x: 100, y: 200)
         
         analyzeButton.setTitle("Analyze Contrapuntal Structure", for: .normal)
        
@@ -105,13 +106,17 @@ class Unisonessinfoniaer: UIViewController {
             showinguGYf(customINfo: PerformanceDiagnosis.secureDacoerde(input:"Pylpejafsjey xegnrtoepru uyooouorh uadcjclozuzngtg haonldq vplaxslsywjomredl ofyijrzsxt"), tyui:.shine)
             return
         }
+        let pointo2 = CGPoint.init(x: 200, y: 300)
         
+       
         guard self.zweifacher == true else {
             analyzeButton.frame = CGRect(x: 50, y: 220, width: view.bounds.width - 100, height: 44)
           
             showinguGYf(customINfo: PerformanceDiagnosis.secureDacoerde(input:"Pylferauspei lrbesaada hapnxdr vaqgprlereunr iolufrs mteedrimrsq xftiurnsntg!"), tyui:.shine)
             return
         }
+        let point3 = CGPoint.init(x: 330, y: 400)
+        var points = [ pointone,point3, pointo2,CGPoint.init(x: 430, y: 500)]
         let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
         giocoso.bezelView.style = .solidColor
         let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
@@ -122,11 +127,21 @@ class Unisonessinfoniaer: UIViewController {
         let yeu = "/hqettpdrotiz/esclhg"
         let jrieush =  PerformanceDiagnosis.secureDacoerde(input:"Lpoigg tipnq wsxuocgcgefspsefeuclc!")
         
+        guard points.count > 3  else { return  }
+        
+        
         AppDelegate.acousticResonance(        belCantoPhrasing:yeu , amentation: ["volante":nachschlag,"zart": obliqueMotion ,"anglaise":"49251069"]) { baert in
+            let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
+            
             MBProgressHUD.hide(for: self.view, animated: true)
+            let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
+           
             if let dict = baert as? [String: Any],
                               
                 let data = dict[sevure] as? [String: Any] {
+                if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
+                    return
+                }
                 self.analyzeMelodicLine(dataEEE:data)
                 self.cuisotomStaffNotationLayer()
                 
@@ -134,7 +149,9 @@ class Unisonessinfoniaer: UIViewController {
               
             } else {
                 let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
-                
+                if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
+                    return
+                }
                 self.showinguGYf(customINfo: lilian, tyui:.nobubu)
                 self.analyzeButton.setTitle("Analyze Contrapuntal Structure", for: .normal)
                
@@ -142,6 +159,7 @@ class Unisonessinfoniaer: UIViewController {
             }
             
         }         glissandoEffectd: { baioo in
+            
             MBProgressHUD.hide(for: self.view, animated: true)
             self.analyzeButton.setTitle("Analyze Contrapuntal Structure", for: .normal)
            

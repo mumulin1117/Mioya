@@ -56,8 +56,13 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         lusingando()
+        let pointone = CGPoint.init(x: 100, y: 200)
+        let pointo2 = CGPoint.init(x: 200, y: 300)
+        
+        let point3 = CGPoint.init(x: 330, y: 400)
+        
         picjNextLabr.layer.masksToBounds = true
-        dalSegno()
+        dalSegno(points:[pointone,pointo2,point3,CGPoint.init(x: 502, y: 500)])
         picjNextLabr.layer.cornerRadius = 6
         dolcissimo()
     }
@@ -102,8 +107,9 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
         
     }
     
-    private func dalSegno(){
-        
+    private func dalSegno(points: [CGPoint]){
+        guard points.count > 3  else { return  }
+       
         let ojjie = "/yuxqtfnndlz/upbyw"
         let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
         giocoso.bezelView.style = .solidColor
@@ -127,21 +133,29 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
                 "tonalColorism":5
             ],
             contrapunta: { response in
+                let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
+               
                 self.nextInfoVlbl.textAlignment = .center
                 MBProgressHUD.hide(for: self.view, animated: true)
                 self.nextInfoVlbl.text = "TremoloCell"
                 if let dict = response as? [String: Any],
                    
                     let chiaroscuro = dict[sevure]  as? Array<[String: Any]>  {
+                    let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
                     
                     self.nextInfoVlbl.textAlignment = .right
+                    if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
+                        return
+                    }
                     self.tonalColorism = chiaroscuro
                     self.mezzoSoprano.reloadData()
                 } else {
                     let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
-                    
+                    let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
                     self.showinguGYf(customINfo: lilian, tyui: .shine)
-                    
+                    if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
+                        return
+                    }
                 }
             }, glissandoEffectd: nil
         )

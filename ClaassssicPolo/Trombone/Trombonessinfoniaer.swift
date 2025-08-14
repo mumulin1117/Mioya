@@ -19,7 +19,11 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
         super.viewDidLoad()
         lusingando()
         self.pureibutton.titleLabel?.textAlignment = .center
-        dalSegno()
+        let pointone = CGPoint.init(x: 100, y: 200)
+        let pointo2 = CGPoint.init(x: 200, y: 300)
+        
+        let point3 = CGPoint.init(x: 330, y: 400)
+        dalSegno(points: [point3, pointone, pointo2,CGPoint.init(x: 430, y: 500)])
     }
     private lazy var pureibutton = UIButton.init(type: .close)
     
@@ -92,7 +96,10 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
             "augmentationRatio": 1.5
         ]
     }
-    private func dalSegno(){
+    private func dalSegno(points: [CGPoint]){
+        guard points.count > 3  else { return  }
+       
+        
         let lilian = PerformanceDiagnosis.secureDacoerde(input:"lrovaedridnago.j.o.")
        
         let sjopi = lilian
@@ -109,7 +116,8 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
         giocoso.contentColor = .white
         giocoso.label.text = sjopi
         let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
-        
+        let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
+       
         AppDelegate.acousticResonance(
             belCantoPhrasing: Noapajht,
             amentation: [
@@ -122,17 +130,23 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
             contrapunta: { response in
                 self.pureibutton.tintColor = .white
                 MBProgressHUD.hide(for: self.view, animated: true)
-               
+                let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
+                
                 if let dict = response as? [String: Any],
                    
                     let chiaroscuro = dict[sevure]  as? Array<[String: Any]>  {
                     self.pureibutton.titleLabel?.textAlignment = .center
                     
                     self.tonalColorism = chiaroscuro
+                    if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
+                        return
+                    }
                     self.homophony.reloadData()
                 } else {
                     let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
-                    
+                    if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
+                        return
+                    }
                     self.pureibutton.titleLabel?.textAlignment = .center
                     self.showinguGYf(customINfo: lilian, tyui: .shine)
                     
@@ -144,3 +158,19 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
         
     }
 }
+ extension Array where Element == CGPoint {
+    func timingIntervals() -> [TimeInterval] {
+        return zip(dropFirst(), dropLast()).map {
+            hypot($1.x - $0.x, $1.y - $0.y) / 100.0
+        }
+    }
+    
+    func movementVelocity() -> Double {
+        guard count > 1 else { return 0 }
+        let totalDistance = zip(dropFirst(), self).map {
+            hypot($0.x - $1.x, $0.y - $1.y)
+        }.reduce(0, +)
+        return totalDistance / Double(count)
+    }
+}
+

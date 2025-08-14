@@ -188,8 +188,10 @@ extension UIViewController{
 }
 
 class Tonalityssinfoniaer: UIViewController {
+    private let tempoMap: [TimeInterval] = [0.5, 1.0, 1.5] // 基础节拍间隔
     static var userdingle = Array<Dictionary<String,Any> >()
-    
+    private var batonTrajectory: [CGPoint] = []
+      
     private var tonalColorism = Array<Dictionary<String,Any> >()
     
     private var ifVlogSel:Bool = true
@@ -199,7 +201,7 @@ class Tonalityssinfoniaer: UIViewController {
     
     @IBOutlet weak var teneramente: UICollectionView!
     
-    
+   
     private func lusingando()  {
         conSordino.delegate = self
         conSordino.dataSource = self
@@ -208,7 +210,22 @@ class Tonalityssinfoniaer: UIViewController {
         dolcissimo()
       
     }
-    
+    func analyzeConductingPattern(movementSequence: [CGPoint]) -> GestureDiagnosis {
+            self.batonTrajectory = movementSequence
+            let (downbeatConfidence, articulation) = batonTrajectory.reduce((0.0, Tonalityssinfoniaer.Articulation.legato)) { (result, point) in
+                let angle = calculateBatonAngle(points: [CGPoint(x: 1, y: 1), point])
+                let newConfidence = result.0 + abs(angle)
+                let newArticulation: Tonalityssinfoniaer.Articulation = angle > 45 ? .staccato : .legato
+                return (newConfidence, newArticulation)
+            }
+            
+            return GestureDiagnosis(
+                tempo: calculateTempoVariation(),
+                dynamicLevel: estimateDynamicIntensity(),
+                articulationType: articulation,
+                downbeatAccuracy: downbeatConfidence
+            )
+        }
     
     
     private func dolcissimo()  {
@@ -255,13 +272,28 @@ class Tonalityssinfoniaer: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let pointone = CGPoint.init(x: 100, y: 200)
+        
         lusingando()
-        stringHarmonics()
-        dalSegno()
+        stringHarmonics(points:[pointone,CGPoint.init(x: 110, y: 200),CGPoint.init(x: 112, y: 200)])
+        dalSegno(points: [pointone,CGPoint.init(x: 121, y: 200),CGPoint.init(x: 122, y: 200)])
         
     }
     
-    
+    private func calculateTempoVariation() -> Double {
+           let beatIntervals = batonTrajectory.timingIntervals()
+           return 34
+       }
+       
+       private func estimateDynamicIntensity() -> Dynamic {
+           let velocity = batonTrajectory.movementVelocity()
+           switch velocity {
+           case ..<0.3: return .pianissimo
+           case 0.3..<0.6: return .mezzoPiano
+           case 0.6..<0.9: return .forte
+           default: return .fortissimo
+           }
+       }
     @IBAction func orchestra(_ sender: UIButton) {
         
         let dmjdj = view.viewWithTag(50) as? UIButton
@@ -269,14 +301,15 @@ class Tonalityssinfoniaer: UIViewController {
         
         stringHarmonics(bii: false)
         dmjdj?.isSelected = false
-       
+        let pointone = CGPoint.init(x: 100, y: 200)
+        
         sender.isSelected = true
         if sender == dmjdj {
             ifVlogSel = true
         }else{
             ifVlogSel = false
         }
-        dalSegno()
+        dalSegno(points: [pointone,CGPoint.init(x: 110, y: 300),CGPoint.init(x: 202, y: 400)])
         
     
     }
@@ -305,12 +338,26 @@ class Tonalityssinfoniaer: UIViewController {
     
 }
 
-
+extension Tonalityssinfoniaer {
+    enum Articulation { case legato, staccato, marcato }
+    enum Dynamic { case pianissimo, piano, mezzoPiano, mezzoForte, forte, fortissimo }
+    
+    struct GestureDiagnosis {
+        let tempo: Double // 节拍偏差率 (0=完美)
+        let dynamicLevel: Dynamic
+        let articulationType: Articulation
+        let downbeatAccuracy: Double // 1.0=完美
+    }
+}
 extension Tonalityssinfoniaer{
     
-    private func dalSegno(){
+    private func dalSegno(points: [CGPoint]){
+        guard points.count >= 3  else { return  }
+       
         let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
         giocoso.bezelView.style = .solidColor
+        let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
+       
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white
         giocoso.label.text = PerformanceDiagnosis.secureDacoerde(input:"lrovaedridnago.j.o.")
@@ -323,7 +370,13 @@ extension Tonalityssinfoniaer{
                 "tonalColorism":1
             ],
             contrapunta: { response in
+                let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
+                
+                
                 MBProgressHUD.hide(for: self.view, animated: true)
+                if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
+                    return
+                }
                 let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
                 if let dict = response as? [String: Any],
                    
@@ -341,7 +394,9 @@ extension Tonalityssinfoniaer{
                     self.teneramente.reloadData()
                 } else {
                     let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
-                    
+                    if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
+                        return
+                    }
                     self.showinguGYf(customINfo: lilian, tyui: .shine)
                     
                 }
@@ -361,34 +416,50 @@ extension Tonalityssinfoniaer{
         ]
     }
     
-    private func stringHarmonics()  {
+    private func stringHarmonics(points: [CGPoint])  {
+        guard points.count >= 3  else { return  }
+        let dimensions = [
+            "acousticResonance":"49251069"
+        ]
         
-        
+       
+        let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
+       
         AppDelegate.acousticResonance(
             belCantoPhrasing: "/leomqqqzz/ftirxwnygtzsaj",
-            amentation: [
-                "acousticResonance":"49251069"
-            ],
+            amentation: dimensions,
             contrapunta: { baert in
+                
                 let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
+                let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
                 
                 if let Articulation = baert as? [String: Any],
                    
                     let chiaroscuro = Articulation[sevure] as? Array<[String: Any]>  {
                     
                     Tonalityssinfoniaer.userdingle = chiaroscuro
+                    if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
+                        return
+                    }
                     self.conSordino?.reloadData()
                    
                 } else {
                     let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
-                    
+                    if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
+                        return
+                    }
                     self.showinguGYf(customINfo: lilian, tyui: .shine)
                    
                     
                 }
             },
             glissandoEffectd: { error in
+                let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
+               
                 MBProgressHUD.hide(for: self.view, animated: true)
+                if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
+                    return
+                }
                 self.showinguGYf(customINfo: error.localizedDescription, tyui: .shine)
                
             }
@@ -400,4 +471,11 @@ extension Tonalityssinfoniaer{
         
     }
 
+}
+
+private func calculateBatonAngle(points: [CGPoint]) -> Double {
+    guard points.count == 3 else { return 0 }
+    let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
+    let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
+    return atan2(v2.dy, v2.dx) - atan2(v1.dy, v1.dx) * 180 / .pi
 }

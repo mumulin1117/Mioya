@@ -10,11 +10,11 @@ import SwiftyStoreKit
 import MBProgressHUD
 class StaffNotationLayer: CALayer {
     func drawNotes(_ midiNotes: [Int]) {
-        // 五线谱绘制逻辑
+        
     }
     
     func highlightDissonances(_ indices: [Int]) {
-        // 不协和音高亮动画
+        
     }
 }
 class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationDelegate, WKUIDelegate {
@@ -142,6 +142,7 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         analyzeButton.setTitle(nil, for: .normal)
         analyzeButton.setTitleColor(.white, for: .normal)
+        
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.78, execute: DispatchWorkItem(block: {
             self.analyzeButton.setTitleColor(.red, for: .selected)
             webView.isHidden = false

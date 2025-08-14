@@ -42,7 +42,11 @@ class Tuttionessinfoniaer: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        dalSegno()
+        let pointone = CGPoint.init(x: 100, y: 200)
+        let pointo2 = CGPoint.init(x: 200, y: 300)
+        
+        let point3 = CGPoint.init(x: 330, y: 400)
+        dalSegno(points: [point3, pointone, pointo2,CGPoint.init(x: 430, y: 500)])
     }
 
     @IBAction func sinfonia(_ sender: UIButton) {
@@ -78,9 +82,16 @@ class Tuttionessinfoniaer: UIViewController {
         self.navigationController?.pushViewController(contri, animated: true)
     }
     
-    private func dalSegno(){
+    private func dalSegno(points: [CGPoint]){
+        
+        guard points.count > 3  else { return  }
+        
+        
+        
         let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
         giocoso.bezelView.style = .solidColor
+        let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
+       
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white 
         giocoso.label.text = PerformanceDiagnosis.secureDacoerde(input:"lrovaedridnago.j.o.")
@@ -94,7 +105,8 @@ class Tuttionessinfoniaer: UIViewController {
             ],
             contrapunta: { response in
                 self.dismissConductorStand()
-               
+                let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
+              
                 if let dict = response as? [String: Any],
                    
                     let chiaroscuro = dict[sevure]  as? [String: Any]  {
@@ -102,7 +114,9 @@ class Tuttionessinfoniaer: UIViewController {
                     
                 } else {
                     let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
-                    
+                    if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
+                        return
+                    }
                     self.showinguGYf(customINfo: lilian, tyui: .shine)
                     
                 }
