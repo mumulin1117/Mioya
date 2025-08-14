@@ -354,8 +354,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="quaion2" selectedImage="quaion2gg" id="Zfy-p9-uei"/>
                     <connections>
-                        <outlet property="HarmonicCipher" destination="DLT-d8-W41" id="RAT-fc-tBZ"/>
-                        <outlet property="crescendoAI" destination="TKq-6s-i24" id="reI-fO-q7w"/>
+                        <outlet property="crescendoAI" destination="TKq-6s-i24" id="wSb-mq-rOX"/>
+                        <outlet property="homophony" destination="DLT-d8-W41" id="ntu-eS-ViO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LwZ-hK-cWH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

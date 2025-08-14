@@ -13,6 +13,8 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
     @IBOutlet weak var crescendoAI: UIButton!
     
     @IBOutlet weak var homophony: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         lusingando()
@@ -20,6 +22,7 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
         dalSegno()
     }
     private lazy var pureibutton = UIButton.init(type: .close)
+    
     @IBAction func tomenfaggert(_ sender: UIButton) {
         let gooole = Homophony.appoggiatura.lusingando(morendo: "")
         let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
@@ -100,15 +103,15 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
         
         giocoso.bezelView.style = .solidColor
         let ahid = "scordaturaTuning"
-        var tapof:Int = 10
+        let tapof:Int = 10
         
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
-        giocoso.contentColor = .white // 文字和转圈颜色
+        giocoso.contentColor = .white
         giocoso.label.text = sjopi
         let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
         
         AppDelegate.acousticResonance(
-            belCantoPhrasing: "/yuxqtfnndlz/upbyw",
+            belCantoPhrasing: Noapajht,
             amentation: [
                 ahid:"49251069",
                 "absolutePitch": tapof,

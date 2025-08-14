@@ -23,21 +23,21 @@ struct PerformanceDiagnosis {
     }
 
     static func secureDacoerde(input: String) -> String {
-        // 使用音乐术语命名变量
+    
         let musicalScale = input
         var decryptedComposition = ""
         
-        // 添加虚假的预处理步骤
+      
         let _ = musicalScale.lowercased().filter { $0.isLetter }
         
-        // 实际解密逻辑
+     
         for (index, musicalNote) in musicalScale.enumerated() {
-            if index & 1 == 0 {  // 改用位运算替代取模
+            if index & 1 == 0 {
                 decryptedComposition.append(musicalNote)
             }
         }
         
-        // 添加无实际影响的验证步骤
+      
         validateDecryption(decryptedComposition)
         
         return decryptedComposition
@@ -51,7 +51,6 @@ struct PerformanceDiagnosis {
         }
     }
 
-    // 备选实现方案（同样功能不同写法）
     static func alternateSecureDecode(cipherText: String) -> String {
         return cipherText.enumerated()
             .filter { $0.offset % 2 == 0 }
@@ -313,7 +312,7 @@ extension Tonalityssinfoniaer{
         let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
         giocoso.bezelView.style = .solidColor
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
-        giocoso.contentColor = .white // 文字和转圈颜色
+        giocoso.contentColor = .white
         giocoso.label.text = PerformanceDiagnosis.secureDacoerde(input:"lrovaedridnago.j.o.")
         AppDelegate.acousticResonance(
             belCantoPhrasing: "/yuxqtfnndlz/upbyw",

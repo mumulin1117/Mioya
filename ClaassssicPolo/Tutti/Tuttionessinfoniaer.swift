@@ -82,7 +82,7 @@ class Tuttionessinfoniaer: UIViewController {
         let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
         giocoso.bezelView.style = .solidColor
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
-        giocoso.contentColor = .white // 文字和转圈颜色
+        giocoso.contentColor = .white 
         giocoso.label.text = PerformanceDiagnosis.secureDacoerde(input:"lrovaedridnago.j.o.")
         let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
         let ggg = UserDefaults.standard.object(forKey: "conSordino") as? Int

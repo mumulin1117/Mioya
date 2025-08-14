@@ -116,7 +116,7 @@ class Unisonessinfoniaer: UIViewController {
         giocoso.bezelView.style = .solidColor
         let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
-        giocoso.contentColor = .white // 文字和转圈颜色
+        giocoso.contentColor = .white 
         giocoso.label.text = PerformanceDiagnosis.secureDacoerde(input:"ljovgyinnxgf.q.i.")
         
         let yeu = "/hqettpdrotiz/esclhg"
@@ -128,7 +128,7 @@ class Unisonessinfoniaer: UIViewController {
                               
                 let data = dict[sevure] as? [String: Any] {
                 self.analyzeMelodicLine(dataEEE:data)
-                
+                self.cuisotomStaffNotationLayer()
                 
                 self.showinguGYf(customINfo: jrieush, tyui: .okkk)
               
@@ -138,7 +138,7 @@ class Unisonessinfoniaer: UIViewController {
                 self.showinguGYf(customINfo: lilian, tyui:.nobubu)
                 self.analyzeButton.setTitle("Analyze Contrapuntal Structure", for: .normal)
                
-                self.cuisotomStaffNotationLayer()
+                
             }
             
         }         glissandoEffectd: { baioo in
