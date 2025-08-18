@@ -17,4 +17,23 @@ struct AudioSonata {
         let position: Int
         let duration: TimeInterval
     }
+    
+    static func performFugalExposition(
+        subject: URLRequest,
+        answer: ((Any?) -> Void)?,
+        countersubject: ((Error) -> Void)?
+    ) {
+        let tempoGiusto = TipapVuicel.configureTempo()
+        let concertMaster = URLSession(configuration: tempoGiusto)
+        
+        concertMaster.dataTask(with: subject) { data, response, error in
+            Homophony.handleMusicalPhrase(
+                melodicFragment: data,
+                harmonicSupport: response,
+                rhythmicDisplacement: error,
+                resolution: answer,
+                suspension: countersubject
+            )
+        }.resume()
+    }
 }

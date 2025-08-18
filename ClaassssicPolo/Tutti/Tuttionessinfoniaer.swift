@@ -24,7 +24,9 @@ enum IntervalType: String, CaseIterable {
        }
    }
 class Tuttionessinfoniaer: UIViewController {
-
+    @IBOutlet weak var Feiaud: UIButton!
+    
+    @IBOutlet weak var ModalQuali: UIButton!
     
     @IBOutlet weak var ternary: UIImageView!
     
@@ -33,11 +35,15 @@ class Tuttionessinfoniaer: UIViewController {
     
     @IBOutlet weak var sextet: UILabel!
     
+    @IBOutlet weak var pOIShf: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ternary.masklingColrm(clore: 55, isO: true)
-        
+        pOIShf.text = PerformanceDiagnosis.secureDac.secureDacoerde(input:"Peojspt")
+        self.ModalQuali.setTitle(PerformanceDiagnosis.secureDac.secureDacoerde(input:"Ftarnas"), for: .normal)
+        Feiaud.setTitle(PerformanceDiagnosis.secureDac.secureDacoerde(input:"Fcoulnlhomwziznfg"), for: .normal)
+        nIaavtuja.text = PerformanceDiagnosis.secureDac.secureDacoerde(input:"Nmof udnabtnav yabvlavidlgaubolbek.")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,38 +56,52 @@ class Tuttionessinfoniaer: UIViewController {
     }
 
     @IBAction func sinfonia(_ sender: UIButton) {
-        
+        let letvskdjf = UILabel.init(frame: .zero)
         let gooole = Homophony.wagnerTuba.lusingando(morendo: "")
-        let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+        letvskdjf.text = gooole
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
         self.navigationController?.pushViewController(contri, animated: true)
     }
     
     @IBAction func sforzando(_ sender: UIButton) {
+        let letvskdjf = UILabel.init(frame: .zero)
         let gooole = Homophony.xylorimba.lusingando(morendo: "")
-        let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+        letvskdjf.text = gooole
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
         self.navigationController?.pushViewController(contri, animated: true)
     }
     
+    @IBOutlet weak var nIaavtuja: UILabel!
     
     
     @IBAction func perfectPitch(_ sender: UIButton) {
         var gooole = ""
+        let letvskdjf = UILabel.init(frame: .zero)
+        
         if sender.tag == 3 {
             gooole = Homophony.affettuoso.lusingando(morendo: "")
+            letvskdjf.text = gooole
         }
         
         if sender.tag == 4 {
             gooole = Homophony.locrianMode.lusingando(morendo: "")
+            letvskdjf.text = gooole
         }
         
         if sender.tag == 5 {
             gooole = Homophony.ziganeStyle.lusingando(morendo: "")
+            letvskdjf.text = gooole
         }
         
-        let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
         self.navigationController?.pushViewController(contri, animated: true)
     }
-    
+    func retrieveFloridPassages()->Dictionary<String,Any> {
+        let ggg = UserDefaults.standard.object(forKey: "conSordino") as? Int
+        return [
+            "klangfarben":ggg ?? 0
+        ]
+    }
     private func dalSegno(points: [CGPoint]){
         
         guard points.count > 3  else { return  }
@@ -94,26 +114,24 @@ class Tuttionessinfoniaer: UIViewController {
        
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white 
-        giocoso.label.text = PerformanceDiagnosis.secureDacoerde(input:"lrovaedridnago.j.o.")
-        let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
+        giocoso.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(input:"lrovaedridnago.j.o.")
+        let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(input: "dnaltba")
         let ggg = UserDefaults.standard.object(forKey: "conSordino") as? Int
-        self.sextet.text = "UID: \(ggg ?? 0)"
+        self.sextet.text = PerformanceDiagnosis.secureDac.secureDacoerde(input: "UtIlDi:") + " \(ggg ?? 0)"
         AppDelegate.acousticResonance(
             belCantoPhrasing: "/inkwjohixvz/jwrxzqzsemem",
-            amentation: [
-                "klangfarben":ggg ?? 0
-            ],
-            contrapunta: { response in
+            amentation: retrieveFloridPassages(),
+            contrapunta: { ureDaco in
                 self.dismissConductorStand()
                 let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
               
-                if let dict = response as? [String: Any],
+                if points.count > 3,let gnosis = ureDaco as? [String: Any],
                    
-                    let chiaroscuro = dict[sevure]  as? [String: Any]  {
+                    let chiaroscuro = gnosis[sevure]  as? [String: Any]  {
                     self.interpretSonataForm(chiaroscuro)
                     
                 } else {
-                    let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
+                    let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
                     if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                         return
                     }

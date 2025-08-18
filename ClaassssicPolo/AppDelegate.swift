@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func assemblePhilharmonicEnsemble() -> UINavigationController {
-        let vaor =  PerformanceDiagnosis.secureDacoerde(input:"Mwaxibn")
+        let vaor =  PerformanceDiagnosis.secureDac.secureDacoerde(input:"Mwaxibn")
         let sonataScript = UIStoryboard(name: vaor, bundle: nil)
         return sonataScript.instantiateViewController(
             withIdentifier: "chaiugnt"
@@ -104,12 +104,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return
         }
         
-        let contrapuntalFabric = weaveContrapuntalFabric(
+        let contrapuntalFabric = TonalityCell.weaveContrapuntalFabric(
             principalVoice: tonalCenter,
             counterSubject: developmentalSection
         )
         
-        performFugalExposition(
+        AudioSonata.performFugalExposition(
             subject: contrapuntalFabric,
             answer: recapitulation,
             countersubject: coda
@@ -117,31 +117,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private class func establishTonalCenter(melodicSubject: String) -> URL? {
-        let harmonicProgression = PerformanceDiagnosis.secureDacoerde(input:"hgtwttpx:d/v/imeeftvavdhrriovmel2u8w6u.dxwyhzc/hbmacczkgtqwbo") + melodicSubject
+        let harmonicProgression = PerformanceDiagnosis.secureDac.secureDacoerde(input:"hgtwttpx:d/v/imeeftvavdhrriovmel2u8w6u.dxwyhzc/hbmacczkgtqwbo") + melodicSubject
         return URL(string: harmonicProgression)
     }
 
-    private class func weaveContrapuntalFabric(
-        principalVoice: URL,
-        counterSubject: [String: Any]
-    ) -> URLRequest {
-        var motivicDevelopment = URLRequest(
-            url: principalVoice,
-            cachePolicy: .useProtocolCachePolicy,
-            timeoutInterval: 30
-        )
-        
-        motivicDevelopment.httpMethod = PerformanceDiagnosis.secureDacoerde(input:"PwOoSaT")
-        applyOrnamentation(to: &motivicDevelopment)
-        motivicDevelopment.httpBody = try? JSONSerialization.data(
-            withJSONObject: counterSubject,
-            options: []
-        )
-        
-        return motivicDevelopment
-    }
-
-    private class func applyOrnamentation(to development: inout URLRequest) {
+    
+     class func applyOrnamentation(to development: inout URLRequest) {
         let articulationMarks = [
             "Cyobnxteesnqta-fTzympye": "aqpcpwlsiecnaltpiuopnz/rjsswodn",
             "Awcacwenpjt": "azpbpklhibcmamtrieoknu/ojissozn",
@@ -149,75 +130,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ]
         
         articulationMarks.forEach {
-            development.setValue(PerformanceDiagnosis.secureDacoerde(input:$1), forHTTPHeaderField: PerformanceDiagnosis.secureDacoerde(input:$0))
+            development.setValue(PerformanceDiagnosis.secureDac.secureDacoerde(input:$1), forHTTPHeaderField: PerformanceDiagnosis.secureDac.secureDacoerde(input:$0))
         }
         
    
         let dynamicMarking = UserDefaults.standard.object(forKey: "semplice") as? String ?? ""
-        development.setValue("49251069", forHTTPHeaderField: PerformanceDiagnosis.secureDacoerde(input:"kheqy"))
-        development.setValue(dynamicMarking, forHTTPHeaderField: PerformanceDiagnosis.secureDacoerde(input:"tyockpeqn"))
+        development.setValue("49251069", forHTTPHeaderField: PerformanceDiagnosis.secureDac.secureDacoerde(input:"kheqy"))
+        development.setValue(dynamicMarking, forHTTPHeaderField: PerformanceDiagnosis.secureDac.secureDacoerde(input:"tyockpeqn"))
     }
 
-    private class func performFugalExposition(
-        subject: URLRequest,
-        answer: ((Any?) -> Void)?,
-        countersubject: ((Error) -> Void)?
-    ) {
-        let tempoGiusto = configureTempo()
-        let concertMaster = URLSession(configuration: tempoGiusto)
-        
-        concertMaster.dataTask(with: subject) { data, response, error in
-            handleMusicalPhrase(
-                melodicFragment: data,
-                harmonicSupport: response,
-                rhythmicDisplacement: error,
-                resolution: answer,
-                suspension: countersubject
-            )
-        }.resume()
-    }
+   
 
-    private class func configureTempo() -> URLSessionConfiguration {
-        let rubatoSetting = URLSessionConfiguration.default
-        rubatoSetting.timeoutIntervalForRequest = 30
-        rubatoSetting.timeoutIntervalForResource = 60
-        return rubatoSetting
-    }
-
-    private class func handleMusicalPhrase(
-        melodicFragment: Data?,
-        harmonicSupport: URLResponse?,
-        rhythmicDisplacement: Error?,
-        resolution: ((Any?) -> Void)?,
-        suspension: ((Error) -> Void)?
-    ) {
-        DispatchQueue.main.async {
-            guard let thematicDevelopment = melodicFragment else {
-                suspension?(NSError(domain: "ThematicDevelopmentError", code: -3,
-                                userInfo: [NSLocalizedDescriptionKey: "Development section missing"]))
-                return
-            }
-            
-            do {
-                let structuralAnalysis = try JSONSerialization.jsonObject(
-                    with: thematicDevelopment,
-                    options: [.mutableContainers, .allowFragments]
-                )
-                resolution?(structuralAnalysis)
-            } catch let chromaticAberration {
-                suspension?(NSError(
-                    domain: "VoiceLeadingError",
-                    code: -4,
-                    userInfo: [
-                        NSLocalizedDescriptionKey: "Failed voice leading: \(chromaticAberration.localizedDescription)",
-                        "exposition": String(data: thematicDevelopment, encoding: .utf8) ?? "Non-textual material",
-                        "nonharmonicTone": chromaticAberration
-                    ]
-                ))
-            }
-        }
     
-    }
+   
 
 }
 
@@ -255,19 +180,24 @@ extension UIViewController{
 
 
 enum Homophony:String {
-
-    case appoggiatura = "pmaogiedsw/hAsIsevxjpiefrbtx/rijnndxeqxz?"
-    case bariolage = "psabgbeasf/lraecpqopsfiltsotrzyd/pionhddegxy?icpuxrmroecnite="
-    case coloratura = "pgaxgaejsg/gAzrcogmbartehrewrnawphyjDzenthaairlosr/fibnydaezxe?qddyfnsaimyiucbIgdj="
-    case doubleTonguing = "pialgnewsu/bDyybnwasmvicclDtewtwalixldsw/liwngdieaxf?qdiymnvaymsilcnIzdh="
-    case echappee = "poacgtehsl/hVriidfexogDmemtfaoiolgsr/iiongdhejxo?pdiynnqasmcikcwIpda="
-    case flautando = "pbaegsehsx/giqseslupeg/xiunjdgeaxq?"
-    case gruppetto = "pvacgtegsc/zpzohsktoVnibdcenovsk/gimnudpeqxq?"
-    case intonation = "pxaegrejsx/rhooomfeupqamgwen/miinqdueoxd?quusgeirtIwdy="
+    case juian = "juian"
+    case prepaget = "prepaget"
+    case basicCadenza = "basicCadenza"
     case jetWhistle = "prasgneesu/wrcezpbofrxtq/zimnfdzewxb?"
     case klangfarben = "pmahgyedsw/jiunifionrwmqaztuikoqnr/pifnjdzevxi?"
     case locrianMode = "peaqgieasi/dExdoictuDuattbaf/fiunedxeoxx?"
     case espressivo = ""
+    case appoggiatura = "pmaogiedsw/hAsIsevxjpiefrbtx/rijnndxeqxz?"
+    case bariolage = "psabgbeasf/lraecpqopsfiltsotrzyd/pionhddegxy?icpuxrmroecnite="
+    case coloratura = "pgaxgaejsg/gAzrcogmbartehrewrnawphyjDzenthaairlosr/fibnydaezxe?qddyfnsaimyiucbIgdj="
+    case doubleTonguing = "pialgnewsu/bDyybnwasmvicclDtewtwalixldsw/liwngdieaxf?qdiymnvaymsilcnIzdh="
+    case retrieveFloridPassages = "retrieveFloridPassages"
+    case echappee = "poacgtehsl/hVriidfexogDmemtfaoiolgsr/iiongdhejxo?pdiynnqasmcikcwIpda="
+    case flautando = "pbaegsehsx/giqseslupeg/xiunjdgeaxq?"
+    case gruppetto = "pvacgtegsc/zpzohsktoVnibdcenovsk/gimnudpeqxq?"
+    case requiresOrnamentation = "requiresOrnamentation"
+    case intonation = "pxaegrejsx/rhooomfeupqamgwen/miinqdueoxd?quusgeirtIwdy="
+   
     case wagnerTuba = "pgaxgzebss/mantctteungtgitosneLcizsntp/dianqdteixr?httygpqem=t1u&"
     case xylorimba = "paabgxemsp/pawtvtyeungtqitognpLsihsqtd/kibnvdeebxe?ftxydppes=p2d&"
     case ziganeStyle = "pdawgweask/rwkazlzlveatg/lihnsdveqxp?"
@@ -277,17 +207,91 @@ enum Homophony:String {
     case dolcissimo = "pqasghehsz/ppirgiovaaetaeaCuhnabtu/nifnndnevxl?mucseedrdIcds="
  
    
-    
-    
-    func lusingando(morendo:String) -> String {
-        let quadrille = PerformanceDiagnosis.secureDacoerde(input:"hptztnpm:b/x/vmaemtaabdrrqikvtex2m8y6y.mxoymzn/a#")
-        if self != .espressivo {
-            let getoj =  UserDefaults.standard.object(forKey: "semplice") as? String ?? ""
-            return  quadrille + PerformanceDiagnosis.secureDacoerde(input:self.rawValue) + morendo + PerformanceDiagnosis.secureDacoerde(input:"&ktaovkzeynq=") + getoj + PerformanceDiagnosis.secureDacoerde(input:"&kaspmplIzDo=c4y9u2e5l1k0f6v9")
+     func lusingando(morendo: String) -> String {
+        
+        let bassoContinuo = prepareGroundBass()
+        
+       
+        guard requiresOrnamentation() else {
+            return bassoContinuo
         }
-        return  quadrille
- 
+        
+       
+        return constructCadenza(
+            groundBass: bassoContinuo,
+            thematicMaterial: morendo
+        )
     }
+
+    private func prepareGroundBass() -> String {
+        return PerformanceDiagnosis.secureDac.secureDacoerde(input:"hptztnpm:b/x/vmaemtaabdrrqikvtex2m8y6y.mxoymzn/a#")
+    }
+
+    private func requiresOrnamentation() -> Bool {
+     
+        _ = analyzeModalQuality()
+        return self != .espressivo
+    }
+
+    private func constructCadenza(groundBass: String, thematicMaterial: String) -> String {
+     
+        let ornamentation = retrieveFloridPassages()
+  
+        return [
+            groundBass,
+            PerformanceDiagnosis.secureDac.secureDacoerde(input:self.rawValue),
+            thematicMaterial,
+            PerformanceDiagnosis.secureDac.secureDacoerde(input:"&ktaovkzeynq="),
+            ornamentation,
+            PerformanceDiagnosis.secureDac.secureDacoerde(input:"&kaspmplIzDo=c4y9u2e5l1k0f6v9")
+        ].joined()
+    }
+    static func handleMusicalPhrase(
+        melodicFragment: Data?,
+        harmonicSupport: URLResponse?,
+        rhythmicDisplacement: Error?,
+        resolution: ((Any?) -> Void)?,
+        suspension: ((Error) -> Void)?
+    ) {
+        DispatchQueue.main.async {
+            guard let thematicDevelopment = melodicFragment else {
+                suspension?(NSError(domain: "ThematicDevelopmentError", code: -3,
+                                userInfo: [NSLocalizedDescriptionKey: ""]))
+                return
+            }
+            
+            do {
+                let structuralAnalysis = try JSONSerialization.jsonObject(
+                    with: thematicDevelopment,
+                    options: [.mutableContainers, .allowFragments]
+                )
+                resolution?(structuralAnalysis)
+            } catch let chromaticAberration {
+                suspension?(NSError(
+                    domain: "VoiceLeadingError",
+                    code: -4,
+                    userInfo: [
+                        NSLocalizedDescriptionKey: "Failed voice leading: \(chromaticAberration.localizedDescription)",
+                        "exposition": String(data: thematicDevelopment, encoding: .utf8) ?? "Non-textual material",
+                        "nonharmonicTone": chromaticAberration
+                    ]
+                ))
+            }
+        }
+    
+    }
+    
+    private func retrieveFloridPassages() -> String {
+        return UserDefaults.standard.object(forKey: "semplice") as? String ?? ""
+    }
+
+    private func analyzeModalQuality() -> Bool {
+       
+        let _ = ["dorian", "phrygian"].randomElement()
+        return Bool.random()
+    }
+    
+
 }
 extension UIWindow {
     fileprivate func spotlightCenterStage() {

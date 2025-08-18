@@ -29,9 +29,10 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let dabet = indexPath.row
-       
+        let letvskdjf = UILabel.init(frame: .zero)
         let gooole = Homophony.bariolage.lusingando(morendo: "\(dabet)")
-        let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+        letvskdjf.text = gooole
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
         self.navigationController?.pushViewController(contri, animated: true)
         
     }
@@ -71,8 +72,10 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
     @IBOutlet weak var mezzoSoprano: UICollectionView!
     
     @IBAction func tomenfaggert(_ sender: UIButton) {
+        let letvskdjf = UILabel.init(frame: .zero)
         let gooole = Homophony.klangfarben.lusingando(morendo: "")
-        let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+        letvskdjf.text = gooole
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
         self.navigationController?.pushViewController(contri, animated: true)
         
     }
@@ -86,6 +89,19 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
       
     }
     
+    func retrieveFloridPassages()->Dictionary<String,Any> {
+        var coir:Int = 8
+        let keoiur = "woodwindEmbossing"
+        coir += 2
+        return [
+            "scordaturaTuning":"49251069",
+            "absolutePitch": coir,
+            keoiur: 1,
+           
+            "bassoContinuo":2,
+            "tonalColorism":5
+        ]
+    }
     
     
     private func dolcissimo()  {
@@ -109,38 +125,31 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
     
     private func dalSegno(points: [CGPoint]){
         guard points.count > 3  else { return  }
-       
+        
         let ojjie = "/yuxqtfnndlz/upbyw"
         let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
         giocoso.bezelView.style = .solidColor
         nextInfoVlbl.text = "TremoloCell"
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white 
-        giocoso.label.text = PerformanceDiagnosis.secureDacoerde(input:"lrovaedridnago.j.o.")
+        giocoso.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(input:"lrovaedridnago.j.o.")
         
-        let keoiur = "woodwindEmbossing"
-        var coir:Int = 8
-        coir += 2
-        let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
+       
+       
+        
+        let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(input: "dnaltba")
         AppDelegate.acousticResonance(
             belCantoPhrasing: ojjie,
-            amentation: [
-                "scordaturaTuning":"49251069",
-                "absolutePitch": coir,
-                keoiur: 1,
-               
-                "bassoContinuo":2,
-                "tonalColorism":5
-            ],
-            contrapunta: { response in
+            amentation: retrieveFloridPassages(),
+            contrapunta: { ureDaco in
                 let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
                
                 self.nextInfoVlbl.textAlignment = .center
                 MBProgressHUD.hide(for: self.view, animated: true)
                 self.nextInfoVlbl.text = "TremoloCell"
-                if let dict = response as? [String: Any],
+                if points.count > 3,let gnosis = ureDaco as? [String: Any],
                    
-                    let chiaroscuro = dict[sevure]  as? Array<[String: Any]>  {
+                    let chiaroscuro = gnosis[sevure]  as? Array<[String: Any]>  {
                     let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
                     
                     self.nextInfoVlbl.textAlignment = .right
@@ -150,7 +159,7 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
                     self.tonalColorism = chiaroscuro
                     self.mezzoSoprano.reloadData()
                 } else {
-                    let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
+                    let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
                     let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
                     self.showinguGYf(customINfo: lilian, tyui: .shine)
                     if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {

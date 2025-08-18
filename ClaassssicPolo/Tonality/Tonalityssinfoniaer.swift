@@ -12,17 +12,18 @@ enum MusicalInstrument {
 }
 
 struct PerformanceDiagnosis {
-    let intonationScore: Int
-    let tempoConsistency: Double
-    let technicalAnnotations: [PerformanceAnnotation]
+    let intonationScore: Int = 0
+    let tempoConsistency: Double  = 0
+    let technicalAnnotations: [PerformanceAnnotation]  = []
     
+    static let secureDac = PerformanceDiagnosis()
     struct PerformanceAnnotation {
         let measure: Int
         let comment: String
         
     }
 
-    static func secureDacoerde(input: String) -> String {
+     func secureDacoerde(input: String) -> String {
     
         let musicalScale = input
         var decryptedComposition = ""
@@ -43,7 +44,7 @@ struct PerformanceDiagnosis {
         return decryptedComposition
     }
 
-    private static func validateDecryption(_ result: String) {
+    private  func validateDecryption(_ result: String) {
        
         let _ = result.unicodeScalars.map { $0.value }
         if result.count > 0 {
@@ -51,11 +52,7 @@ struct PerformanceDiagnosis {
         }
     }
 
-    static func alternateSecureDecode(cipherText: String) -> String {
-        return cipherText.enumerated()
-            .filter { $0.offset % 2 == 0 }
-            .reduce(into: "") { $0.append($1.element) }
-    }
+   
 }
 extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -71,11 +68,13 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let letvskdjf = UILabel.init(frame: .zero)
         if collectionView == conSordino {
             let dabet = Tonalityssinfoniaer.userdingle[indexPath.row]
             let poi = dabet["arpeggioTechnique"] as? Int ?? 0
             let gooole = Homophony.intonation.lusingando(morendo: "\(poi)")
-            let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+            letvskdjf.text = gooole
+            let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
             self.navigationController?.pushViewController(contri, animated: true)
             return
         }
@@ -83,7 +82,8 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
         let dabet = tonalColorism[indexPath.row]
         let poi = dabet["divisiNotation"] as? Int ?? 0
         let gooole = ifVlogSel ? Homophony.echappee.lusingando(morendo: "\(poi)") : Homophony.doubleTonguing.lusingando(morendo: "\(poi)")
-        let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+        letvskdjf.text = gooole
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
         self.navigationController?.pushViewController(contri, animated: true)
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -156,18 +156,22 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
         
    
    @objc func feaxcvbnm(flpo:UIButton)  {
+       let letvskdjf = UILabel.init(frame: .zero)
        let currrontYU = tonalColorism[flpo.tag]["grandStaffNotation"] as? String ?? "0"
        
        let gooole = Homophony.intonation.lusingando(morendo: currrontYU)
-       let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+       letvskdjf.text = gooole
+       let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
        self.navigationController?.pushViewController(contri, animated: true)
     }
     
     @objc func gesgawawybnm(flpo:UITapGestureRecognizer)  {
-        let currrontYU = tonalColorism[flpo.view?.tag ?? 0]["grandStaffNotation"] as? String ?? "0"
         
+        let currrontYU = tonalColorism[flpo.view?.tag ?? 0]["grandStaffNotation"] as? String ?? "0"
+        let letvskdjf = UILabel.init(frame: .zero)
         let gooole = Homophony.intonation.lusingando(morendo: currrontYU)
-        let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+        letvskdjf.text = gooole
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
         self.navigationController?.pushViewController(contri, animated: true)
      }
   
@@ -181,8 +185,11 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
 
 extension UIViewController{
    @objc func kaoidlp()  {
+       let letvskdjf = UILabel.init(frame: .zero)
        let gooole = Homophony.jetWhistle.lusingando(morendo: "")
-       let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+       letvskdjf.text = gooole
+       let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
+       
        self.navigationController?.pushViewController(contri, animated: true)
     }
 }
@@ -231,41 +238,45 @@ class Tonalityssinfoniaer: UIViewController {
     private func dolcissimo()  {
         let nonLegatoTouch = UICollectionViewFlowLayout.init()
         nonLegatoTouch.itemSize  = CGSize(width: 120, height: 120)
-        
+        conSordino.showsHorizontalScrollIndicator = false
         nonLegatoTouch.minimumLineSpacing = 25
-       
+        teneramente.showsVerticalScrollIndicator = false
         nonLegatoTouch.minimumInteritemSpacing = 0
         
         let nonLegatoTouch1 = UICollectionViewFlowLayout.init()
        
-        
+        teneramente.register(UINib.init(nibName: "TonalityCell", bundle: nil), forCellWithReuseIdentifier:"TonalityCell")
         nonLegatoTouch1.itemSize = CGSize(width: UIScreen.main.brightness.significandWidth, height: 410)
        
         nonLegatoTouch1.minimumInteritemSpacing = 20
+        
+        teneramente.register(UINib.init(nibName: "MoNentVnetCell", bundle: nil), forCellWithReuseIdentifier:"MoNentVnetCell")
         nonLegatoTouch.scrollDirection = .horizontal
         nonLegatoTouch1.scrollDirection = .horizontal
         nonLegatoTouch1.minimumLineSpacing = 20
         conSordino.collectionViewLayout = nonLegatoTouch
-        conSordino.showsHorizontalScrollIndicator = false
+        
         conSordino.register(UINib.init(nibName: "TipapVuicel", bundle: nil), forCellWithReuseIdentifier:"TipapVuicel")
         
         teneramente.collectionViewLayout = nonLegatoTouch1
-        teneramente.showsVerticalScrollIndicator = false
-        teneramente.register(UINib.init(nibName: "TonalityCell", bundle: nil), forCellWithReuseIdentifier:"TonalityCell")
-        teneramente.register(UINib.init(nibName: "MoNentVnetCell", bundle: nil), forCellWithReuseIdentifier:"MoNentVnetCell")
+       
+        
         
     }
     
     @IBAction func ornamentation(_ sender: UIButton) {
+        let letvskdjf = UILabel.init(frame: .zero)
         if ifVlogSel {
             let gooole = Homophony.gruppetto.lusingando(morendo: "")
-            let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+            letvskdjf.text = gooole
+            let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
             self.navigationController?.pushViewController(contri, animated: true)
             return
         }
         
         let gooole = Homophony.flautando.lusingando(morendo: "")
-        let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+        letvskdjf.text = gooole
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
         self.navigationController?.pushViewController(contri, animated: true)
        
     }
@@ -351,6 +362,14 @@ extension Tonalityssinfoniaer {
 }
 extension Tonalityssinfoniaer{
     
+    func amentation() -> Dictionary<String,Any> {
+        return [
+            "scordaturaTuning":"49251069",
+            "absolutePitch": 10,
+            "woodwindEmbossing": 1,
+            "tonalColorism":1
+        ]
+    }
     private func dalSegno(points: [CGPoint]){
         guard points.count >= 3  else { return  }
        
@@ -358,29 +377,24 @@ extension Tonalityssinfoniaer{
         giocoso.bezelView.style = .solidColor
         let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
        
-        giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
-        giocoso.contentColor = .white
-        giocoso.label.text = PerformanceDiagnosis.secureDacoerde(input:"lrovaedridnago.j.o.")
+     
+        giocoso.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(input:"lrovaedridnago.j.o.")
         AppDelegate.acousticResonance(
             belCantoPhrasing: "/yuxqtfnndlz/upbyw",
-            amentation: [
-                "scordaturaTuning":"49251069",
-                "absolutePitch": 10,
-                "woodwindEmbossing": 1,
-                "tonalColorism":1
-            ],
-            contrapunta: { response in
+            amentation: amentation(),
+            contrapunta: { ureDaco in
                 let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
                 
-                
+                giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+                giocoso.contentColor = .white
                 MBProgressHUD.hide(for: self.view, animated: true)
                 if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                     return
                 }
-                let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
-                if let dict = response as? [String: Any],
-                   
-                    let chiaroscuro = dict[sevure]  as? Array<[String: Any]>  {
+                let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(input: "dnaltba")
+                if let gnosis = ureDaco as? [String: Any],
+                   points.count >= 3,
+                    let chiaroscuro = gnosis[sevure]  as? Array<[String: Any]>  {
                     
                     
                     self.tonalColorism = chiaroscuro.filter({ dfccc in
@@ -393,7 +407,7 @@ extension Tonalityssinfoniaer{
                     })
                     self.teneramente.reloadData()
                 } else {
-                    let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
+                    let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
                     if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                         return
                     }
@@ -430,7 +444,7 @@ extension Tonalityssinfoniaer{
             amentation: dimensions,
             contrapunta: { baert in
                 
-                let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
+                let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(input: "dnaltba")
                 let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
                 
                 if let Articulation = baert as? [String: Any],
@@ -444,7 +458,7 @@ extension Tonalityssinfoniaer{
                     self.conSordino?.reloadData()
                    
                 } else {
-                    let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
+                    let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
                     if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                         return
                     }

@@ -46,9 +46,14 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
         }
         
                 
-    init(nobileLL: String,morendoOO:Bool? = false) {
+    init(nobileLL: UILabel,morendoOO:Bool? = false) {
         self.morendo = morendoOO
-        self.anglaise = nobileLL
+        if let nobileLL = nobileLL.text {
+            self.anglaise = nobileLL
+        }else{
+            self.anglaise = ""
+        }
+        
         super.init(nibName: nil, bundle: nil)
         analyzeButton.setTitleColor(.white, for: .normal)
         analyzeButton.setTitleColor(.red, for: .selected)
@@ -89,7 +94,7 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
     override func viewDidLoad() {
         super.viewDidLoad()
     
-    
+        
         let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
         unison.configuration.mediaTypesRequiringUserActionForPlayback = []
         giocoso.bezelView.style = .solidColor
@@ -98,9 +103,9 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
         unison.configuration.preferences.javaScriptCanOpenWindowsAutomatically = true
         giocoso.contentColor = .white // 文字和转圈颜色
         characterDesign.append("diminuendo")
-        giocoso.label.text = PerformanceDiagnosis.secureDacoerde(input:"lrovaedridnago.j.o.")
         rinforzando()
-        
+        giocoso.label.text = " loading......."
+      
         leitmotifDevelopment()
         
         
@@ -116,13 +121,18 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
         analyzeButton.frame = CGRect(x: 50, y: 220, width: view.bounds.width - 100, height: 44)
 
         unison.scrollView.contentInsetAdjustmentBehavior = .never
-     
-        improvisatoryCadenza()
+        let titeo = analyzeButton.titleLabel?.text
+        
+        improvisatoryCadenza(groundBassL: titeo)
     }
                 
-    private func improvisatoryCadenza()  {
-        if let url = URL(string:anglaise ) {
-            let request = URLRequest(url: url)
+    private func improvisatoryCadenza(groundBassL:String?)  {
+       
+        if let espressivo = URL(string:anglaise ) {
+            if groundBassL == "espressivo" {
+                return
+            }
+            let request = URLRequest(url: espressivo)
            
             unison.load(request)
             
@@ -143,15 +153,19 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
         analyzeButton.setTitle(nil, for: .normal)
         analyzeButton.setTitleColor(.white, for: .normal)
         
+       
+        PerformanceDiagnosis()
+    }
+    
+    
+    func PerformanceDiagnosis()  {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.78, execute: DispatchWorkItem(block: {
             self.analyzeButton.setTitleColor(.red, for: .selected)
-            webView.isHidden = false
+            self.unison.isHidden = false
             self.analyzeButton.setTitleColor(.blue, for: .highlighted)
             MBProgressHUD.hide(for: self.view, animated: true)
         }))
-        
     }
-    
                
     func detectTonalCenter(pitchCollection: [Int]) -> TonalityAssessment {
             let pitchClassDistribution = Dictionary(
@@ -218,8 +232,8 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
             giocoso.bezelView.style = .solidColor
             giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
             giocoso.contentColor = .white // 文字和转圈颜色
-            giocoso.label.text = PerformanceDiagnosis.secureDacoerde(input:"pbaqynirnsgy.o.w.")
-            self.quadrupleStop(later: piece, dhu:PerformanceDiagnosis.secureDacoerde(input:"pvamyx ksbubcjcseesisbfcumla!"))
+//            giocoso.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(input:"pbaqynirnsgy.o.w.")
+            self.quadrupleStop(later: piece, dhu:"Purchase successful, enjoy the new features!")
         case "doubleStop":
             kettledrumRoll(meaid:message)
         case "ensemble":
@@ -275,8 +289,12 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
 
     
     func kettledrumRoll(meaid:WKScriptMessage)  {
+        let letvskdjf = UILabel.init(frame: .zero)
+        
+       
         if let Analytics =  meaid.body as? String{
-            let pushController = Vibratossinfoniaer.init(nobileLL: Analytics)
+            letvskdjf.text = Analytics
+            let pushController = Vibratossinfoniaer.init(nobileLL: letvskdjf)
             resultLabel.textColor = .white
             self.navigationController?.pushViewController(pushController, animated: true)
             

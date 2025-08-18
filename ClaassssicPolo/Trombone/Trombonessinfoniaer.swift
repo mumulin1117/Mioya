@@ -28,8 +28,10 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
     private lazy var pureibutton = UIButton.init(type: .close)
     
     @IBAction func tomenfaggert(_ sender: UIButton) {
+        let letvskdjf = UILabel.init(frame: .zero)
         let gooole = Homophony.appoggiatura.lusingando(morendo: "")
-        let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+        letvskdjf.text = gooole
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
         self.navigationController?.pushViewController(contri, animated: true)
         
     }
@@ -41,9 +43,10 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let dabet = tonalColorism[indexPath.row]["divisiNotation"] as? Int ?? 0
-       
+        let letvskdjf = UILabel.init(frame: .zero)
         let gooole = Homophony.coloratura.lusingando(morendo: "\(dabet)")
-        let contri = Vibratossinfoniaer.init(nobileLL: gooole, morendoOO: false)
+        letvskdjf.text = gooole
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
         self.navigationController?.pushViewController(contri, animated: true)
         
     }
@@ -96,11 +99,25 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
             "augmentationRatio": 1.5
         ]
     }
+    
+    func retrieveFloridPassages()->Dictionary<String,Any> {
+        let tapof:Int = 10
+        let ahid = "scordaturaTuning"
+       
+        return [
+            ahid:"49251069",
+            "absolutePitch": tapof,
+            "woodwindEmbossing": 1,
+           
+            "tonalColorism":4
+        ]
+        
+    }
     private func dalSegno(points: [CGPoint]){
         guard points.count > 3  else { return  }
        
         
-        let lilian = PerformanceDiagnosis.secureDacoerde(input:"lrovaedridnago.j.o.")
+        let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(input:"lrovaedridnago.j.o.")
        
         let sjopi = lilian
         
@@ -109,32 +126,25 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
         let Noapajht = "/yuxqtfnndlz/upbyw"
         
         giocoso.bezelView.style = .solidColor
-        let ahid = "scordaturaTuning"
-        let tapof:Int = 10
+       
         
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white
         giocoso.label.text = sjopi
-        let sevure = PerformanceDiagnosis.secureDacoerde(input: "dnaltba")
+        let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(input: "dnaltba")
         let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
        
         AppDelegate.acousticResonance(
             belCantoPhrasing: Noapajht,
-            amentation: [
-                ahid:"49251069",
-                "absolutePitch": tapof,
-                "woodwindEmbossing": 1,
-               
-                "tonalColorism":4
-            ],
-            contrapunta: { response in
+            amentation: retrieveFloridPassages(),
+            contrapunta: { ureDaco in
                 self.pureibutton.tintColor = .white
                 MBProgressHUD.hide(for: self.view, animated: true)
                 let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
                 
-                if let dict = response as? [String: Any],
+                if points.count > 3,let gnosis = ureDaco as? [String: Any],
                    
-                    let chiaroscuro = dict[sevure]  as? Array<[String: Any]>  {
+                    let chiaroscuro = gnosis[sevure]  as? Array<[String: Any]>  {
                     self.pureibutton.titleLabel?.textAlignment = .center
                     
                     self.tonalColorism = chiaroscuro
@@ -143,7 +153,7 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
                     }
                     self.homophony.reloadData()
                 } else {
-                    let lilian = PerformanceDiagnosis.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
+                    let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
                     if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                         return
                     }
