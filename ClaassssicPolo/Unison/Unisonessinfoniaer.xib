@@ -122,6 +122,18 @@
                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mr8-jb-awE">
+                    <rect key="frame" x="10" y="10" width="38" height="34"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="sedll"/>
+                </button>
+                <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hH7-cY-OXS">
+                    <rect key="frame" x="218" y="12" width="131" height="32"/>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                    </segments>
+                </segmentedControl>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -137,14 +149,18 @@
                 <constraint firstItem="Ccv-hB-yLm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Iw2-HF-uXh"/>
                 <constraint firstItem="drI-bQ-f4W" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="Jpe-3L-Gei"/>
                 <constraint firstItem="Vwo-2p-D4P" firstAttribute="leading" secondItem="X2M-G7-IEO" secondAttribute="leading" id="L1D-i1-bz3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hH7-cY-OXS" secondAttribute="trailing" constant="26" id="LRv-ax-okW"/>
                 <constraint firstItem="Ccv-hB-yLm" firstAttribute="top" secondItem="vfo-WN-dXf" secondAttribute="bottom" constant="25" id="LiN-Sd-Xws"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="d2s-fI-bSx" secondAttribute="trailing" constant="22" id="Nco-a3-ARO"/>
                 <constraint firstAttribute="bottom" secondItem="M5B-F0-76V" secondAttribute="bottom" id="SnW-df-2oT"/>
+                <constraint firstItem="mr8-jb-awE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="VPc-8P-syg"/>
                 <constraint firstItem="Qaa-5u-4o2" firstAttribute="top" secondItem="X2M-G7-IEO" secondAttribute="bottom" constant="25" id="XkF-WK-EIP"/>
                 <constraint firstItem="ZRy-OG-dNp" firstAttribute="leading" secondItem="sqi-qy-8Ra" secondAttribute="trailing" constant="8" symbolic="YES" id="YeG-nf-ICm"/>
                 <constraint firstItem="vfo-WN-dXf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Yrb-eH-sRY"/>
                 <constraint firstItem="Vwo-2p-D4P" firstAttribute="top" secondItem="Qaa-5u-4o2" secondAttribute="bottom" constant="11" id="Zam-dz-hct"/>
+                <constraint firstItem="mr8-jb-awE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="ayc-Sl-JdT"/>
                 <constraint firstItem="M5B-F0-76V" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="bKa-wM-TkX"/>
+                <constraint firstItem="hH7-cY-OXS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="12" id="cOE-S8-5oB"/>
                 <constraint firstItem="Qaa-5u-4o2" firstAttribute="leading" secondItem="Ccv-hB-yLm" secondAttribute="leading" id="hQd-8L-BOo"/>
                 <constraint firstItem="ZRy-OG-dNp" firstAttribute="top" secondItem="sqi-qy-8Ra" secondAttribute="top" id="j4b-vl-eYm"/>
                 <constraint firstItem="NTa-cf-4KL" firstAttribute="centerY" secondItem="ZRy-OG-dNp" secondAttribute="centerY" id="jB4-YY-f5N"/>

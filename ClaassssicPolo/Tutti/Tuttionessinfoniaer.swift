@@ -36,14 +36,14 @@ class Tuttionessinfoniaer: UIViewController {
     @IBOutlet weak var sextet: UILabel!
     
     @IBOutlet weak var pOIShf: UILabel!
-    
+    private var zenzeng:String = "homophony"
     override func viewDidLoad() {
         super.viewDidLoad()
         ternary.masklingColrm(clore: 55, isO: true)
-        pOIShf.text = PerformanceDiagnosis.secureDac.secureDacoerde(input:"Peojspt")
-        self.ModalQuali.setTitle(PerformanceDiagnosis.secureDac.secureDacoerde(input:"Ftarnas"), for: .normal)
-        Feiaud.setTitle(PerformanceDiagnosis.secureDac.secureDacoerde(input:"Fcoulnlhomwziznfg"), for: .normal)
-        nIaavtuja.text = PerformanceDiagnosis.secureDac.secureDacoerde(input:"Nmof udnabtnav yabvlavidlgaubolbek.")
+        pOIShf.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Peojspt")
+        self.ModalQuali.setTitle(PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Ftarnas"), for: .normal)
+        Feiaud.setTitle(PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Fcoulnlhomwziznfg"), for: .normal)
+        nIaavtuja.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Nmof udnabtnav yabvlavidlgaubolbek.")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,15 +59,18 @@ class Tuttionessinfoniaer: UIViewController {
         let letvskdjf = UILabel.init(frame: .zero)
         let gooole = Homophony.wagnerTuba.lusingando(morendo: "")
         letvskdjf.text = gooole
-        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
+        let preparation = "souvenirIdeas"
+        
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO:(zenzeng ,preparation,false))
         self.navigationController?.pushViewController(contri, animated: true)
     }
     
     @IBAction func sforzando(_ sender: UIButton) {
         let letvskdjf = UILabel.init(frame: .zero)
+        let preparation = "souvenirIdeas"
         let gooole = Homophony.xylorimba.lusingando(morendo: "")
         letvskdjf.text = gooole
-        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: ( zenzeng,preparation,false))
         self.navigationController?.pushViewController(contri, animated: true)
     }
     
@@ -87,13 +90,13 @@ class Tuttionessinfoniaer: UIViewController {
             gooole = Homophony.locrianMode.lusingando(morendo: "")
             letvskdjf.text = gooole
         }
-        
+        let preparation = "souvenirIdeas"
         if sender.tag == 5 {
             gooole = Homophony.ziganeStyle.lusingando(morendo: "")
             letvskdjf.text = gooole
         }
         
-        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: ( zenzeng,preparation,false))
         self.navigationController?.pushViewController(contri, animated: true)
     }
     func retrieveFloridPassages()->Dictionary<String,Any> {
@@ -114,11 +117,11 @@ class Tuttionessinfoniaer: UIViewController {
        
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white 
-        giocoso.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(input:"lrovaedridnago.j.o.")
-        let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(input: "dnaltba")
+        giocoso.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"lrovaedridnago.j.o.")
+        let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD: "dnaltba")
         let ggg = UserDefaults.standard.object(forKey: "conSordino") as? Int
-        self.sextet.text = PerformanceDiagnosis.secureDac.secureDacoerde(input: "UtIlDi:") + " \(ggg ?? 0)"
-        AppDelegate.acousticResonance(
+        self.sextet.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD: "UtIlDi:") + " \(ggg ?? 0)"
+        AudioSonata.acousticResonance(
             belCantoPhrasing: "/inkwjohixvz/jwrxzqzsemem",
             amentation: retrieveFloridPassages(),
             contrapunta: { ureDaco in
@@ -131,7 +134,7 @@ class Tuttionessinfoniaer: UIViewController {
                     self.interpretSonataForm(chiaroscuro)
                     
                 } else {
-                    let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
+                    let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
                     if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                         return
                     }
@@ -147,7 +150,7 @@ class Tuttionessinfoniaer: UIViewController {
     
     private func interpretSonataForm(_ chiaroscuro:[String: Any]) {
         if let gdhdd = chiaroscuro["improvisatoryCadenza"] as? String {
-            self.ternary.sprechstimme(tremolo: gdhdd)
+            self.ternary.orchestrateVisualSymphony(maestro: gdhdd)
         }
         
         

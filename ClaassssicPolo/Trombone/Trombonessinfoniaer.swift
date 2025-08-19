@@ -14,6 +14,7 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
     
     @IBOutlet weak var homophony: UICollectionView!
     
+    private var zenzeng:String = "homophony"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +30,11 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
     
     @IBAction func tomenfaggert(_ sender: UIButton) {
         let letvskdjf = UILabel.init(frame: .zero)
+        let preparation = "souvenirIdeas"
+        
         let gooole = Homophony.appoggiatura.lusingando(morendo: "")
         letvskdjf.text = gooole
-        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: (zenzeng,preparation,false))
         self.navigationController?.pushViewController(contri, animated: true)
         
     }
@@ -42,11 +45,12 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let dabet = tonalColorism[indexPath.row]["divisiNotation"] as? Int ?? 0
+        let dabet = tonalColorism[indexPath.row].descriptor["divisiNotation"] as? Int ?? 0
         let letvskdjf = UILabel.init(frame: .zero)
         let gooole = Homophony.coloratura.lusingando(morendo: "\(dabet)")
         letvskdjf.text = gooole
-        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
+        let preparation = "souvenirIdeas"
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: (zenzeng,preparation,false))
         self.navigationController?.pushViewController(contri, animated: true)
         
     }
@@ -54,16 +58,16 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
         let jaio = collectionView.dequeueReusableCell(withReuseIdentifier: "TremoloCell", for: indexPath) as! TremoloCell
 //        jaio.melisma.isHidden = true
         
-        if let fxc = (tonalColorism[indexPath.row]["passageworkPractice"] as? Array<String>)?.first {
-            jaio.neapolitan.sprechstimme(tremolo: fxc)
+        if let fxc = (tonalColorism[indexPath.row].descriptor["passageworkPractice"] as? Array<String>)?.first {
+            jaio.neapolitan.orchestrateVisualSymphony(maestro: fxc)
         }
         
-        jaio.pianissimo.text = tonalColorism[indexPath.row]["fugalExposition"] as? String
+        jaio.pianissimo.text = tonalColorism[indexPath.row].descriptor["fugalExposition"] as? String
         return jaio
         
     }
     
-    private var tonalColorism = Array<Dictionary<String,Any> >()
+    private var tonalColorism = Array<ArtisticElement >()
     
     private func lusingando()  {
         homophony.delegate = self
@@ -117,7 +121,7 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
         guard points.count > 3  else { return  }
        
         
-        let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(input:"lrovaedridnago.j.o.")
+        let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"lrovaedridnago.j.o.")
        
         let sjopi = lilian
         
@@ -131,13 +135,14 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white
         giocoso.label.text = sjopi
-        let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(input: "dnaltba")
+        let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD: "dnaltba")
         let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
        
-        AppDelegate.acousticResonance(
+        AudioSonata.acousticResonance(
             belCantoPhrasing: Noapajht,
             amentation: retrieveFloridPassages(),
             contrapunta: { ureDaco in
+                self.tonalColorism.removeAll()
                 self.pureibutton.tintColor = .white
                 MBProgressHUD.hide(for: self.view, animated: true)
                 let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
@@ -147,13 +152,16 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
                     let chiaroscuro = gnosis[sevure]  as? Array<[String: Any]>  {
                     self.pureibutton.titleLabel?.textAlignment = .center
                     
-                    self.tonalColorism = chiaroscuro
+                      chiaroscuro.forEach({ MKDhg in
+                        let sjaet = ArtisticElement.init(rawValue: 233, descriptor: MKDhg)
+                         self.tonalColorism.append(sjaet)
+                    })
                     if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                         return
                     }
                     self.homophony.reloadData()
                 } else {
-                    let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
+                    let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
                     if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                         return
                     }

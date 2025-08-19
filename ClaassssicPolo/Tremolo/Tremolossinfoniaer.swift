@@ -14,6 +14,13 @@ struct TempoKeeper {
         return 20
     }
 }
+
+ struct ArtisticElement {
+    let rawValue: Any
+    let descriptor: [String: Any]
+}
+
+
 class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         tonalColorism.count
@@ -30,24 +37,26 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let dabet = indexPath.row
         let letvskdjf = UILabel.init(frame: .zero)
+        let preparation = "souvenirIdeas"
         let gooole = Homophony.bariolage.lusingando(morendo: "\(dabet)")
         letvskdjf.text = gooole
-        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: (preparation,preparation,false))
         self.navigationController?.pushViewController(contri, animated: true)
         
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let jaio = collectionView.dequeueReusableCell(withReuseIdentifier: "TremoloCell", for: indexPath) as! TremoloCell
         jaio.melisma.isHidden = true
-        if let fxc = (tonalColorism[indexPath.row]["passageworkPractice"] as? Array<String>)?.first {
-            jaio.neapolitan.sprechstimme(tremolo: fxc)
+        let abgffccc = tonalColorism[indexPath.row].descriptor
+        if let fxc = (abgffccc["passageworkPractice"] as? Array<String>)?.first {
+            jaio.neapolitan.orchestrateVisualSymphony(maestro: fxc)
         }
-        jaio.pianissimo.text = tonalColorism[indexPath.row]["fugalExposition"] as? String
+        jaio.pianissimo.text = abgffccc["fugalExposition"] as? String
         return jaio
         
     }
     
-    private var tonalColorism = Array<Dictionary<String,Any> >()
+    private var tonalColorism = Array<ArtisticElement>()
     @IBOutlet weak var onlinwrUserVIur: UIButton!
     
     lazy var nextInfoVlbl = UILabel.init()
@@ -73,9 +82,10 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
     
     @IBAction func tomenfaggert(_ sender: UIButton) {
         let letvskdjf = UILabel.init(frame: .zero)
+        let preparation = "souvenirIdeas"
         let gooole = Homophony.klangfarben.lusingando(morendo: "")
         letvskdjf.text = gooole
-        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: false)
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO:(preparation,preparation, false))
         self.navigationController?.pushViewController(contri, animated: true)
         
     }
@@ -83,10 +93,10 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
     
     private func lusingando()  {
         mezzoSoprano.delegate = self
-        mezzoSoprano.dataSource = self
        
         dolcissimo()
-      
+        mezzoSoprano.dataSource = self
+       
     }
     
     func retrieveFloridPassages()->Dictionary<String,Any> {
@@ -132,13 +142,13 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
         nextInfoVlbl.text = "TremoloCell"
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white 
-        giocoso.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(input:"lrovaedridnago.j.o.")
+        giocoso.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"lrovaedridnago.j.o.")
         
        
        
         
-        let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(input: "dnaltba")
-        AppDelegate.acousticResonance(
+        let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD: "dnaltba")
+        AudioSonata.acousticResonance(
             belCantoPhrasing: ojjie,
             amentation: retrieveFloridPassages(),
             contrapunta: { ureDaco in
@@ -151,15 +161,17 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
                    
                     let chiaroscuro = gnosis[sevure]  as? Array<[String: Any]>  {
                     let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
-                    
+                    self.tonalColorism.removeAll()
                     self.nextInfoVlbl.textAlignment = .right
                     if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                         return
                     }
-                    self.tonalColorism = chiaroscuro
+                     chiaroscuro.forEach({ lsoaf in
+                         self.tonalColorism.append(ArtisticElement.init(rawValue: 23, descriptor: lsoaf))
+                    })
                     self.mezzoSoprano.reloadData()
                 } else {
-                    let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
+                    let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
                     let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
                     self.showinguGYf(customINfo: lilian, tyui: .shine)
                     if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {

@@ -17,14 +17,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="437" height="338"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrZ-yC-ayQ">
-                        <rect key="frame" x="66" y="9" width="0.0" height="0.0"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="''''" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrZ-yC-ayQ">
+                        <rect key="frame" x="66" y="8.9999999999999982" width="19" height="19.333333333333329"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCY-ep-Cnf">
-                        <rect key="frame" x="66" y="11" width="0.0" height="0.0"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hhh" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCY-ep-Cnf">
+                        <rect key="frame" x="66" y="30.333333333333329" width="24.333333333333329" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="1" alpha="0.426312712585034" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -51,11 +51,8 @@
                         </state>
                     </button>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nnH-G8-y4I">
-                        <rect key="frame" x="10" y="23" width="367" height="200"/>
+                        <rect key="frame" x="10" y="59.333333333333329" width="367" height="236.66666666666669"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="200" id="LAg-lR-14y"/>
-                        </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saxophone" translatesAutoresizingMaskIntoConstraints="NO" id="kJu-Ip-6r3">
                         <rect key="frame" x="395" y="72" width="30" height="28"/>
@@ -92,8 +89,8 @@
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" image="bassClef"/>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOX-U9-rIk">
-                        <rect key="frame" x="12" y="235" width="413" height="0.0"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hhhh" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOX-U9-rIk">
+                        <rect key="frame" x="12" y="308" width="413" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="1" alpha="0.75613839287210882" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -112,6 +109,7 @@
                 <constraint firstItem="cyY-sk-gZk" firstAttribute="centerX" secondItem="HKf-4d-8Db" secondAttribute="centerX" id="H05-xw-9bS"/>
                 <constraint firstItem="cyY-sk-gZk" firstAttribute="top" secondItem="HKf-4d-8Db" secondAttribute="bottom" constant="7" id="IbV-It-1OO"/>
                 <constraint firstItem="HKf-4d-8Db" firstAttribute="top" secondItem="ujV-fx-sjF" secondAttribute="bottom" constant="15" id="Obd-Cq-gC5"/>
+                <constraint firstAttribute="bottom" secondItem="gOX-U9-rIk" secondAttribute="bottom" constant="13" id="QVW-or-0XY"/>
                 <constraint firstItem="DrZ-yC-ayQ" firstAttribute="leading" secondItem="0JU-qI-ZQ8" secondAttribute="trailing" constant="10" id="Rc1-w0-pJN"/>
                 <constraint firstItem="kJu-Ip-6r3" firstAttribute="trailing" secondItem="AXH-BN-kO0" secondAttribute="trailing" id="SDv-Ib-3Fc"/>
                 <constraint firstAttribute="trailing" secondItem="gOX-U9-rIk" secondAttribute="trailing" constant="12" id="Tfc-Yu-qKK"/>

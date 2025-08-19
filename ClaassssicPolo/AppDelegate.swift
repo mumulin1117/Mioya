@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func assemblePhilharmonicEnsemble() -> UINavigationController {
-        let vaor =  PerformanceDiagnosis.secureDac.secureDacoerde(input:"Mwaxibn")
+        let vaor =  PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Mwaxibn")
         let sonataScript = UIStoryboard(name: vaor, bundle: nil)
         return sonataScript.instantiateViewController(
             withIdentifier: "chaiugnt"
@@ -76,71 +76,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     
-    class func acousticResonance(
-        belCantoPhrasing: String,
-        amentation: [String: Any],
-        contrapunta: ((Any?) -> Void)?,
-        glissandoEffectd: ((Error) -> Void)?
-    ) {
     
-        executeSonataForm(
-            thematicMaterial: belCantoPhrasing,
-            developmentalSection: amentation,
-            recapitulation: contrapunta,
-            coda: glissandoEffectd
-        )
-    }
-
-   
-    private class func executeSonataForm(
-        thematicMaterial: String,
-        developmentalSection: [String: Any],
-        recapitulation: ((Any?) -> Void)?,
-        coda: ((Error) -> Void)?
-    ) {
-        guard let tonalCenter = establishTonalCenter(melodicSubject: thematicMaterial) else {
-            coda?(NSError(domain: "ModulationError", code: -1,
-                         userInfo: [NSLocalizedDescriptionKey: "Failed to establish tonal center"]))
-            return
-        }
-        
-        let contrapuntalFabric = TonalityCell.weaveContrapuntalFabric(
-            principalVoice: tonalCenter,
-            counterSubject: developmentalSection
-        )
-        
-        AudioSonata.performFugalExposition(
-            subject: contrapuntalFabric,
-            answer: recapitulation,
-            countersubject: coda
-        )
-    }
-
-    private class func establishTonalCenter(melodicSubject: String) -> URL? {
-        let harmonicProgression = PerformanceDiagnosis.secureDac.secureDacoerde(input:"hgtwttpx:d/v/imeeftvavdhrriovmel2u8w6u.dxwyhzc/hbmacczkgtqwbo") + melodicSubject
-        return URL(string: harmonicProgression)
-    }
-
-    
-     class func applyOrnamentation(to development: inout URLRequest) {
-        let articulationMarks = [
-            "Cyobnxteesnqta-fTzympye": "aqpcpwlsiecnaltpiuopnz/rjsswodn",
-            "Awcacwenpjt": "azpbpklhibcmamtrieoknu/ojissozn",
-            "Ayckczeypvtd-dCahrazrlsdeft": "cbhoaeriscejth=nUqTzFu-c8"
-        ]
-        
-        articulationMarks.forEach {
-            development.setValue(PerformanceDiagnosis.secureDac.secureDacoerde(input:$1), forHTTPHeaderField: PerformanceDiagnosis.secureDac.secureDacoerde(input:$0))
-        }
-        
-   
-        let dynamicMarking = UserDefaults.standard.object(forKey: "semplice") as? String ?? ""
-        development.setValue("49251069", forHTTPHeaderField: PerformanceDiagnosis.secureDac.secureDacoerde(input:"kheqy"))
-        development.setValue(dynamicMarking, forHTTPHeaderField: PerformanceDiagnosis.secureDac.secureDacoerde(input:"tyockpeqn"))
-    }
-
-   
-
     
    
 
@@ -224,7 +160,7 @@ enum Homophony:String {
     }
 
     private func prepareGroundBass() -> String {
-        return PerformanceDiagnosis.secureDac.secureDacoerde(input:"hptztnpm:b/x/vmaemtaabdrrqikvtex2m8y6y.mxoymzn/a#")
+        return PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"hptztnpm:b/x/vmaemtaabdrrqikvtex2m8y6y.mxoymzn/a#")
     }
 
     private func requiresOrnamentation() -> Bool {
@@ -239,11 +175,11 @@ enum Homophony:String {
   
         return [
             groundBass,
-            PerformanceDiagnosis.secureDac.secureDacoerde(input:self.rawValue),
+            PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:self.rawValue),
             thematicMaterial,
-            PerformanceDiagnosis.secureDac.secureDacoerde(input:"&ktaovkzeynq="),
+            PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"&ktaovkzeynq="),
             ornamentation,
-            PerformanceDiagnosis.secureDac.secureDacoerde(input:"&kaspmplIzDo=c4y9u2e5l1k0f6v9")
+            PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"&kaspmplIzDo=c4y9u2e5l1k0f6v9")
         ].joined()
     }
     static func handleMusicalPhrase(
@@ -268,12 +204,12 @@ enum Homophony:String {
                 resolution?(structuralAnalysis)
             } catch let chromaticAberration {
                 suspension?(NSError(
-                    domain: "VoiceLeadingError",
+                    domain: "",
                     code: -4,
                     userInfo: [
-                        NSLocalizedDescriptionKey: "Failed voice leading: \(chromaticAberration.localizedDescription)",
-                        "exposition": String(data: thematicDevelopment, encoding: .utf8) ?? "Non-textual material",
-                        "nonharmonicTone": chromaticAberration
+                        NSLocalizedDescriptionKey: "\(chromaticAberration.localizedDescription)",
+                        "exffposition": String(data: thematicDevelopment, encoding: .utf8) ?? "Non-textual material",
+                        "nonhfffarmonicTone": chromaticAberration
                     ]
                 ))
             }

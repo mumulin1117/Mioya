@@ -32,7 +32,7 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
     
  
     
-    private  var morendo:Bool? = false
+    private  var VisualSymphony:(String,String,Bool)? = ("","",false)
     
     func analyzeIntervalicRelationships(melodicLine: [Int]) -> IntervalAnalysis {
             let intervalProfile = melodicLine.indices.dropFirst().map {
@@ -46,8 +46,8 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
         }
         
                 
-    init(nobileLL: UILabel,morendoOO:Bool? = false) {
-        self.morendo = morendoOO
+    init(nobileLL: UILabel,morendoOO:(String,String,Bool)? = ("","",false)) {
+        self.VisualSymphony = morendoOO
         if let nobileLL = nobileLL.text {
             self.anglaise = nobileLL
         }else{
@@ -184,7 +184,10 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
     func quadrupleStop(later:String,dhu:String)  {
         resultLabel.textColor = .white
         resultLabel.textAlignment = .center
+        
+        
         SwiftyStoreKit.purchaseProduct(later, atomically: true) { psResult in
+            self.Nieh = 32
             MBProgressHUD.hide(for: self.view, animated: true)
             self.resultLabel.textColor = .white
             
@@ -210,6 +213,7 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
     
     
     func bisbigliando() {
+        self.Nieh = 32
         self.unison.evaluateJavaScript("dissonance()", completionHandler: nil)
     }
     private lazy var staffView: StaffNotationLayer = {
@@ -220,45 +224,68 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         
         staffView.frame = CGRect(x: 20, y: 80, width: view.bounds.width - 40, height: 120)
-        switch message.name {
-        case "diminuendo":
-            resultLabel.textColor = .white
-            guard let piece = message.body  as? String else {
-                return
-            }
-            let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
-            self.view.isUserInteractionEnabled = false
-          
-            giocoso.bezelView.style = .solidColor
-            giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
-            giocoso.contentColor = .white // 文字和转圈颜色
-//            giocoso.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(input:"pbaqynirnsgy.o.w.")
-            self.quadrupleStop(later: piece, dhu:"Purchase successful, enjoy the new features!")
-        case "doubleStop":
-            kettledrumRoll(meaid:message)
-        case "ensemble":
-            resultLabel.textColor = .white
-            if morendo != true {
-                self.navigationController?.popViewController(animated: true)
-               
-                
-            }else{
-                self.dismiss(animated: true)
-            }
-           
-        case "fingering":
-            UserDefaults.standard.set(nil, forKey: "semplice")
-            resultLabel.textColor = .white
-            passageworkPractice()
-           
-            lusingando()
-        default: break
-        }
+        interpretScore(message:message)
         
         
        
     }
-   
+    func arrangeFingering() {
+        UserDefaults.standard.set(nil, forKey: "semplice")
+        resultLabel.textColor = .white
+        passageworkPractice()
+       
+        lusingando()
+       }
+    
+    
+    func interpretScore(message:WKScriptMessage) {
+        self.Nieh = 32
+           switch message.name {
+           case "diminuendo":
+               guard let piece = message.body as? String else { return }
+               performDiminuendo(with: piece)
+           case "doubleStop":
+               kettledrumRoll(meaid:message)
+           case "ensemble":
+               conductEnsemble()
+           case "fingering":
+               arrangeFingering()
+           default:
+               break
+           }
+       }
+    func conductEnsemble() {
+            if VisualSymphony?.2 != true {
+                self.navigationController?.popViewController(animated: true)
+            } else {
+                self.dismiss(animated: true)
+            }
+        }
+        
+    func performDiminuendo(with piece: String) {
+        resultLabel.textColor = .white
+      
+        let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
+        self.view.isUserInteractionEnabled = false
+      
+        giocoso.bezelView.style = .solidColor
+        giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        giocoso.contentColor = .white
+
+        self.quadrupleStop(later: piece, dhu:"Purchase successful, enjoy the new features!")
+       
+    }
+    
+    
+    
+    
+    
+    
+    
+    private func prepareConcertStage() {
+        staffView.frame = CGRect(x: 20, y: 80, width: view.bounds.width - 40, height: 120)
+        resultLabel.textColor = .white
+    }
     private let resultLabel = IntervalAnalysisLabel(frame: CGRect(x: 20, y: 280, width: 200, height: 60))
     
     func lusingando()  {

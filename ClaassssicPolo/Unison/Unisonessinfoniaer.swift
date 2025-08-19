@@ -52,14 +52,14 @@ class Unisonessinfoniaer: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         glissando()
-        grandFa.setTitle(PerformanceDiagnosis.secureDac.secureDacoerde(input:"Lioggxizn"), for: .normal)
+        grandFa.setTitle(PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Lioggxizn"), for: .normal)
         
-        melodicLine.text = PerformanceDiagnosis.secureDac.secureDacoerde(input:"Bpyo tcfonnhtrignaubiznwgs tykohuf yalgkrseaek ltzob toeuprh ")
+        melodicLine.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Bpyo tcfonnhtrignaubiznwgs tykohuf yalgkrseaek ltzob toeuprh ")
         
-        analyzeModalQuality.text = "📮" + PerformanceDiagnosis.secureDac.secureDacoerde(input:"Ewmgaviwl")
+        analyzeModalQuality.text = "📮" + PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Ewmgaviwl")
         
-        self.virtuoso.text = PerformanceDiagnosis.secureDac.secureDacoerde(input:"<rTrezrhmdsq mozfp sSoeurdvcilclem>a ")
-        self.viola.text = PerformanceDiagnosis.secureDac.secureDacoerde(input:"<oPgriilvqauczyd wPcoqlgivcmyw>g.")
+        self.virtuoso.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"<rTrezrhmdsq mozfp sSoeurdvcilclem>a ")
+        self.viola.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"<oPgriilvqauczyd wPcoqlgivcmyw>g.")
         virtuoso.isUserInteractionEnabled = true
         staffView.frame = CGRect(x: 20, y: 80, width: view.bounds.width - 40, height: 120)
         virtuoso.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(JISoeiu(tapgo:))))
@@ -70,10 +70,10 @@ class Unisonessinfoniaer: UIViewController {
     @objc func JISoeiu(tapgo:UITapGestureRecognizer)  {
         let letvskdjf = UILabel.init(frame: .zero)
         if tapgo.view ==  virtuoso{
-            
+            let preparation = "souvenirIdeas"
             let gooole = Homophony.barcarolle.lusingando(morendo: "")
             letvskdjf.text = gooole
-            let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: true)
+            let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: (preparation,preparation,true))
             self.present(contri, animated: true)
         }
         
@@ -81,7 +81,8 @@ class Unisonessinfoniaer: UIViewController {
         if tapgo.view ==  virtuoso{
             let gooole = Homophony.conSordino.lusingando(morendo: "")
             letvskdjf.text = gooole
-            let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: true)
+            let preparation = "souvenirIdeas"
+            let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: (preparation,preparation,true))
             self.present(contri, animated: true)
         }
     }
@@ -99,19 +100,19 @@ class Unisonessinfoniaer: UIViewController {
         viola.isUserInteractionEnabled = true
         analyzeButton.setTitle("Analyze Contrapuntal Structure", for: .normal)
         analyzeButton.frame = CGRect(x: 50, y: 220, width: view.bounds.width - 100, height: 44)
-        Ornamentation.text = "🔑" + PerformanceDiagnosis.secureDac.secureDacoerde(input:"Pwaeskspwoorrid")
+        Ornamentation.text = "🔑" + PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Pwaeskspwoorrid")
         rhapsody.attributedPlaceholder = NSAttributedString(
-            string: PerformanceDiagnosis.secureDac.secureDacoerde(input:"Egnttkeyre leumkaiipl"),
+            string: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Egnttkeyre leumkaiipl"),
             attributes: [
                          NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16),
                          NSAttributedString.Key.foregroundColor: UIColor.white]
         )
-        espressivo.text = PerformanceDiagnosis.secureDac.secureDacoerde(input:"Imfy ytthyei zaycvcuowuqnlta pdgopelsi wnkohtf ueoxdimsqtg,y iwneu twlillpln baguttfowmpaitoijctaxlglayc scpryerahtmem tikt")
+        espressivo.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Imfy ytthyei zaycvcuowuqnlta pdgopelsi wnkohtf ueoxdimsqtg,y iwneu twlillpln baguttfowmpaitoijctaxlglayc scpryerahtmem tikt")
         
         viola.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(JISoeiu(tapgo:))))
         woodwind.textColor = .white
         woodwind.attributedPlaceholder = NSAttributedString(
-            string: PerformanceDiagnosis.secureDac.secureDacoerde(input:"Ecnbtbesrb hpfaosbslwsohrzd"),
+            string: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Ecnbtbesrb hpfaosbslwsohrzd"),
             attributes: [
                          NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16),
                          NSAttributedString.Key.foregroundColor: UIColor.white]
@@ -129,7 +130,7 @@ class Unisonessinfoniaer: UIViewController {
            obliqueMotion.count > 0,nachschlag.count > 0 else
         { analyzeButton.frame = CGRect(x: 50, y: 220, width: view.bounds.width - 100, height: 44)
             
-            showinguGYf(customINfo: PerformanceDiagnosis.secureDac.secureDacoerde(input:"Pylpejafsjey xegnrtoepru uyooouorh uadcjclozuzngtg haonldq vplaxslsywjomredl ofyijrzsxt"), tyui:.shine)
+            showinguGYf(customINfo: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Pylpejafsjey xegnrtoepru uyooouorh uadcjclozuzngtg haonldq vplaxslsywjomredl ofyijrzsxt"), tyui:.shine)
             return
         }
         let pointo2 = CGPoint.init(x: 200, y: 300)
@@ -138,31 +139,31 @@ class Unisonessinfoniaer: UIViewController {
         guard self.zweifacher == true else {
             analyzeButton.frame = CGRect(x: 50, y: 220, width: view.bounds.width - 100, height: 44)
           
-            showinguGYf(customINfo: PerformanceDiagnosis.secureDac.secureDacoerde(input:"Pylferauspei lrbesaada hapnxdr vaqgprlereunr iolufrs mteedrimrsq xftiurnsntg!"), tyui:.shine)
+            showinguGYf(customINfo: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Pylferauspei lrbesaada hapnxdr vaqgprlereunr iolufrs mteedrimrsq xftiurnsntg!"), tyui:.shine)
             return
         }
         let point3 = CGPoint.init(x: 330, y: 400)
         var points = [ pointone,point3, pointo2,CGPoint.init(x: 430, y: 500)]
         let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
         giocoso.bezelView.style = .solidColor
-        let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(input: "dnaltba")
+        let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD: "dnaltba")
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         giocoso.contentColor = .white 
-        giocoso.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(input:"ljovgyinnxgf.q.i.")
+        giocoso.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"ljovgyinnxgf.q.i.")
         
         let yeu = "/hqettpdrotiz/esclhg"
-        let jrieush =  PerformanceDiagnosis.secureDac.secureDacoerde(input:"Lpoigg tipnq wsxuocgcgefspsefeuclc!")
+        let jrieush =  PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Lpoigg tipnq wsxuocgcgefspsefeuclc!")
         
         guard points.count > 3  else { return  }
         
         
-        AppDelegate.acousticResonance(        belCantoPhrasing:yeu , amentation: ["volante":nachschlag,"zart": obliqueMotion ,"anglaise":"49251069"]) { baert in
+        AudioSonata.acousticResonance(        belCantoPhrasing:yeu , amentation: ["volante":nachschlag,"zart": obliqueMotion ,"anglaise":"49251069"]) { sunriseAlerts in
             let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
             
             MBProgressHUD.hide(for: self.view, animated: true)
             let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
            
-            if let dict = baert as? [String: Any],
+            if let dict = sunriseAlerts as? [String: Any],
                               
                 let data = dict[sevure] as? [String: Any] {
                 if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
@@ -174,7 +175,7 @@ class Unisonessinfoniaer: UIViewController {
                 self.showinguGYf(customINfo: jrieush, tyui: .okkk)
               
             } else {
-                let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(input:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
+                let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
                 if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                     return
                 }
@@ -189,7 +190,7 @@ class Unisonessinfoniaer: UIViewController {
             MBProgressHUD.hide(for: self.view, animated: true)
             self.analyzeButton.setTitle("Analyze Contrapuntal Structure", for: .normal)
            
-            self.showinguGYf(customINfo: PerformanceDiagnosis.secureDac.secureDacoerde(input:"Rxegqgureosx eedryrooyry!"), tyui:.nobubu)
+            self.showinguGYf(customINfo: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Rxegqgureosx eedryrooyry!"), tyui:.nobubu)
         }
 
         
@@ -221,7 +222,7 @@ class Unisonessinfoniaer: UIViewController {
     
     
     private func cuisotomStaffNotationLayer()  {
-      let vaor =  PerformanceDiagnosis.secureDac.secureDacoerde(input:"Mwaxibn")
+      let vaor =  PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Mwaxibn")
         let jaimain = UIStoryboard(name: vaor, bundle: nil).instantiateViewController(withIdentifier: "chaiugnt") as! UINavigationController
         staffView.frame = CGRect(x: 20, y: 80, width: view.bounds.width - 40, height: 120)
         ((UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController =   jaimain

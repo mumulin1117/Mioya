@@ -31,6 +31,18 @@
                         <wkPreferences key="preferences"/>
                     </wkWebViewConfiguration>
                 </wkWebView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dti-VS-nVK">
+                    <rect key="frame" x="38" y="223" width="38" height="34"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="sedll"/>
+                </button>
+                <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GYn-sX-DgI">
+                    <rect key="frame" x="246" y="225" width="131" height="32"/>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                    </segments>
+                </segmentedControl>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -39,10 +51,14 @@
                 <constraint firstItem="nBw-9p-YgY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="JzR-77-cEq"/>
                 <constraint firstItem="Zuj-LC-LSw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KPA-8V-aLN"/>
                 <constraint firstItem="nBw-9p-YgY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Kbz-rl-mBf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GYn-sX-DgI" secondAttribute="trailing" constant="16" id="YhP-eP-HyR"/>
                 <constraint firstItem="Zuj-LC-LSw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cNU-4X-IrF"/>
+                <constraint firstItem="GYn-sX-DgI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="166" id="cwi-Zp-o2Y"/>
                 <constraint firstItem="Zuj-LC-LSw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="eVE-8c-Yqq"/>
                 <constraint firstItem="nBw-9p-YgY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mNV-FL-j8q"/>
                 <constraint firstAttribute="bottom" secondItem="Zuj-LC-LSw" secondAttribute="bottom" id="qDy-AH-6c8"/>
+                <constraint firstItem="dti-VS-nVK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="xII-Eg-39F"/>
+                <constraint firstItem="dti-VS-nVK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="164" id="y5p-mM-7kq"/>
             </constraints>
             <point key="canvasLocation" x="87.786259541984734" y="20.422535211267608"/>
         </view>

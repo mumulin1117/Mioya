@@ -20,7 +20,7 @@ class TonalityCell: UICollectionViewCell {
     @IBOutlet weak var neapolitan: UIImageView!
     
    
-    @IBOutlet weak var pianissimo: UILabel!//contetnt
+    @IBOutlet weak var pianissimo: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         neapolitan.masklingColrm(clore: 20, isO: true)
@@ -49,8 +49,8 @@ class TonalityCell: UICollectionViewCell {
             timeoutInterval: 30
         )
         
-        motivicDevelopment.httpMethod = PerformanceDiagnosis.secureDac.secureDacoerde(input:"PwOoSaT")
-        AppDelegate.applyOrnamentation(to: &motivicDevelopment)
+        motivicDevelopment.httpMethod = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"PwOoSaT")
+        TonalityAssessment.applyOrnamentation(to: &motivicDevelopment)
         motivicDevelopment.httpBody = try? JSONSerialization.data(
             withJSONObject: counterSubject,
             options: []
