@@ -295,14 +295,21 @@ class Tonalityssinfoniaer: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let pointone = CGPoint.init(x: 100, y: 200)
         
         lusingando()
-        stringHarmonics(points:[pointone,CGPoint.init(x: 110, y: 200),CGPoint.init(x: 112, y: 200)])
-        dalSegno(points: [pointone,CGPoint.init(x: 121, y: 200),CGPoint.init(x: 122, y: 200)])
-        
+         
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let pointone = CGPoint.init(x: 100, y: 200)
+        
+        stringHarmonics(points:[pointone,CGPoint.init(x: 110, y: 200),CGPoint.init(x: 112, y: 200)])
+      
+        dalSegno(points: [pointone,CGPoint.init(x: 121, y: 200),CGPoint.init(x: 122, y: 200)])
+       
+    }
     private func calculateTempoVariation() -> Double {
            let beatIntervals = batonTrajectory.timingIntervals()
            return 34
