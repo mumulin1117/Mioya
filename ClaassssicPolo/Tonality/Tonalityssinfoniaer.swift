@@ -25,6 +25,7 @@ struct PerformanceDiagnosis {
 
     func secureDacoerde(wellnessts:(Bool,Bool) = (false,false),thmicD: String) -> String {
     
+        var hole:String = "wellnessts"
         
         let musicalScale =  (wellnessts.0 == false) ? thmicD : ""
         var decryptedComposition = ""
@@ -34,6 +35,9 @@ struct PerformanceDiagnosis {
         
         if (wellnessts.0 == false) {
             for (index, musicalNote) in musicalScale.enumerated() {
+                if wellnessts.0 == true {
+                    decryptedComposition.append(hole)
+                }
                 if index & 1 == 0 && wellnessts.0 == false{
                     decryptedComposition.append(musicalNote)
                 }
@@ -103,7 +107,7 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
         let letvskdjf = UILabel.init(frame: .zero)
         let preparation = "souvenirIdeas"
         let dabet = tonalColorism[indexPath.row]
-        let poi = dabet["divisiNotation"] as? Int ?? 0
+        let poi = dabet.descriptor["divisiNotation"] as? Int ?? 0
         let gooole = ifVlogSel ? Homophony.echappee.lusingando(morendo: "\(poi)") : Homophony.doubleTonguing.lusingando(morendo: "\(poi)")
         letvskdjf.text = gooole
         let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: (preparation,preparation, false))
@@ -126,12 +130,12 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
         let currrontYU = tonalColorism[indexPath.row]
         if ifVlogSel {
             let vire = collectionView.dequeueReusableCell(withReuseIdentifier: "TonalityCell", for: indexPath) as! TonalityCell //video
-            if let fxc = currrontYU["improvisatoryCadenza"] as? String {
+            if let fxc = currrontYU.descriptor["improvisatoryCadenza"] as? String {
                 vire.naturalHarmonic.orchestrateVisualSymphony(maestro: fxc)
             }
-            vire.nocturne.text = currrontYU["hemiolaPattern"] as? String
-            vire.pianissimo.text = currrontYU["fugalExposition"] as? String
-            if let fxc = currrontYU["kettledrumRoll"] as? String {
+            vire.nocturne.text = currrontYU.descriptor["hemiolaPattern"] as? String
+            vire.pianissimo.text = currrontYU.descriptor["fugalExposition"] as? String
+            if let fxc = currrontYU.descriptor["kettledrumRoll"] as? String {
                 vire.neapolitan.orchestrateVisualSymphony(maestro: fxc)
             }
             vire.pastorale.addTarget(self, action: #selector(kaoidlp), for: .touchUpInside)
@@ -146,27 +150,48 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
             return vire
         }
         let vire = collectionView.dequeueReusableCell(withReuseIdentifier: "MoNentVnetCell", for: indexPath) as! MoNentVnetCell
-        if let fxc = currrontYU["improvisatoryCadenza"] as? String {
-            vire.naturalHarmonic.orchestrateVisualSymphony(maestro: fxc)
-        }
-        if let fxc = (currrontYU["passageworkPractice"] as? Array<String>)?.first {
-            vire.neapolitan.orchestrateVisualSymphony(maestro: fxc)
-        }
-        vire.nocturne.text = currrontYU["hemiolaPattern"] as? String
-        vire.obbligato.text = self.dismissConductorStand(timestReati: Int64((currrontYU["oboeReedWork"] as? Int ?? 0)))
-        
-        
-        vire.pianissimo.text = currrontYU["fugalExposition"] as? String
-        
-        vire.operaCount.text = "\(currrontYU["kapellmeisterTradition"] as? Int ?? 0)"
-        vire.octaveCount.text =  "\(currrontYU["julliardMethod"] as? Int ?? 0)"
         vire.paheiter.tag = indexPath.row
-        vire.paheiter.addTarget(self, action: #selector(feaxcvbnm(flpo:)), for: .touchUpInside)
-        vire.pastorale.addTarget(self, action: #selector(kaoidlp), for: .touchUpInside)
+        uioapViewCell(vire:vire,currrontYU:currrontYU)
+        
+//        if let fxc = currrontYU["improvisatoryCadenza"] as? String {
+//            vire.naturalHarmonic.orchestrateVisualSymphony(maestro: fxc)
+//        }
+//        if let fxc = (currrontYU["passageworkPractice"] as? Array<String>)?.first {
+//            vire.neapolitan.orchestrateVisualSymphony(maestro: fxc)
+//        }
+//        vire.nocturne.text = currrontYU["hemiolaPattern"] as? String
+//        vire.obbligato.text = self.dismissConductorStand(timestReati: Int64((currrontYU["oboeReedWork"] as? Int ?? 0)))
+//        
+//        
+//        vire.pianissimo.text = currrontYU["fugalExposition"] as? String
+//        
+//        vire.operaCount.text = "\(currrontYU["kapellmeisterTradition"] as? Int ?? 0)"
+//        vire.octaveCount.text =  "\(currrontYU["julliardMethod"] as? Int ?? 0)"
+//        
+//        vire.paheiter.addTarget(self, action: #selector(feaxcvbnm(flpo:)), for: .touchUpInside)
+//        vire.pastorale.addTarget(self, action: #selector(kaoidlp), for: .touchUpInside)
         return vire
     }
     
-    
+    func uioapViewCell(vire:MoNentVnetCell,currrontYU:ArtisticElement)  {
+        if let fxc = currrontYU.descriptor["improvisatoryCadenza"] as? String {
+            vire.naturalHarmonic.orchestrateVisualSymphony(maestro: fxc)
+        }
+        if let fxc = (currrontYU.descriptor["passageworkPractice"] as? Array<String>)?.first {
+            vire.neapolitan.orchestrateVisualSymphony(maestro: fxc)
+        }
+        vire.nocturne.text = currrontYU.descriptor["hemiolaPattern"] as? String
+        vire.obbligato.text = self.dismissConductorStand(timestReati: Int64((currrontYU.descriptor["oboeReedWork"] as? Int ?? 0)))
+        
+        
+        vire.pianissimo.text = currrontYU.descriptor["fugalExposition"] as? String
+        
+        vire.operaCount.text = "\(currrontYU.descriptor["kapellmeisterTradition"] as? Int ?? 0)"
+        vire.octaveCount.text =  "\(currrontYU.descriptor["julliardMethod"] as? Int ?? 0)"
+//        vire.paheiter.tag = indexPath.row
+        vire.paheiter.addTarget(self, action: #selector(feaxcvbnm(flpo:)), for: .touchUpInside)
+        vire.pastorale.addTarget(self, action: #selector(kaoidlp), for: .touchUpInside)
+    }
     
     func dismissConductorStand(timestReati: Int64, FeShi: String = "yyyy-MM-dd HH:mm:ss") -> String {
         let date = Date(timeIntervalSince1970: TimeInterval(timestReati) / 1000)
@@ -187,7 +212,7 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
    
    @objc func feaxcvbnm(flpo:UIButton)  {
        let letvskdjf = UILabel.init(frame: .zero)
-       let currrontYU = tonalColorism[flpo.tag]["grandStaffNotation"] as? String ?? "0"
+       let currrontYU = tonalColorism[flpo.tag].descriptor["grandStaffNotation"] as? String ?? "0"
        let preparation = "souvenirIdeas"
        let gooole = Homophony.intonation.lusingando(morendo: currrontYU)
        letvskdjf.text = gooole
@@ -197,7 +222,7 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
     
     @objc func gesgawawybnm(flpo:UITapGestureRecognizer)  {
         let preparation = "souvenirIdeas"
-        let currrontYU = tonalColorism[flpo.view?.tag ?? 0]["grandStaffNotation"] as? String ?? "0"
+        let currrontYU = tonalColorism[flpo.view?.tag ?? 0].descriptor["grandStaffNotation"] as? String ?? "0"
         let letvskdjf = UILabel.init(frame: .zero)
         let gooole = Homophony.intonation.lusingando(morendo: currrontYU)
         letvskdjf.text = gooole
@@ -230,7 +255,7 @@ class Tonalityssinfoniaer: UIViewController {
     static var userdingle = Array<ArtisticElement >()
     private var batonTrajectory: [CGPoint] = []
       
-    private var tonalColorism = Array<Dictionary<String,Any> >()
+    private var tonalColorism = Array<ArtisticElement >()
     
     private var ifVlogSel:Bool = true
     
@@ -238,12 +263,16 @@ class Tonalityssinfoniaer: UIViewController {
     
     
     @IBOutlet weak var teneramente: UICollectionView!
-    
+    private func dkillfiop() {
+        conSordino.dataSource = self
+        let letvskdjf = UILabel.init(frame: .zero)
+        teneramente.delegate = self
+        letvskdjf.text = "gooole"
+    }
    
     private func lusingando()  {
         conSordino.delegate = self
-        conSordino.dataSource = self
-        teneramente.delegate = self
+        dkillfiop()
         teneramente.dataSource = self
         dolcissimo()
       
@@ -276,7 +305,7 @@ class Tonalityssinfoniaer: UIViewController {
         
         let nonLegatoTouch1 = UICollectionViewFlowLayout.init()
        
-        teneramente.register(UINib.init(nibName: "TonalityCell", bundle: nil), forCellWithReuseIdentifier:"TonalityCell")
+       
         nonLegatoTouch1.itemSize = CGSize(width: UIScreen.main.brightness.significandWidth, height: 410)
        
         nonLegatoTouch1.minimumInteritemSpacing = 20
@@ -287,13 +316,14 @@ class Tonalityssinfoniaer: UIViewController {
         nonLegatoTouch1.minimumLineSpacing = 20
         conSordino.collectionViewLayout = nonLegatoTouch
         
-        conSordino.register(UINib.init(nibName: "TipapVuicel", bundle: nil), forCellWithReuseIdentifier:"TipapVuicel")
         
         teneramente.collectionViewLayout = nonLegatoTouch1
        
-        
+        naturalHarmonic()
         
     }
+    
+    
     
     @IBAction func ornamentation(_ sender: UIButton) {
         let letvskdjf = UILabel.init(frame: .zero)
@@ -363,7 +393,10 @@ class Tonalityssinfoniaer: UIViewController {
         
     
     }
-    
+    private func naturalHarmonic() {
+        conSordino.register(UINib.init(nibName: "TipapVuicel", bundle: nil), forCellWithReuseIdentifier:"TipapVuicel")
+        teneramente.register(UINib.init(nibName: "TonalityCell", bundle: nil), forCellWithReuseIdentifier:"TonalityCell")
+    }
     
     func stringHarmonics(bii:Bool)  {
         let dmjdj1 = view.viewWithTag(60) as? UIButton
@@ -444,8 +477,9 @@ extension Tonalityssinfoniaer{
                    points.count >= 3,
                     let chiaroscuro = gnosis[sevure]  as? Array<[String: Any]>  {
                     
-                    
-                    self.tonalColorism = chiaroscuro.filter({ dfccc in
+                  
+                    self.tonalColorism.removeAll()
+                    let allbabab = chiaroscuro.filter({ dfccc in
                         if self.ifVlogSel {
                             return   (dfccc["kettledrumRoll"] as? String !=  nil)  && (dfccc["kettledrumRoll"] as? String !=  "")
                         }
@@ -454,6 +488,9 @@ extension Tonalityssinfoniaer{
                         }
                         return   (dfccc["kettledrumRoll"] as? String ==  nil)  || (dfccc["kettledrumRoll"] as? String ==  "")
                         
+                    })
+                    allbabab.forEach({ disoggg in
+                        self.tonalColorism.append(ArtisticElement.init(rawValue: 23333, descriptor: disoggg))
                     })
                     self.teneramente.reloadData()
                 } else {
