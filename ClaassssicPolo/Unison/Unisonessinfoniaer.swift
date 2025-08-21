@@ -15,7 +15,9 @@ class Unisonessinfoniaer: UIViewController {
     
     @IBOutlet weak var analyzeModalQuality: UILabel!
     
+    @IBOutlet weak var reefRestoration: UIButton!
     
+    @IBOutlet weak var whaleWatching: UISegmentedControl!
     
     private  var zweifacher:Bool = false{
         didSet{
@@ -75,16 +77,18 @@ class Unisonessinfoniaer: UIViewController {
             letvskdjf.text = gooole
             let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: (preparation,preparation,true))
             self.present(contri, animated: true)
+            return
         }
         
-        
-        if tapgo.view ==  virtuoso{
-            let gooole = Homophony.conSordino.lusingando(morendo: "")
-            letvskdjf.text = gooole
-            let preparation = "souvenirIdeas"
-            let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: (preparation,preparation,true))
-            self.present(contri, animated: true)
-        }
+        unescoSpots(letvskdjf: letvskdjf)
+    }
+    
+    private func unescoSpots(letvskdjf:UILabel)  {
+        let gooole = Homophony.conSordino.lusingando(morendo: "")
+        letvskdjf.text = gooole
+        let preparation = "souvenirIdeas"
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: (preparation,preparation,true))
+        self.present(contri, animated: true)
     }
     private lazy var analyzeButton: UIButton = {
         let btn = UIButton(type: .system)
@@ -130,7 +134,7 @@ class Unisonessinfoniaer: UIViewController {
            obliqueMotion.count > 0,nachschlag.count > 0 else
         { analyzeButton.frame = CGRect(x: 50, y: 220, width: view.bounds.width - 100, height: 44)
             
-            showinguGYf(customINfo: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Pylpejafsjey xegnrtoepru uyooouorh uadcjclozuzngtg haonldq vplaxslsywjomredl ofyijrzsxt"), tyui:.shine)
+            interpretSonataForm(cuStrinAtt: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Pylpejafsjey xegnrtoepru uyooouorh uadcjclozuzngtg haonldq vplaxslsywjomredl ofyijrzsxt"), Cienleart:.shine)
             return
         }
         let pointo2 = CGPoint.init(x: 200, y: 300)
@@ -139,7 +143,7 @@ class Unisonessinfoniaer: UIViewController {
         guard self.zweifacher == true else {
             analyzeButton.frame = CGRect(x: 50, y: 220, width: view.bounds.width - 100, height: 44)
           
-            showinguGYf(customINfo: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Pylferauspei lrbesaada hapnxdr vaqgprlereunr iolufrs mteedrimrsq xftiurnsntg!"), tyui:.shine)
+            interpretSonataForm(cuStrinAtt: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Pylferauspei lrbesaada hapnxdr vaqgprlereunr iolufrs mteedrimrsq xftiurnsntg!"), Cienleart:.shine)
             return
         }
         let point3 = CGPoint.init(x: 330, y: 400)
@@ -157,7 +161,7 @@ class Unisonessinfoniaer: UIViewController {
         guard points.count > 3  else { return  }
         
         
-        AudioSonata.acousticResonance(        belCantoPhrasing:yeu , amentation: ["volante":nachschlag,"zart": obliqueMotion ,"anglaise":"49251069"]) { sunriseAlerts in
+        AudioSonata.acousticResonance(musicVenues:55,sanitizerWipes:giocoso,        belCantoPhrasing:yeu , amentation: ["volante":nachschlag,"zart": obliqueMotion ,"anglaise":"49251069"]) { sunriseAlerts in
             let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
             
             MBProgressHUD.hide(for: self.view, animated: true)
@@ -172,14 +176,14 @@ class Unisonessinfoniaer: UIViewController {
                 self.analyzeMelodicLine(dataEEE:data)
                 self.cuisotomStaffNotationLayer()
                 
-                self.showinguGYf(customINfo: jrieush, tyui: .okkk)
+                self.interpretSonataForm(cuStrinAtt: jrieush, Cienleart: .okkk)
               
             } else {
                 let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
                 if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                     return
                 }
-                self.showinguGYf(customINfo: lilian, tyui:.nobubu)
+                self.interpretSonataForm(cuStrinAtt: lilian, Cienleart:.nobubu)
                 self.analyzeButton.setTitle("Analyze Contrapuntal Structure", for: .normal)
                
                 
@@ -187,15 +191,19 @@ class Unisonessinfoniaer: UIViewController {
             
         }         glissandoEffectd: { baioo in
             
-            MBProgressHUD.hide(for: self.view, animated: true)
-            self.analyzeButton.setTitle("Analyze Contrapuntal Structure", for: .normal)
-           
-            self.showinguGYf(customINfo: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Rxegqgureosx eedryrooyry!"), tyui:.nobubu)
+            self.ssafariLodges()
         }
 
         
     }
     
+    
+    func ssafariLodges()  {
+        MBProgressHUD.hide(for: self.view, animated: true)
+        self.analyzeButton.setTitle("Analyze Contrapuntal Structure", for: .normal)
+       
+        self.interpretSonataForm(cuStrinAtt: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Rxegqgureosx eedryrooyry!"), Cienleart:.nobubu)
+    }
     
     
     func analyzeMelodicLine(dataEEE:Dictionary<String,Any>)  {

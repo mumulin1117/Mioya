@@ -17,10 +17,12 @@
                 <outlet property="grandFa" destination="d2s-fI-bSx" id="jpf-hc-DTx"/>
                 <outlet property="melodicLine" destination="ZRy-OG-dNp" id="Xu3-O3-ysa"/>
                 <outlet property="parlando" destination="sqi-qy-8Ra" id="vd6-5h-N7f"/>
+                <outlet property="reefRestoration" destination="mr8-jb-awE" id="W66-AB-P4g"/>
                 <outlet property="rhapsody" destination="X2M-G7-IEO" id="oZp-dS-PwO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viola" destination="Zq0-eb-iTc" id="Bpk-D2-q2R"/>
                 <outlet property="virtuoso" destination="NTa-cf-4KL" id="4v4-KN-bCs"/>
+                <outlet property="whaleWatching" destination="hH7-cY-OXS" id="1ym-F0-yHU"/>
                 <outlet property="woodwind" destination="Vwo-2p-D4P" id="6LG-T8-vSc"/>
             </connections>
         </placeholder>

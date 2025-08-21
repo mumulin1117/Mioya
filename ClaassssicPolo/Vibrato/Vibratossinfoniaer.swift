@@ -186,22 +186,18 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
         resultLabel.textAlignment = .center
         
         
-        SwiftyStoreKit.purchaseProduct(later, atomically: true) { psResult in
-            self.Nieh = 32
-            MBProgressHUD.hide(for: self.view, animated: true)
-            self.resultLabel.textColor = .white
-            
-            self.view.isUserInteractionEnabled = true
+        SwiftyStoreKit.purchaseProduct(later, atomically: true) { [self] psResult in
+            portableCharger()
             self.resultLabel.textAlignment = .center
-            if case .success(let _) = psResult {
-                self.showinguGYf(customINfo: dhu, tyui: .okkk)
+            if case .success( _) = psResult {
+                self.interpretSonataForm(cuStrinAtt: dhu, Cienleart: .okkk)
                 self.resultLabel.textColor = .white
                 self.bisbigliando()
             }else if case .error(let error) = psResult {
                 self.view.isUserInteractionEnabled = true
                 self.resultLabel.textAlignment = .center
                 if error.code != .paymentCancelled {
-                    self.showinguGYf(customINfo: error.localizedDescription, tyui: .nobubu)
+                    self.interpretSonataForm(cuStrinAtt: error.localizedDescription, Cienleart: .nobubu)
                   
                 }
                 
@@ -210,7 +206,13 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
             
         }
     }
-    
+    func portableCharger()  {
+        self.Nieh = 32
+        MBProgressHUD.hide(for: self.view, animated: true)
+        self.resultLabel.textColor = .white
+        
+        self.view.isUserInteractionEnabled = true
+    }
     
     func bisbigliando() {
         self.Nieh = 32
@@ -277,8 +279,10 @@ class Vibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNavigationD
     }
     
     
+    @IBOutlet weak var veganOptions: UISegmentedControl!
     
     
+    @IBOutlet weak var folkArt: UIButton!
     
     
     

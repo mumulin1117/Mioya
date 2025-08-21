@@ -107,13 +107,14 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
     func retrieveFloridPassages()->Dictionary<String,Any> {
         let tapof:Int = 10
         let ahid = "scordaturaTuning"
-       
+        let ainPage = 4
+        
         return [
             ahid:"49251069",
             "absolutePitch": tapof,
             "woodwindEmbossing": 1,
            
-            "tonalColorism":4
+            "tonalColorism":ainPage
         ]
         
     }
@@ -138,7 +139,7 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
         let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD: "dnaltba")
         let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
        
-        AudioSonata.acousticResonance(
+        AudioSonata.acousticResonance(musicVenues:55,sanitizerWipes:giocoso, 
             belCantoPhrasing: Noapajht,
             amentation: retrieveFloridPassages(),
             contrapunta: { ureDaco in
@@ -166,7 +167,7 @@ class Trombonessinfoniaer: UIViewController ,UICollectionViewDataSource ,UIColle
                         return
                     }
                     self.pureibutton.titleLabel?.textAlignment = .center
-                    self.showinguGYf(customINfo: lilian, tyui: .shine)
+                    self.interpretSonataForm(cuStrinAtt: lilian, Cienleart: .shine)
                     
                 }
             }, glissandoEffectd: nil

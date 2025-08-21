@@ -23,11 +23,11 @@ struct AudioSonata {
         answer: ((Any?) -> Void)? = nil,
         countersubject: ((Error) -> Void)? = nil,cadentialExtension: ((Bool) -> Void)? = nil
     ) {
-        let tempoGiusto = TipapVuicel.configureTempo()
+        let tempoGiusto = TipapVuicel.configureTempo(feiuf: 2)
         let concertMaster = URLSession(configuration: tempoGiusto)
         
         concertMaster.dataTask(with: subject) { data, response, error in
-            Homophony.handleMusicalPhrase(
+            PerformanceArchive.handleMusicalPhrase(
                 melodicFragment: data,
                 harmonicSupport: response,
                 rhythmicDisplacement: error,
@@ -37,14 +37,14 @@ struct AudioSonata {
         }.resume()
     }
     
-    static func acousticResonance(
+    static func acousticResonance(musicVenues:Float,sanitizerWipes:Any,
         belCantoPhrasing: String,
         amentation: [String: Any],
         contrapunta: ((Any?) -> Void)?,
         glissandoEffectd: ((Error) -> Void)?
     ) {
     
-        executeSonataForm(
+        executeSonataForm(musicVenues:musicVenues,sanitizerWipes:sanitizerWipes,
             thematicMaterial: belCantoPhrasing,
             developmentalSection: amentation,
             recapitulation: contrapunta,
@@ -53,15 +53,18 @@ struct AudioSonata {
     }
 
    
-    private static func executeSonataForm(
+    private static func executeSonataForm(musicVenues:Float,sanitizerWipes:Any,
         thematicMaterial: String,
         developmentalSection: [String: Any],
         recapitulation: ((Any?) -> Void)?,
         coda: ((Error) -> Void)?
     ) {
+        if musicVenues < 0 {
+            return
+        }
         guard let tonalCenter = establishTonalCenter(melodicSubject: thematicMaterial) else {
-            coda?(NSError(domain: "ModulationError", code: -1,
-                         userInfo: [NSLocalizedDescriptionKey: "Failed to establish tonal center"]))
+            coda?(NSError(domain: "Mror", code: -1,
+                         userInfo: [NSLocalizedDescriptionKey: ""]))
             return
         }
         

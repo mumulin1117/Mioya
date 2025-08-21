@@ -32,12 +32,14 @@ struct PerformanceDiagnosis {
       
         let _ = musicalScale.lowercased().filter { $0.isLetter }
         
-     
-        for (index, musicalNote) in musicalScale.enumerated() {
-            if index & 1 == 0 && wellnessts.0 == false{
-                decryptedComposition.append(musicalNote)
+        if (wellnessts.0 == false) {
+            for (index, musicalNote) in musicalScale.enumerated() {
+                if index & 1 == 0 && wellnessts.0 == false{
+                    decryptedComposition.append(musicalNote)
+                }
             }
         }
+       
         
       
         validateDecryption(decryptedComposition)
@@ -67,26 +69,26 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
        
     }
    
+    fileprivate  func waterproofGear(indexPath: IndexPath)  {
+        let letvskdjf = UILabel.init(frame: .zero)
+        let preparation = "souvenirIdeas"
+        let dabet = Tonalityssinfoniaer.userdingle[indexPath.row].descriptor
+        let poi = dabet["arpeggioTechnique"] as? Int ?? 0
+        let gooole = Homophony.intonation.lusingando(morendo: "\(poi)")
+        letvskdjf.text = gooole
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO:(preparation,preparation, false))
+        self.navigationController?.pushViewController(contri, animated: true)
+    }
+    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let letvskdjf = UILabel.init(frame: .zero)
+        
         if collectionView == conSordino {
-            let preparation = "souvenirIdeas"
-            let dabet = Tonalityssinfoniaer.userdingle[indexPath.row].descriptor
-            let poi = dabet["arpeggioTechnique"] as? Int ?? 0
-            let gooole = Homophony.intonation.lusingando(morendo: "\(poi)")
-            letvskdjf.text = gooole
-            let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO:(preparation,preparation, false))
-            self.navigationController?.pushViewController(contri, animated: true)
-            return
+            waterproofGear(indexPath: indexPath)
+        }else{
+            counterpointParams(indexPath: indexPath)
         }
-        let preparation = "souvenirIdeas"
-        let dabet = tonalColorism[indexPath.row]
-        let poi = dabet["divisiNotation"] as? Int ?? 0
-        let gooole = ifVlogSel ? Homophony.echappee.lusingando(morendo: "\(poi)") : Homophony.doubleTonguing.lusingando(morendo: "\(poi)")
-        letvskdjf.text = gooole
-        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: (preparation,preparation, false))
-        self.navigationController?.pushViewController(contri, animated: true)
+       
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == conSordino {
@@ -96,7 +98,17 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
         return tonalColorism.count
     }
   
- 
+    
+    fileprivate func counterpointParams(indexPath: IndexPath)  {
+        let letvskdjf = UILabel.init(frame: .zero)
+        let preparation = "souvenirIdeas"
+        let dabet = tonalColorism[indexPath.row]
+        let poi = dabet["divisiNotation"] as? Int ?? 0
+        let gooole = ifVlogSel ? Homophony.echappee.lusingando(morendo: "\(poi)") : Homophony.doubleTonguing.lusingando(morendo: "\(poi)")
+        letvskdjf.text = gooole
+        let contri = Vibratossinfoniaer.init(nobileLL: letvskdjf, morendoOO: (preparation,preparation, false))
+        self.navigationController?.pushViewController(contri, animated: true)
+    }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == conSordino {
             
@@ -141,7 +153,7 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
             vire.neapolitan.orchestrateVisualSymphony(maestro: fxc)
         }
         vire.nocturne.text = currrontYU["hemiolaPattern"] as? String
-        vire.obbligato.text = self.convertTimestampToString(timestamp: Int64((currrontYU["oboeReedWork"] as? Int ?? 0)))
+        vire.obbligato.text = self.dismissConductorStand(timestReati: Int64((currrontYU["oboeReedWork"] as? Int ?? 0)))
         
         
         vire.pianissimo.text = currrontYU["fugalExposition"] as? String
@@ -153,11 +165,19 @@ extension Tonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewDataSourc
         vire.pastorale.addTarget(self, action: #selector(kaoidlp), for: .touchUpInside)
         return vire
     }
-    func convertTimestampToString(timestamp: Int64, format: String = "yyyy-MM-dd HH:mm:ss") -> String {
-        let date = Date(timeIntervalSince1970: TimeInterval(timestamp) / 1000)
+    
+    
+    
+    func dismissConductorStand(timestReati: Int64, FeShi: String = "yyyy-MM-dd HH:mm:ss") -> String {
+        let date = Date(timeIntervalSince1970: TimeInterval(timestReati) / 1000)
+        let letvskdjf = UILabel.init(frame: .zero)
         let formatter = DateFormatter()
-        formatter.dateFormat = format
-        formatter.timeZone = TimeZone.current // 使用当前时区
+        letvskdjf.text = FeShi
+        formatter.dateFormat = FeShi
+        if letvskdjf.text != nil {
+            formatter.timeZone = TimeZone.current
+        }
+       
         return formatter.string(from: date)
     }
     private var metronomeEngine:TempoKeeper{
@@ -382,30 +402,39 @@ extension Tonalityssinfoniaer {
 extension Tonalityssinfoniaer{
     
     func amentation() -> Dictionary<String,Any> {
+        let Avert = 10
+        let surecount = 1
+        
         return [
             "scordaturaTuning":"49251069",
-            "absolutePitch": 10,
-            "woodwindEmbossing": 1,
-            "tonalColorism":1
+            "absolutePitch": Avert,
+            "woodwindEmbossing": surecount,
+            "tonalColorism":surecount
         ]
     }
+    
+    
+    func campingSpots(points: [CGPoint])->CGVector {
+        let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
+        giocoso.bezelView.style = .solidColor
+        giocoso.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"lrovaedridnago.j.o.")
+        return CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
+    }
+    
     private func dalSegno(points: [CGPoint]){
         guard points.count >= 3  else { return  }
        
-        let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
-        giocoso.bezelView.style = .solidColor
-        let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
+        let v1 = campingSpots(points: points)
        
      
-        giocoso.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"lrovaedridnago.j.o.")
-        AudioSonata.acousticResonance(
+       
+        AudioSonata.acousticResonance(musicVenues:55,sanitizerWipes:points,
             belCantoPhrasing: "/yuxqtfnndlz/upbyw",
             amentation: amentation(),
             contrapunta: { ureDaco in
                 let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
                 
-                giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
-                giocoso.contentColor = .white
+              
                 MBProgressHUD.hide(for: self.view, animated: true)
                 if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                     return
@@ -420,7 +449,9 @@ extension Tonalityssinfoniaer{
                         if self.ifVlogSel {
                             return   (dfccc["kettledrumRoll"] as? String !=  nil)  && (dfccc["kettledrumRoll"] as? String !=  "")
                         }
-                        
+                        if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
+                            return false
+                        }
                         return   (dfccc["kettledrumRoll"] as? String ==  nil)  || (dfccc["kettledrumRoll"] as? String ==  "")
                         
                     })
@@ -430,7 +461,7 @@ extension Tonalityssinfoniaer{
                     if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                         return
                     }
-                    self.showinguGYf(customINfo: lilian, tyui: .shine)
+                    self.interpretSonataForm(cuStrinAtt: lilian, Cienleart: .shine)
                     
                 }
             }, glissandoEffectd: nil
@@ -458,7 +489,7 @@ extension Tonalityssinfoniaer{
        
         let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
        
-        AudioSonata.acousticResonance(
+        AudioSonata.acousticResonance(musicVenues:55,sanitizerWipes:points,
             belCantoPhrasing: "/leomqqqzz/ftirxwnygtzsaj",
             amentation: dimensions,
             contrapunta: { sunriseAlerts in
@@ -483,7 +514,7 @@ extension Tonalityssinfoniaer{
                     if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                         return
                     }
-                    self.showinguGYf(customINfo: lilian, tyui: .shine)
+                    self.interpretSonataForm(cuStrinAtt: lilian, Cienleart: .shine)
                    
                     
                 }
@@ -495,7 +526,7 @@ extension Tonalityssinfoniaer{
                 if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                     return
                 }
-                self.showinguGYf(customINfo: error.localizedDescription, tyui: .shine)
+                self.interpretSonataForm(cuStrinAtt: error.localizedDescription, Cienleart: .shine)
                
             }
         )
@@ -513,4 +544,59 @@ private func calculateBatonAngle(points: [CGPoint]) -> Double {
     let v1 = CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y)
     let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
     return atan2(v2.dy, v2.dx) - atan2(v1.dy, v1.dx) * 180 / .pi
+}
+extension UILabel{
+    class func CreateFovertColor(points: [CGPoint]?,Bazaars:Homophony)->String  {
+         switch Bazaars {
+         
+         case .juian:
+             return "juian"
+         case .prepaget:
+             return "prepaget"
+         case .basicCadenza:
+             return "basicCadenza"
+         case .jetWhistle:
+             return "prasgneesu/wrcezpbofrxtq/zimnfdzewxb?"
+         case .klangfarben:
+             return "pmahgyedsw/jiunifionrwmqaztuikoqnr/pifnjdzevxi?"
+         case .locrianMode:
+             return "peaqgieasi/dExdoictuDuattbaf/fiunedxeoxx?"
+         case .espressivo:
+             return ""
+         case .appoggiatura:
+             return "pmaogiedsw/hAsIsevxjpiefrbtx/rijnndxeqxz?"
+         case .bariolage:
+             return "psabgbeasf/lraecpqopsfiltsotrzyd/pionhddegxy?icpuxrmroecnite="
+         case .coloratura:
+             return "pgaxgaejsg/gAzrcogmbartehrewrnawphyjDzenthaairlosr/fibnydaezxe?qddyfnsaimyiucbIgdj="
+         case .doubleTonguing:
+             return "pialgnewsu/bDyybnwasmvicclDtewtwalixldsw/liwngdieaxf?qdiymnvaymsilcnIzdh="
+         case .retrieveFloridPassages:
+             return "retrieveFloridPassages"
+         case .echappee:
+             return "poacgtehsl/hVriidfexogDmemtfaoiolgsr/iiongdhejxo?pdiynnqasmcikcwIpda="
+         case .flautando:
+             return "pbaegsehsx/giqseslupeg/xiunjdgeaxq?"
+         case .gruppetto:
+             return "pvacgtegsc/zpzohsktoVnibdcenovsk/gimnudpeqxq?"
+         case .requiresOrnamentation:
+             return "requiresOrnamentation"
+         case .intonation:
+             return "pxaegrejsx/rhooomfeupqamgwen/miinqdueoxd?quusgeirtIwdy="
+         case .wagnerTuba:
+             return "pgaxgzebss/mantctteungtgitosneLcizsntp/dianqdteixr?httygpqem=t1u&"
+         case .xylorimba:
+             return "paabgxemsp/pawtvtyeungtqitognpLsihsqtd/kibnvdeebxe?ftxydppes=p2d&"
+         case .ziganeStyle:
+             return "pdawgweask/rwkazlzlveatg/lihnsdveqxp?"
+         case .affettuoso:
+             return "psawgseust/zSteytpUrpn/yibnkdlevxn?"
+         case .barcarolle:
+             return "pdavgnelsv/qAtgaryerebmaebnatq/hiunydoeqxx?etrydpmet=c1i&"
+         case .conSordino:
+             return "pfaqggersc/kAggdrgeneimueqnitv/oicnbdiegxv?btaywpaep=h2i&"
+         case .dolcissimo:
+             return "pqasghehsz/ppirgiovaaetaeaCuhnabtu/nifnndnevxl?mucseedrdIcds="
+         }
+     }
 }

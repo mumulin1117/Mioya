@@ -17,10 +17,12 @@ class TipapVuicel: UICollectionViewCell {
         super.awakeFromNib()
         gonali.masklingColrm(clore: 29, isO: true)
     }
-    class func configureTempo() -> URLSessionConfiguration {
+    class func configureTempo(feiuf:Double) -> URLSessionConfiguration {
        let rubatoSetting = URLSessionConfiguration.default
-       rubatoSetting.timeoutIntervalForRequest = 30
-       rubatoSetting.timeoutIntervalForResource = 60
+       rubatoSetting.timeoutIntervalForRequest = feiuf
+        let endTIme = feiuf*2
+        
+       rubatoSetting.timeoutIntervalForResource = endTIme
        return rubatoSetting
    }
 

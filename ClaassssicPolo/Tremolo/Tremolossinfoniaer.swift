@@ -127,17 +127,27 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
         nextInfoVlbl.layer.cornerRadius = 1
         mezzoSoprano.showsHorizontalScrollIndicator = false
         nextInfoVlbl.text = "TremoloCell"
-        mezzoSoprano.register(UINib.init(nibName: "TremoloCell", bundle: nil), forCellWithReuseIdentifier:"TremoloCell")
-        
+       
+        coffeeCulture()
      
         
     }
     
+    func coffeeCulture()  {
+        mezzoSoprano.register(UINib.init(nibName: "TremoloCell", bundle: nil), forCellWithReuseIdentifier:"TremoloCell")
+        nextInfoVlbl.layer.cornerRadius = 1
+    }
+    
+    
+    func marathonEvents()  {
+        
+    }
     private func dalSegno(points: [CGPoint]){
         guard points.count > 3  else { return  }
         
         let ojjie = "/yuxqtfnndlz/upbyw"
         let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
+        let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD: "dnaltba")
         giocoso.bezelView.style = .solidColor
         nextInfoVlbl.text = "TremoloCell"
         giocoso.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
@@ -147,8 +157,8 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
        
        
         
-        let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD: "dnaltba")
-        AudioSonata.acousticResonance(
+       
+        AudioSonata.acousticResonance(musicVenues:55,sanitizerWipes:giocoso,
             belCantoPhrasing: ojjie,
             amentation: retrieveFloridPassages(),
             contrapunta: { ureDaco in
@@ -173,7 +183,7 @@ class Tremolossinfoniaer: UIViewController, UICollectionViewDataSource ,UICollec
                 } else {
                     let lilian = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
                     let v2 = CGVector(dx: points[2].x - points[1].x, dy: points[2].y - points[1].y)
-                    self.showinguGYf(customINfo: lilian, tyui: .shine)
+                    self.interpretSonataForm(cuStrinAtt: lilian, Cienleart: .shine)
                     if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                         return
                     }

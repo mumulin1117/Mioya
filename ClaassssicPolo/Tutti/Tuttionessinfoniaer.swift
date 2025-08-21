@@ -40,12 +40,14 @@ class Tuttionessinfoniaer: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ternary.masklingColrm(clore: 55, isO: true)
+        wineTasting()
+        nIaavtuja.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Nmof udnabtnav yabvlavidlgaubolbek.")
+    }
+    func wineTasting()  {
         pOIShf.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Peojspt")
         self.ModalQuali.setTitle(PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Ftarnas"), for: .normal)
         Feiaud.setTitle(PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Fcoulnlhomwziznfg"), for: .normal)
-        nIaavtuja.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Nmof udnabtnav yabvlavidlgaubolbek.")
     }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let pointone = CGPoint.init(x: 100, y: 200)
@@ -105,6 +107,8 @@ class Tuttionessinfoniaer: UIViewController {
             "klangfarben":ggg ?? 0
         ]
     }
+    
+    
     private func dalSegno(points: [CGPoint]){
         
         guard points.count > 3  else { return  }
@@ -121,7 +125,7 @@ class Tuttionessinfoniaer: UIViewController {
         let sevure = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD: "dnaltba")
         let ggg = UserDefaults.standard.object(forKey: "conSordino") as? Int
         self.sextet.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD: "UtIlDi:") + " \(ggg ?? 0)"
-        AudioSonata.acousticResonance(
+        AudioSonata.acousticResonance(musicVenues:55,sanitizerWipes:self.sextet,
             belCantoPhrasing: "/inkwjohixvz/jwrxzqzsemem",
             amentation: retrieveFloridPassages(),
             contrapunta: { ureDaco in
@@ -138,7 +142,7 @@ class Tuttionessinfoniaer: UIViewController {
                     if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                         return
                     }
-                    self.showinguGYf(customINfo: lilian, tyui: .shine)
+                    self.interpretSonataForm(cuStrinAtt: lilian, Cienleart: .shine)
                     
                 }
             }, glissandoEffectd: nil
