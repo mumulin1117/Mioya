@@ -60,7 +60,7 @@ class Unisonessinfoniaer: UIViewController {
         
         analyzeModalQuality.text = "📮" + PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Ewmgaviwl")
         
-        self.virtuoso.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"<rTrezrhmdsq mozfp sSoeurdvcilclem>a ")
+        self.virtuoso.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"EqLtUwAm qalnrds a<jTlejrrmasl lonfh kSvearcvsigcpey>")
         self.viola.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"<oPgriilvqauczyd wPcoqlgivcmyw>g.")
         virtuoso.isUserInteractionEnabled = true
         staffView.frame = CGRect(x: 20, y: 80, width: view.bounds.width - 40, height: 120)
