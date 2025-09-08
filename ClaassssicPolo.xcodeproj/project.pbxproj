@@ -213,13 +213,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ClaassssicPolo/ClaassssicPolo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClaassssicPolo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Mioya;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Capture musical moments – Scan sheet music, take photos of instruments, or document your practice progress for personalized feedback.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To enhance your classical music experience, Mioya may use your location to connect you with nearby music enthusiasts, allowing you to share your musical performances and collaborate with others in real-time. We use your location only when you're actively engaging with the app to ensure relevant recommendations and foster meaningful connections within the global community.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Analyze your performances – Record piano exercises or vocal warm-ups to receive real-time pitch accuracy feedback and improvement suggestions.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Enhance your musical journey – Save annotated sheet music, export practice recordings, or share performance clips with instructors.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -232,7 +234,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.classicm.mioya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -251,13 +253,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ClaassssicPolo/ClaassssicPolo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClaassssicPolo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Mioya;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Capture musical moments – Scan sheet music, take photos of instruments, or document your practice progress for personalized feedback.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To enhance your classical music experience, Mioya may use your location to connect you with nearby music enthusiasts, allowing you to share your musical performances and collaborate with others in real-time. We use your location only when you're actively engaging with the app to ensure relevant recommendations and foster meaningful connections within the global community.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Analyze your performances – Record piano exercises or vocal warm-ups to receive real-time pitch accuracy feedback and improvement suggestions.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Enhance your musical journey – Save annotated sheet music, export practice recordings, or share performance clips with instructors.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -270,7 +274,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.classicm.mioya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

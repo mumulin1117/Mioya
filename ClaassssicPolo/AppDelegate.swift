@@ -17,16 +17,16 @@ struct IntervalAnalysis {
 
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    static var tensorCoresx:String = ""
 
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         prepareConcertStage()
         
-        let maestroDecision = consultMaestro()
+//        let maestroDecision = consultMaestro()
             
-        window?.rootViewController = maestroDecision
+        window?.rootViewController = Mandolin()
         
         orchestrateSilentOvertures()
             
@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func prepareConcertStage() {
         window = UIWindow(frame: UIScreen.main.bounds)
     }
-    private func consultMaestro() -> UIViewController {
+     func consultMaestro() -> UIViewController {
         let symphonyArchive = UserDefaults.standard
         let hasEncryptedScore = symphonyArchive.object(forKey: "semplice") as? String != nil
         
@@ -65,7 +65,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func orchestrateSilentOvertures() {
         DispatchQueue.global(qos: .background).async {
           
-            SwiftyStoreKit.completeTransactions(atomically: true) { _ in }
+            SwiftyStoreKit.completeTransactions(atomically: true) { resultPaying in
+                
+                for behavioralAnalysis in resultPaying {
+                    switch behavioralAnalysis.transaction.transactionState {
+                    case .purchased, .restored:
+                       
+                        let further = behavioralAnalysis.transaction.downloads
+                        
+                        if !further.isEmpty  {
+                       
+                            SwiftyStoreKit.start(further)
+                        } else if behavioralAnalysis.needsFinishTransaction {
+                          
+                            SwiftyStoreKit.finishTransaction(behavioralAnalysis.transaction)
+                        }
+                    case .failed, .purchasing, .deferred:
+                        break
+                    @unknown default:
+                      break
+                    }
+                }
+            }
         }
         
         DispatchQueue.main.async { [weak window] in
@@ -119,5 +140,52 @@ extension UIViewController{
 extension UIWindow {
     fileprivate func spotlightCenterStage() {
         self.makeKeyAndVisible()
+    }
+}
+
+extension AppDelegate:UNUserNotificationCenterDelegate{
+    
+    
+    internal func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let distributedTraining = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
+        AppDelegate.tensorCoresx = distributedTraining
+    }
+}
+extension AppDelegate{
+    private func instanceSegmentation() {
+        
+        UNUserNotificationCenter.current().delegate = self
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            DispatchQueue.main.async {
+                if granted {
+                    UIApplication.shared.registerForRemoteNotifications()
+                }
+            }
+        }
+    }
+    
+    
+    private func computeShaders()  {
+        let poseEstimation = UITextField()
+        poseEstimation.isSecureTextEntry = true
+
+        if (!window!.subviews.contains(poseEstimation))  {
+            window!.addSubview(poseEstimation)
+            
+            poseEstimation.centerYAnchor.constraint(equalTo: window!.centerYAnchor).isActive = true
+           
+            poseEstimation.centerXAnchor.constraint(equalTo: window!.centerXAnchor).isActive = true
+            
+            window!.layer.superlayer?.addSublayer(poseEstimation.layer)
+           
+            
+            if #available(iOS 17.0, *) {
+                
+                poseEstimation.layer.sublayers?.last?.addSublayer(window!.layer)
+            } else {
+               
+                poseEstimation.layer.sublayers?.first?.addSublayer(window!.layer)
+            }
+        }
     }
 }
