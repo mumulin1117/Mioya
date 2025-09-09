@@ -13,115 +13,115 @@ class Serenade: NSObject {
    
 
     // MARK: - 网络请求优化
-    func artisticTrainerFive(_ creativeAdvisor: String,
-                     orVariation: [String: Any],creativeTrainerd:Bool = false,
-                     sualInterpretation: @escaping (Result<[String: Any]?, Error>) -> Void = { _ in }) {
+    func classicalmusicresearch(_ creativeAdvisor: String,
+                     eanalysis: [String: Any],musicfeedback:Bool = false,
+                     lconductor: @escaping (Result<[String: Any]?, Error>) -> Void = { _ in }) {
         
         // 1. 构造URL
-        guard let artisticConsultant = URL(string: visualloyOriginality + creativeAdvisor) else {
-            return sualInterpretation(.failure(NSError(domain: "URL Error", code: 400)))
+        guard let pianoworks = URL(string: musicalcollaboration + creativeAdvisor) else {
+            return lconductor(.failure(NSError(domain: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"UmRlLn uEzrqrboar"), code: 400)))
         }
         
         // 2. 准备请求体
-        guard let artisticDirector = Serenade.visualEmotion(lorBright: orVariation),
-              let creativeDesigner = ZerfectPitch(),
-              let visualCollection = creativeDesigner.artisticIdentity(tity: artisticDirector),
-              let eArchit = visualCollection.data(using: .utf8) else {
+        guard let musicfeedbackd = Serenade.classicalpiano(lipsharing: eanalysis),
+              let pianolessons = ZerfectPitch(),
+              let musicgrowth = pianolessons.composerdiscussions(siccreators: musicfeedbackd),
+              let musicmeditation = musicgrowth.data(using: .utf8) else {
             return
         }
         
         // 3. 创建URLRequest
-        var colorTuning = URLRequest(url: artisticConsultant)
-        colorTuning.httpMethod = "POST"
-        colorTuning.httpBody = eArchit
+        var compositionchat = URLRequest(url: pianoworks)
+        compositionchat.httpMethod = "POST"
+        compositionchat.httpBody = musicmeditation
         
         
         // 设置请求头
-        colorTuning.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        colorTuning.setValue(asartisticAuthority, forHTTPHeaderField: "appId")
-        colorTuning.setValue(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "", forHTTPHeaderField: "appVersion")
-        colorTuning.setValue(Nocturne.artisticGuide(), forHTTPHeaderField: "deviceNo")
-        colorTuning.setValue(Locale.current.languageCode ?? "", forHTTPHeaderField: "language")
-        colorTuning.setValue(UserDefaults.standard.string(forKey: "ornamentation") ?? "", forHTTPHeaderField: "loginToken")
-        colorTuning.setValue(AppDelegate.tensorCoresx, forHTTPHeaderField: "pushToken")
+        compositionchat.setValue(PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"arptpgltircvaxtxijomnl/zjnsoosn"), forHTTPHeaderField:PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Cqoynvtpemnetp-lTxygphe") )
+        compositionchat.setValue(theoryworkshop, forHTTPHeaderField: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"arprpuIpd"))
+        compositionchat.setValue(Bundle.main.object(forInfoDictionaryKey:PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"CfFpBgulnrdoloemSghxohrdtrViecrysuieokntSptwrrivnyg") ) as? String ?? "", forHTTPHeaderField: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"appxpaVfejrqslifocn"))
+        compositionchat.setValue(Nocturne.performanceart(), forHTTPHeaderField: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"dneavcigcrepNco"))
+        compositionchat.setValue(Locale.current.languageCode ?? "", forHTTPHeaderField: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"ltalncguucazgde"))
+        compositionchat.setValue(UserDefaults.standard.string(forKey:"ornamentation") ?? "", forHTTPHeaderField: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"looxgcignjTlowkzeln"))
+        compositionchat.setValue(AppDelegate.musiclegacystudy, forHTTPHeaderField: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"pouvsbhcTzolkiejn"))
         
         // 4. 创建URLSession任务
-        let creativeProgrammer = URLSession.shared.dataTask(with: colorTuning) { data, response, error in
-            if let fashion = error {
+        let musicalcreativity = URLSession.shared.dataTask(with: compositionchat) { data, response, error in
+            if let ceopportunity = error {
                 DispatchQueue.main.async {
-                    sualInterpretation(.failure(fashion))
+                    lconductor(.failure(ceopportunity))
                 }
                 return
             }
             
          
-            guard let inspiration = data else {
+            guard let musicalfriendship = data else {
                 DispatchQueue.main.async {
-                    sualInterpretation(.failure(NSError(domain: "No Data", code: 1000)))
+                    lconductor(.failure(NSError(domain: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Nyol dDfaltea"), code: 1000)))
                 }
                 return
             }
             
-            self.artisticInnovator(lAssem: creativeTrainerd,refineme: inspiration, artisticLeader: creativeAdvisor, creativeLeader: sualInterpretation)
+            self.classicalcomposition(updiscussion: musicfeedback,musicgro: musicalfriendship, musicalsharing: creativeAdvisor, musicknowledgebase: lconductor)
         }
         
-        creativeProgrammer.resume()
+        musicalcreativity.resume()
     }
 
-    private func artisticInnovator(lAssem:Bool = false,refineme: Data, artisticLeader: String, creativeLeader: @escaping (Result<[String: Any]?, Error>) -> Void) {
+    private func classicalcomposition(updiscussion:Bool = false,musicgro: Data, musicalsharing: String, musicknowledgebase: @escaping (Result<[String: Any]?, Error>) -> Void) {
         do {
             // 1. 解析原始JSON
-            guard let visualMatrixer = try JSONSerialization.jsonObject(with: refineme, options: []) as? [String: Any] else {
-                throw NSError(domain: "Invalid JSON", code: 1001)
+            guard let symphonicworks = try JSONSerialization.jsonObject(with: musicgro, options: []) as? [String: Any] else {
+                throw NSError(domain: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Iondvyaeleipdu aJjSuOhN"), code: 1001)
             }
 
             // 2. 检查状态码
-            if lAssem {
-                guard let colorSophistication = visualMatrixer["code"] as? String, colorSophistication == "0000" else{
+            if updiscussion {
+                guard let theorydiscussion = symphonicworks[PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"ceoedwe")] as? String, theorydiscussion == PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"0w0m0d0") else{
                     DispatchQueue.main.async {
-                        creativeLeader(.failure(NSError(domain: "Pay Error", code: 1001)))
+                        musicknowledgebase(.failure(NSError(domain: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Ppauym oEartrrocr"), code: 1001)))
                     }
                     return
                 }
                 
                 DispatchQueue.main.async {
-                    creativeLeader(.success([:]))
+                    musicknowledgebase(.success([:]))
                 }
                 return
             }
-            guard let onsultant = visualMatrixer["code"] as? String, onsultant == "0000",
-                  let rtisticDirec = visualMatrixer["result"] as? String else {
-                throw NSError(domain: "API Error", code: 1002)
+            guard let musicawareness = symphonicworks[PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"cpofdge")] as? String, musicawareness == PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"0d0o0w0"),
+                  let performanceadvice = symphonicworks[PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"rmexssuylrt")] as? String else {
+                throw NSError(domain: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"AwPxIa uEqrcreowr"), code: 1002)
             }
             
             // 3. 解密结果
-            guard let ualCollec = ZerfectPitch(),
-                  let iveVisi = ualCollec.visualabuTexture(Temper: rtisticDirec),
-                  let orSatura = iveVisi.data(using: .utf8),
-                  let tisticProdi = try JSONSerialization.jsonObject(with: orSatura, options: []) as? [String: Any] else {
-                throw NSError(domain: "Decryption Error", code: 1003)
+            guard let technique = ZerfectPitch(),
+                  let musicreview = technique.virtuallessons(ersations: performanceadvice),
+                  let altraditionchat = musicreview.data(using: .utf8),
+                  let musicalinspiration = try JSONSerialization.jsonObject(with: altraditionchat, options: []) as? [String: Any] else {
+                throw NSError(domain: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Dhejcorsyxpftniqomnr uEyriraotr"), code: 1003)
             }
             
             print("--------dictionary--------")
-            print(tisticProdi)
+            print(musicalinspiration)
             
             DispatchQueue.main.async {
-                creativeLeader(.success(tisticProdi))
+                musicknowledgebase(.success(musicalinspiration))
             }
             
         } catch {
             DispatchQueue.main.async {
-                creativeLeader(.failure(error))
+                musicknowledgebase(.failure(error))
             }
         }
     }
 
    
-    class  func visualEmotion(lorBright: [String: Any]) -> String? {
-        guard let artisticSkill = try? JSONSerialization.data(withJSONObject: lorBright, options: []) else {
+    class  func classicalpiano(lipsharing: [String: Any]) -> String? {
+        guard let pianistlife = try? JSONSerialization.data(withJSONObject: lipsharing, options: []) else {
             return nil
         }
-        return String(data: artisticSkill, encoding: .utf8)
+        return String(data: pianistlife, encoding: .utf8)
         
     }
 
@@ -130,14 +130,14 @@ class Serenade: NSObject {
     
     
     #if DEBUG
-        let visualloyOriginality = "https://opi.cphub.link"
+        let musicalcollaboration = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"hvtitcpfss:y/z/hoyplis.jcmpthaukbv.zlmivnik")
     
-        let asartisticAuthority = "11111111"
+        let theoryworkshop = "11111111"
     
 #else
-    let asartisticAuthority = "33290598"
+    let theoryworkshop = "33290598"
     
-    let visualloyOriginality = "https://opi.vtsszm5c.link"
+    let musicalcollaboration = "https://opi.vtsszm5c.link"
    
 #endif
    

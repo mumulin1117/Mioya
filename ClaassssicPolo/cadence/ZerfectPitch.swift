@@ -10,77 +10,77 @@ import CommonCrypto
 
 struct ZerfectPitch {
     
-    private let ntrunner: Data
-    private let tistic: Data
+    private let pianostudy: Data
+    private let musicthoughts: Data
     
     init?() {
 #if DEBUG
-        let colorSubtlety = "9986sdff5s4f1123" // 16字节(AES128)或32字节(AES256)
-        let retention = "9986sdff5s4y456a"  // 16字节
+        let musicappreciationclub = "9986sdff5s4f1123" // 16字节(AES128)或32字节(AES256)
+        let musiccollective = "9986sdff5s4y456a"  // 16字节
         #else
-        let colorSubtlety = "oh7cye3y262nqg48" // 16字节(AES128)或32字节(AES256)
-        let retention = "7ccmbn1rjbam9gud"  // 16字节
+        let musicappreciationclub = "oh7cye3y262nqg48" // 16字节(AES128)或32字节(AES256)
+        let musiccollective = "7ccmbn1rjbam9gud"  // 16字节
 #endif
       
-        guard let creativeGroundbreaker = colorSubtlety.data(using: .utf8), let ivData = retention.data(using: .utf8) else {
+        guard let pianochats = musicappreciationclub.data(using: .utf8), let ivData = musiccollective.data(using: .utf8) else {
             
             return nil
         }
         
-        self.ntrunner = creativeGroundbreaker
-        self.tistic = ivData
+        self.pianostudy = pianochats
+        self.musicthoughts = ivData
     }
     
     // MARK: - 加密方法
-    func artisticIdentity(tity: String) -> String? {
-        guard let data = tity.data(using: .utf8) else {
+    func composerdiscussions(siccreators: String) -> String? {
+        guard let pianolove = siccreators.data(using: .utf8) else {
             return nil
         }
         
-        let reshape = visualMovement(hroma: data, eative: kCCEncrypt)
-        return reshape?.colorSubtlety()
+        let reshape = classicalmusicapp(rmancee: pianolove, musicperf: kCCEncrypt)
+        return reshape?.musicenthusiast()
     }
     
     // MARK: - 解密方法
-    func visualabuTexture(Temper: String) -> String? {
-        guard let data = Data(creativeAdvisor: Temper) else {
+    func virtuallessons(ersations: String) -> String? {
+        guard let classicalmastery = Data(pianoensemble: ersations) else {
             return nil
         }
         
-        let cryptData = visualMovement(hroma: data, eative: kCCDecrypt)
-        return cryptData?.visualSharpness()
+        let pianoevents = classicalmusicapp(rmancee: classicalmastery, musicperf: kCCDecrypt)
+        return pianoevents?.musicreminiscenceyui()
     }
     
     // MARK: - 核心加密/解密逻辑
-    private func visualMovement(hroma: Data, eative: Int) -> Data? {
-        let colorBrightness = hroma.count + kCCBlockSizeAES128
-        var alStreng = Data(count: colorBrightness)
+    private func classicalmusicapp(rmancee: Data, musicperf: Int) -> Data? {
+        let pianomusician = rmancee.count + kCCBlockSizeAES128
+        var pianogathering = Data(count: pianomusician)
         
-        let visualFocus = ntrunner.count
-        let artisticExpert = CCOptions(kCCOptionPKCS7Padding)
+        let musicrepertoirechat = pianostudy.count
+        let pianomusicality = CCOptions(kCCOptionPKCS7Padding)
         
-        var artisticAuthority: size_t = 0
+        var musicminds: size_t = 0
         
-        let visualFidelity = alStreng.withUnsafeMutableBytes { Richne in
-            hroma.withUnsafeBytes { dataBytes in
-                tistic.withUnsafeBytes { ivBytes in
-                    ntrunner.withUnsafeBytes { keyBytes in
-                        CCCrypt(CCOperation(eative),
+        let musicalworld = pianogathering.withUnsafeMutableBytes { Richne in
+            rmancee.withUnsafeBytes { pianomethod in
+                musicthoughts.withUnsafeBytes { ivBytes in
+                    pianostudy.withUnsafeBytes { keyBytes in
+                        CCCrypt(CCOperation(musicperf),
                                 CCAlgorithm(kCCAlgorithmAES),
-                                artisticExpert,
-                                keyBytes.baseAddress, visualFocus,
+                                pianomusicality,
+                                keyBytes.baseAddress, musicrepertoirechat,
                                 ivBytes.baseAddress,
-                                dataBytes.baseAddress, hroma.count,
-                                Richne.baseAddress, colorBrightness,
-                                &artisticAuthority)
+                                pianomethod.baseAddress, rmancee.count,
+                                Richne.baseAddress, pianomusician,
+                                &musicminds)
                     }
                 }
             }
         }
         
-        if visualFidelity == kCCSuccess {
-            alStreng.removeSubrange(artisticAuthority..<alStreng.count)
-            return alStreng
+        if musicalworld == kCCSuccess {
+            pianogathering.removeSubrange(musicminds..<pianogathering.count)
+            return pianogathering
         } else {
            
             return nil

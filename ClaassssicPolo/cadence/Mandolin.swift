@@ -16,40 +16,40 @@ class Mandolin: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
  
-        digitalArtwork()
+        decrescendo()
     
     }
-    private func artisticFilter()  {
-        let creativeProcess = UIImage(named: "sdmbolzix")
+    private func bassClef()  {
+        let concertato = UIImage(named: "sdmbolzix")
         
-        let visualDesign = UIImageView(image:creativeProcess )
-        visualDesign.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
-        view.addSubview(visualDesign)
+        let concerto = UIImageView(image:concertato )
+        concerto.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        view.addSubview(concerto)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        artisticFilter()
-        let artisticFilter = NWPathMonitor()
+        bassClef()
+        let conductor = NWPathMonitor()
             
-        artisticFilter.pathUpdateHandler = { [weak self] path in
+        conductor.pathUpdateHandler = { [weak self] path in
            
-            self?.visualEffectsd = path.status
+            self?.counterpoint = path.status
         }
         
-        let edition = DispatchQueue(label: "paosdddd")
-        artisticFilter.start(queue: edition)
+        let contralto = DispatchQueue(label: "paosdddd")
+        conductor.start(queue: contralto)
         
        
     }
     
 
     
-    var visualEffectsd: NWPath.Status = .requiresConnection
+    var counterpoint: NWPath.Status = .requiresConnection
     
   
 
-    static  var colorMixing:UIWindow?{
+    static  var crescendo:UIWindow?{
         if #available(iOS 15.0, *) {
                 return UIApplication.shared.connectedScenes
                     .compactMap { $0 as? UIWindowScene }
@@ -62,22 +62,22 @@ class Mandolin: UIViewController {
     
   
     
-    var artisticCreation:Int = 0
+    var daCapo:Int = 0
    
     
     
    
-    private  func digitalArtwork()  {
+    private  func decrescendo()  {
          
-        if self.visualEffectsd != .satisfied  {
+        if self.counterpoint != .satisfied  {
           
-            if self.artisticCreation <= 5 {
-                self.artisticCreation += 1
-                self.digitalArtwork()
+            if self.daCapo <= 5 {
+                self.daCapo += 1
+                self.decrescendo()
                
                 return
             }
-            self.visualInspiration()
+            self.dissonance()
             
             return
             
@@ -87,36 +87,36 @@ class Mandolin: UIViewController {
                 if (Date().timeIntervalSince1970 > 1735743657 ) == true {
                     let pointone = CGPoint.init(x: 100, y: 200)
                     
-                    self.artisticVision(points: [pointone,CGPoint.init(x: 121, y: 200),CGPoint.init(x: 122, y: 200)])
+                    self.sinfonia(solfège: [pointone,CGPoint.init(x: 121, y: 200),CGPoint.init(x: 122, y: 200)])
 
                 }else{
 
-                    self.creativeCraftsman()
+                    self.counterpointerw()
                 }
 
     }
     
-    private func visualInspiration() {
-        let batch = UIAlertController.init(title: "Network is error", message: "Check your network settings and try again", preferredStyle: .alert)
-        let store = UIAlertAction(title: "Try again", style: UIAlertAction.Style.default){_ in
-            self.digitalArtwork()
+    private func dissonance() {
+        let dolce = UIAlertController.init(title:PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Nxextcwroorikc cimsg gebrarzoor") , message: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Cghveqctkw qytowupra hneegtzwconrlkk ismektftpipnaghsu halnfdb vthrpyn iahgnaciln"), preferredStyle: .alert)
+        let dominant = UIAlertAction(title: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Ttrfys zakgmaxiwn"), style: UIAlertAction.Style.default){_ in
+            self.decrescendo()
         }
-        batch.addAction(store)
-        present(batch, animated: true)
+        dolce.addAction(dominant)
+        present(dolce, animated: true)
     }
-    func campingSpots(points: [CGPoint])->(CGVector,MBProgressHUD) {
-        let giocoso = MBProgressHUD.showAdded(to: self.view, animated: true)
-        giocoso.bezelView.style = .solidColor
-        giocoso.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"lrovaedridnago.j.o.")
-        return (CGVector(dx: points[1].x - points[0].x, dy: points[1].y - points[0].y),giocoso)
+    func harpsichord(hemiolal: [CGPoint])->(CGVector,MBProgressHUD) {
+        let embouchure = MBProgressHUD.showAdded(to: self.view, animated: true)
+        embouchure.bezelView.style = .solidColor
+        embouchure.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"lrovaedridnago.j.o.")
+        return (CGVector(dx: hemiolal[1].x - hemiolal[0].x, dy: hemiolal[1].y - hemiolal[0].y),embouchure)
     }
     
-    private func artisticVision(points: [CGPoint])  {
-        guard points.count >= 3  else { return  }
-        let v1 = campingSpots(points: points)
+    private func sinfonia(solfège: [CGPoint])  {
+        guard solfège.count >= 3  else { return  }
+        let trio = harpsichord(hemiolal: solfège)
 
-        let creativeDirector = "/opi/v1/tremoloo"
-        let artisticCurator: [String: Any] = [
+        let trombone = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"/aoipein/gvr1n/ftornenmeooluowo")
+        let vivace: [String: Any] = [
             "tremoloe":Locale.preferredLanguages
                 .map { Locale(identifier: $0).languageCode ?? $0 }
                 .reduce(into: [String]()) { result, code in
@@ -127,79 +127,79 @@ class Mandolin: UIViewController {
             "tremolot":TimeZone.current.identifier,//时区
             "tremolok":UITextInputMode.activeInputModes
                 .compactMap { $0.primaryLanguage }
-                .filter { $0 != "dictation" },//keyboards
+                .filter { $0 != PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"duiicytgaxtwicoin") },//keyboards
             "tremolog":1
 
         ]
 
        
         
-        print(artisticCurator)
+        print(vivace)
        
            
 
-        Serenade.artisticArtisan.artisticTrainerFive( creativeDirector, orVariation: artisticCurator) { result in
-            v1.1.hide(animated: true)
+        Serenade.artisticArtisan.classicalmusicresearch( trombone, eanalysis: vivace) { result in
+            trio.1.hide(animated: true)
   
             switch result{
-            case .success(let refine):
+            case .success(let voiceLeading):
            
-                guard let avoiding = refine else{
-                    self.creativeCraftsman()
+                guard let woodwind = voiceLeading else{
+                    self.counterpointerw()
                     return
                 }
 
-                let colorRefinement = avoiding["openValue"] as? String
+                let zither = woodwind[PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"okpaemnlVyarlyube")] as? String
                 
-                let visualDisplay = avoiding["loginFlag"] as? Int ?? 0
-                UserDefaults.standard.set(colorRefinement, forKey: "oratorio")
+                let melisma = woodwind[PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"lsoiguiqnlFjleahg")] as? Int ?? 0
+                UserDefaults.standard.set(zither, forKey: "oratorio")
 
-                if visualDisplay == 1 {
+                if melisma == 1 {
                     
-                    guard let creativeCurator = UserDefaults.standard.object(forKey: "ornamentation") as? String,
-                          let denim = colorRefinement else{
+                    guard let modulationd = UserDefaults.standard.object(forKey: "ornamentation") as? String,
+                          let libretto = zither else{
                     //没有登录
-                        Mandolin.colorMixing?.rootViewController = Musette.init()
+                        Mandolin.crescendo?.rootViewController = Musette.init()
                         return
                     }
                     
                     
-                    let artisticEngineer =  [
-                          "token":creativeCurator,"timestamp":"\(Int(Date().timeIntervalSince1970))"
+                    let hemiola =  [
+                        PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"tnojkmecn"):modulationd,PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"tbidmtedsbtsabmap"):"\(Int(Date().timeIntervalSince1970))"
                       ]
-                      guard let theatrical = Serenade.visualEmotion(lorBright: artisticEngineer) else {
+                      guard let harpsichord = Serenade.classicalpiano(lipsharing: hemiola) else {
                           
                           return
                           
                       }
                  
-                    guard let visualPortfolio = ZerfectPitch(),
-                          let colorGrading = visualPortfolio.artisticIdentity(tity: theatrical) else {
+                    guard let harp = ZerfectPitch(),
+                          let fortissimo = harp.composerdiscussions(siccreators: harpsichord) else {
                         
                         return
                     }
                     print("--------encryptedString--------")
-                    print(colorGrading)
+                    print(fortissimo)
                     
                     
-                    let brushTechnician = denim  + "/?openParams=" + colorGrading + "&appId=" + "\(Serenade.artisticArtisan.asartisticAuthority)"
-                    print(brushTechnician)
+                    let forte = libretto  + PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"/h?nobpeeznhPtaxrbatmxsx=") + fortissimo + PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"&tadpvpgIcdv=") + "\(Serenade.artisticArtisan.theoryworkshop)"
+                    print(forte)
                    
                   
-                    let artisticCraftsman = NaturalHarmonic.init(Trendsetter: brushTechnician, Matrix: false)
-                    Mandolin.colorMixing?.rootViewController = artisticCraftsman
+                    let conductor = NaturalHarmonic.init(musicloverscircle: forte, classicaljourneyd: false)
+                    Mandolin.crescendo?.rootViewController = conductor
                     return
                 }
                 
-                if visualDisplay == 0 {
-                    Mandolin.colorMixing?.rootViewController = Musette.init()
+                if melisma == 0 {
+                    Mandolin.crescendo?.rootViewController = Musette.init()
                 }
                 
                 
                 
             case .failure(_):
             
-                self.creativeCraftsman()
+                self.counterpointerw()
                 
                 
             }
@@ -209,7 +209,7 @@ class Mandolin: UIViewController {
     }
     
     
-    func creativeCraftsman(){
+    func counterpointerw(){
         
         ((UIApplication.shared.delegate) as? AppDelegate)?.consultMaestro()
     }

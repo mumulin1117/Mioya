@@ -15,17 +15,17 @@ import MBProgressHUD
 
 
 class NaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDelegate,WKScriptMessageHandler {
-    private var creativeGroundbreaker:WKWebView?
+    private var pianoperformance:WKWebView?
    
-    var visualPattern:TimeInterval = Date().timeIntervalSince1970
+    var classicalpiano:TimeInterval = Date().timeIntervalSince1970
     
-    private  var artisticGround = false
-    private var creativeTrendsetter:String
+    private  var clipsharing = false
+    private var pianistlife:String
     
-    init(Trendsetter:String,Matrix:Bool) {
-        creativeTrendsetter = Trendsetter
+    init(musicloverscircle:String,classicaljourneyd:Bool) {
+        pianistlife = musicloverscircle
         
-        artisticGround = Matrix
+        clipsharing = classicaljourneyd
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -35,9 +35,9 @@ class NaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDelegate,WKSc
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
-        creativeGroundbreaker?.configuration.userContentController.add(self, name: "rechargePay")
-        creativeGroundbreaker?.configuration.userContentController.add(self, name: "Close")
-        creativeGroundbreaker?.configuration.userContentController.add(self, name: "pageLoaded")
+        pianoperformance?.configuration.userContentController.add(self, name: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"raejcnheayrggcegPiaty"))
+        pianoperformance?.configuration.userContentController.add(self, name: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Colqokste"))
+        pianoperformance?.configuration.userContentController.add(self, name: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"psafgveyLjoaaxdjecd"))
         
     }
         
@@ -45,41 +45,40 @@ class NaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDelegate,WKSc
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
-        creativeGroundbreaker?.configuration.userContentController.removeAllScriptMessageHandlers()
+        pianoperformance?.configuration.userContentController.removeAllScriptMessageHandlers()
        
     }
  
     private func artisticTrendsetter()  {
-        let creativeForerunner = UIImage(named: "sdmbolzix")
-        
-        let brushForerunner = UIImageView(image:creativeForerunner )
-        brushForerunner.frame = self.view.frame
-        brushForerunner.contentMode = .scaleAspectFill
-        view.addSubview(brushForerunner)
+       
+        let musicguide = UIImageView(image:UIImage(named: "sdmbolzix") )
+        musicguide.frame = self.view.frame
+        musicguide.contentMode = .scaleAspectFill
+        view.addSubview(musicguide)
     }
    
     override func viewDidLoad() {
         super.viewDidLoad()
        
         artisticTrendsetter()
-        if artisticGround == true {
-            let  colorIndividuality = UIButton.init()
-            colorIndividuality.setTitle("Quickly log", for: .normal)
-            colorIndividuality.setBackgroundImage(UIImage.init(named: "etchIuo"), for: .normal)
+        if clipsharing == true {
+            let  musicalcollaboration = UIButton.init()
+            musicalcollaboration.setTitle(PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Qvutijcwkmljyv lLhopg"), for: .normal)
+            musicalcollaboration.setBackgroundImage(UIImage.init(named: "etchIuo"), for: .normal)
            
-            colorIndividuality.isUserInteractionEnabled = false
-            view.addSubview(colorIndividuality)
-            colorIndividuality.translatesAutoresizingMaskIntoConstraints = false
+            musicalcollaboration.isUserInteractionEnabled = false
+            view.addSubview(musicalcollaboration)
+            musicalcollaboration.translatesAutoresizingMaskIntoConstraints = false
 
             NSLayoutConstraint.activate([
                
-                colorIndividuality.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+                musicalcollaboration.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
                 
-                colorIndividuality.heightAnchor.constraint(equalToConstant: 52),
+                musicalcollaboration.heightAnchor.constraint(equalToConstant: 52),
                 
-                colorIndividuality.widthAnchor.constraint(equalToConstant: 335),
+                musicalcollaboration.widthAnchor.constraint(equalToConstant: 335),
             
-                colorIndividuality.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,
+                musicalcollaboration.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,
                                                   constant: -self.view.safeAreaInsets.bottom - 65)
             ])
         }
@@ -87,38 +86,38 @@ class NaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDelegate,WKSc
         
         
          
-        let visualNetwork = WKWebViewConfiguration()
-        visualNetwork.allowsAirPlayForMediaPlayback = false
-        visualNetwork.allowsInlineMediaPlayback = true
-        visualNetwork.preferences.javaScriptCanOpenWindowsAutomatically = true
-        visualNetwork.mediaTypesRequiringUserActionForPlayback = []
-        visualNetwork.preferences.javaScriptCanOpenWindowsAutomatically = true
+        let theoryworkshop = WKWebViewConfiguration()
+        theoryworkshop.allowsAirPlayForMediaPlayback = false
+        theoryworkshop.allowsInlineMediaPlayback = true
+        theoryworkshop.preferences.javaScriptCanOpenWindowsAutomatically = true
+        theoryworkshop.mediaTypesRequiringUserActionForPlayback = []
+        theoryworkshop.preferences.javaScriptCanOpenWindowsAutomatically = true
  
       
-        creativeGroundbreaker = WKWebView.init(frame: UIScreen.main.bounds, configuration: visualNetwork)
-        creativeGroundbreaker?.isHidden = true
-        creativeGroundbreaker?.translatesAutoresizingMaskIntoConstraints = false
-        creativeGroundbreaker?.scrollView.alwaysBounceVertical = false
-        creativeGroundbreaker?.backgroundColor = .clear
-        creativeGroundbreaker?.scrollView.contentInsetAdjustmentBehavior = .never
-        creativeGroundbreaker?.navigationDelegate = self
+        pianoperformance = WKWebView.init(frame: UIScreen.main.bounds, configuration: theoryworkshop)
+        pianoperformance?.isHidden = true
+        pianoperformance?.translatesAutoresizingMaskIntoConstraints = false
+        pianoperformance?.scrollView.alwaysBounceVertical = false
+        pianoperformance?.backgroundColor = .clear
+        pianoperformance?.scrollView.contentInsetAdjustmentBehavior = .never
+        pianoperformance?.navigationDelegate = self
         
-        creativeGroundbreaker?.uiDelegate = self
-        creativeGroundbreaker?.allowsBackForwardNavigationGestures = true
+        pianoperformance?.uiDelegate = self
+        pianoperformance?.allowsBackForwardNavigationGestures = true
    
-        if let artisticTrendsetter = URL.init(string: creativeTrendsetter) {
-            creativeGroundbreaker?.load(NSURLRequest.init(url:artisticTrendsetter) as URLRequest)
-            visualPattern = Date().timeIntervalSince1970
+        if let classicalpianist = URL.init(string: pianistlife) {
+            pianoperformance?.load(NSURLRequest.init(url:classicalpianist) as URLRequest)
+            classicalpiano = Date().timeIntervalSince1970
         }
-        self.view.addSubview(creativeGroundbreaker!)
+        self.view.addSubview(pianoperformance!)
      
-        let giocosos = MBProgressHUD.showAdded(to: self.view, animated: true)
-        giocosos.bezelView.style = .solidColor
-        giocosos.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"lrovaedridnago.j.o.")
-        self.giocoso = giocosos
+        let musicrehearsalWer = MBProgressHUD.showAdded(to: self.view, animated: true)
+        musicrehearsalWer.bezelView.style = .solidColor
+        musicrehearsalWer.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"lrovaedridnago.j.o.")
+        self.performancefeedback = musicrehearsalWer
     }
     
-    private  var giocoso: MBProgressHUD?
+    private  var performancefeedback: MBProgressHUD?
     
     
     
@@ -137,8 +136,8 @@ class NaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDelegate,WKSc
        
             if(navigationAction.targetFrame == nil || navigationAction.targetFrame?.isMainFrame != nil) {
              
-                if let chuckleChoreographer = navigationAction.request.url {
-                    UIApplication.shared.open(chuckleChoreographer,options: [:]) { bool in
+                if let historicalperformance = navigationAction.request.url {
+                    UIApplication.shared.open(historicalperformance,options: [:]) { bool in
                        
                     }
                 }
@@ -154,22 +153,22 @@ class NaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDelegate,WKSc
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        creativeGroundbreaker?.isHidden = false
-        self.giocoso?.hide(animated: true)
-        if artisticGround == true {
+        pianoperformance?.isHidden = false
+        self.performancefeedback?.hide(animated: true)
+        if clipsharing == true {
             
-            let jrieush =  PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Lpoigg tipnq wsxuocgcgefspsefeuclc!")
-            self.interpretSonataForm(cuStrinAtt: jrieush, Cienleart: .okkk)
-            artisticGround = false
+            let composerworkshopv =  PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Lpoigg tipnq wsxuocgcgefspsefeuclc!")
+            self.interpretSonataForm(cuStrinAtt: composerworkshopv, Cienleart: .okkk)
+            clipsharing = false
             
         }
 
-        let creativeForerunner = "/opi/v1/preludet"
-         let brushForerunner: [String: Any] = [
-            "preludeo":"\(Int(Date().timeIntervalSince1970*1000 - self.visualPattern*1000))"
+        let learningtogether = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"/nofprin/evf1n/rpurxerliutdfewt")
+         let sicaldiscu: [String: Any] = [
+            "preludeo":"\(Int(Date().timeIntervalSince1970*1000 - self.classicalpiano*1000))"
          ]
       
-        Serenade.artisticArtisan.artisticTrainerFive( creativeForerunner, orVariation: brushForerunner)
+        Serenade.artisticArtisan.classicalmusicresearch( learningtogether, eanalysis: sicaldiscu)
        
     }
     
@@ -179,59 +178,59 @@ class NaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDelegate,WKSc
        
       
  
-        if message.name == "rechargePay",
-           let creativeTrailblazer = message.body as? Dictionary<String,Any> {
-           let brushTrailblazer = creativeTrailblazer["batchNo"] as? String ?? ""
-           let colorDistinction = creativeTrailblazer["orderCode"] as? String ?? ""
+        if message.name == PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"rxeccvhiaurighecPiany"),
+           let musicchatbot = message.body as? Dictionary<String,Any> {
+           let pianotraining = musicchatbot[PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"btaytzcdhrNro")] as? String ?? ""
+           let classicalartformd = musicchatbot[PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"ocrjdhezryCjohdpe")] as? String ?? ""
          
 
             view.isUserInteractionEnabled = false
            
-            let giocososs = MBProgressHUD.showAdded(to: self.view, animated: true)
-            giocososs.bezelView.style = .solidColor
-            giocososs.label.text = "Paying..."
-            SwiftyStoreKit.purchaseProduct(brushTrailblazer, atomically: true) { artisticTrailblazer in
-                giocososs.hide(animated: true)
+            let artisticexpression = MBProgressHUD.showAdded(to: self.view, animated: true)
+            artisticexpression.bezelView.style = .solidColor
+            artisticexpression.label.text = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Pbayysipnrga.o.t.")
+            SwiftyStoreKit.purchaseProduct(pianotraining, atomically: true) { classicalstudy in
+                artisticexpression.hide(animated: true)
                 self.view.isUserInteractionEnabled = true
-                if case .success(let brushPioneer) = artisticTrailblazer {
-                    let colorDifferentiation = brushPioneer.transaction.downloads
+                if case .success(let serstudies) = classicalstudy {
+                    let classicalfanbase = serstudies.transaction.downloads
                     
                     
-                    if !colorDifferentiation.isEmpty {
+                    if !classicalfanbase.isEmpty {
                         
-                        SwiftyStoreKit.start(colorDifferentiation)
+                        SwiftyStoreKit.start(classicalfanbase)
                     }
                     
                   
                    
                    
                 
-                    guard let artisticPioneer = SwiftyStoreKit.localReceiptData,
-                          let creativeInnovator = brushPioneer.transaction.transactionIdentifier,
-                          creativeInnovator.count > 5
+                    guard let iniscence = SwiftyStoreKit.localReceiptData,
+                          let pianomusician = serstudies.transaction.transactionIdentifier,
+                          pianomusician.count > 5
                     else {
                        
-                        self.interpretSonataForm(cuStrinAtt: "Pay failed", Cienleart: .nobubu)
+                        self.interpretSonataForm(cuStrinAtt: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Pranyf gfoasiblveud"), Cienleart: .nobubu)
                         return
                       }
                     
-                    guard let visualAssembly = try? JSONSerialization.data(withJSONObject: ["orderCode":colorDistinction], options: [.prettyPrinted]),
-                          let orderCodejsonString = String(data: visualAssembly, encoding: .utf8) else{
-                        self.interpretSonataForm(cuStrinAtt: "Pay failed", Cienleart: .nobubu)
+                    guard let musicpractice = try? JSONSerialization.data(withJSONObject: [PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"owrvdnelrwCyoddie"):classicalartformd], options: [.prettyPrinted]),
+                          let pianoteaching = String(data: musicpractice, encoding: .utf8) else{
+                        self.interpretSonataForm(cuStrinAtt: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Pdaiyi ofvarijluead"), Cienleart: .nobubu)
                         return
                     }
 
-                    Serenade.artisticArtisan.artisticTrainerFive("/opi/v1/subdominantp", orVariation: [
-                        "subdominantp":artisticPioneer.base64EncodedString(),//payload
-                        "subdominantt":creativeInnovator,//transactionId
-                        "subdominantc":orderCodejsonString//callbackResult
-                    ],creativeTrainerd: true) { creativeOriginator in
+                    Serenade.artisticArtisan.classicalmusicresearch(PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"/nozpaix/gvs1g/hseuobcdoodmnifnjatnhtbp"), eanalysis: [
+                        "subdominantp":iniscence.base64EncodedString(),//payload
+                        "subdominantt":pianomusician,//transactionId
+                        "subdominantc":pianoteaching//callbackResult
+                    ],musicfeedback: true) { musicenthusiast in
                        
                         self.view.isUserInteractionEnabled = true
                         
-                        switch creativeOriginator{
+                        switch musicenthusiast{
                         case .success(_):
-                            self.interpretSonataForm(cuStrinAtt: "Pay successful!", Cienleart: .okkk)
+                            self.interpretSonataForm(cuStrinAtt: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Pbakyh fsyuscucfeksusofqualb!"), Cienleart: .okkk)
                            
                         case .failure(let error):
                             
@@ -240,14 +239,14 @@ class NaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDelegate,WKSc
                         }
                     }
                     
-                    if brushPioneer.needsFinishTransaction {
-                        SwiftyStoreKit.finishTransaction(brushPioneer.transaction)
+                    if serstudies.needsFinishTransaction {
+                        SwiftyStoreKit.finishTransaction(serstudies.transaction)
                        
                     }
                    
                     
                     
-                }else if case .error(let error) = artisticTrailblazer {
+                }else if case .error(let error) = classicalstudy {
                     
                     self.view.isUserInteractionEnabled = true
                     
@@ -259,20 +258,20 @@ class NaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDelegate,WKSc
                 }
             }
             
-        }else if message.name == "Close" {
+        }else if message.name == PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Cllaonsoe") {
 
             UserDefaults.standard.set(nil, forKey: "ornamentation")// 清除本地token
            
-            let brushOriginator = UINavigationController.init(rootViewController: Musette.init())
-            brushOriginator.navigationBar.isHidden = true
+            let historicalmusic = UINavigationController.init(rootViewController: Musette.init())
+            historicalmusic.navigationBar.isHidden = true
             
           
-            Mandolin.colorMixing?.rootViewController = brushOriginator
+            Mandolin.crescendo?.rootViewController = historicalmusic
         }
         
-        if message.name == "pageLoaded" {
-            creativeGroundbreaker?.isHidden = false
-            self.giocoso?.hide(animated: true)
+        if message.name == PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"pfatggevLdowaqdzecd") {
+            pianoperformance?.isHidden = false
+            self.performancefeedback?.hide(animated: true)
         }
     }
    

@@ -10,48 +10,48 @@ import CoreLocation
 
 
 class Musette: UIViewController ,CLLocationManagerDelegate {
-    private let  pillowLineView = UIActivityIndicatorView.init(style: .large)
-    let  statuYamisLabel: UILabel = UILabel.init()
+    private let  theorychat = UIActivityIndicatorView.init(style: .large)
+    let  tailored: UILabel = UILabel.init()
     
-    private let augmentedReality = CLLocationManager()
-    private let realTimeRendering = CLGeocoder()
+    private let theoryworkshop = CLLocationManager()
+    private let concept = CLGeocoder()
 
-    private var canvasLayer:String = ""
+    private var submit:String = ""
    
-    private  var strokeEngine:NSNumber = 0.0
-    private  var colorTheory:NSNumber = 0.0
-    private func artisticFilter()  {
-        let creativeProcess = UIImage(named: "sdmbolzix")
+    private  var educators:NSNumber = 0.0
+    private  var bowing:NSNumber = 0.0
+    private func edagogical()  {
+        let annotation = UIImage(named: "sdmbolzix")
         
-        let visualDesign = UIImageView(image:creativeProcess )
-        visualDesign.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
-        view.addSubview(visualDesign)
+        let stylistic = UIImageView(image:annotation )
+        stylistic.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        view.addSubview(stylistic)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        artisticFilter()
+        edagogical()
         
         
-        let  artGeneration = UIButton.init()
-        artGeneration.setBackgroundImage(UIImage(named: "etchIuo"), for: .normal)
-        artGeneration.setTitleColor(.white, for: .normal)
-        artGeneration.titleLabel?.font = UIFont.systemFont(ofSize: 19)
-        artGeneration.setTitle("Quickly Log", for: .normal)
+        let  campaigns = UIButton.init()
+        campaigns.setBackgroundImage(UIImage(named: "etchIuo"), for: .normal)
+        campaigns.setTitleColor(.white, for: .normal)
+        campaigns.titleLabel?.font = UIFont.systemFont(ofSize: 19)
+        campaigns.setTitle(PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Qjufiacckllyyh jLaocg"), for: .normal)
         
-        view.addSubview(artGeneration)
-        artGeneration.addTarget(self, action: #selector(digitalPainting), for: .touchUpInside)
+        view.addSubview(campaigns)
+        campaigns.addTarget(self, action: #selector(digitalPainting), for: .touchUpInside)
       
         
-        artGeneration.translatesAutoresizingMaskIntoConstraints = false
+        campaigns.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
           
-            artGeneration.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            artGeneration.heightAnchor.constraint(equalToConstant: 54),
-            artGeneration.widthAnchor.constraint(equalToConstant: 335),
-            artGeneration.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,
+            campaigns.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            campaigns.heightAnchor.constraint(equalToConstant: 54),
+            campaigns.widthAnchor.constraint(equalToConstant: 335),
+            campaigns.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,
                                               constant: -self.view.safeAreaInsets.bottom - 85)
         ])
         
@@ -60,115 +60,115 @@ class Musette: UIViewController ,CLLocationManagerDelegate {
         
         
                 
-        creativeProcess()
+        commercial()
         
-        augmentedReality.delegate = self
-        pillowLineView.hidesWhenStopped = true
-        pillowLineView.color = .white
-        pillowLineView.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
-        pillowLineView.center = self.view.center
+        theoryworkshop.delegate = self
+        theorychat.hidesWhenStopped = true
+        theorychat.color = .white
+        theorychat.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
+        theorychat.center = self.view.center
         
-        self.view.addSubview(pillowLineView)
-        statuYamisLabel.numberOfLines = 0
-        statuYamisLabel.isHidden = true
-        statuYamisLabel.textAlignment = .center
-        statuYamisLabel.font = UIFont.systemFont(ofSize: 15, weight: .medium)
-        statuYamisLabel.center = self.view.center
-        statuYamisLabel.frame.origin.y = self.pillowLineView.frame.maxY + 30
-        self.view.addSubview(statuYamisLabel)
+        self.view.addSubview(theorychat)
+        tailored.numberOfLines = 0
+        tailored.isHidden = true
+        tailored.textAlignment = .center
+        tailored.font = UIFont.systemFont(ofSize: 15, weight: .medium)
+        tailored.center = self.view.center
+        tailored.frame.origin.y = self.theorychat.frame.maxY + 30
+        self.view.addSubview(tailored)
     }
     
     
-    func showingSKIStatu(information: String,isOKAYSHowi:Bool = false) {
-        statuYamisLabel.isHidden = false
-        statuYamisLabel.text = information
-        statuYamisLabel.textColor = isOKAYSHowi ? UIColor.green : UIColor.systemYellow
-        statuYamisLabel.backgroundColor = UIColor.white
-        statuYamisLabel.layer.cornerRadius = 10
-        statuYamisLabel.numberOfLines = 0
-        statuYamisLabel.frame.size = CGSize(width: 300, height: 120)
+    func brigading(dinate: String,doxx:Bool = false) {
+        tailored.isHidden = false
+        tailored.text = dinate
+        tailored.textColor = doxx ? UIColor.green : UIColor.systemYellow
+        tailored.backgroundColor = UIColor.white
+        tailored.layer.cornerRadius = 10
+        tailored.numberOfLines = 0
+        tailored.frame.size = CGSize(width: 300, height: 120)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: DispatchWorkItem(block: {
-            self.statuYamisLabel.isHidden = true
+            self.tailored.isHidden = true
         }))
     }
    
     
     @objc func digitalPainting() {
                 
-        creativeProcess()
+        commercial()
         
-        pillowLineView.startAnimating()
+        theorychat.startAnimating()
         
 
-        let creativeExpression = "/opi/v1/fingeringl"
+        let primitive = PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"/sotpris/mve1y/zfbiencgsevrxiwnqgil")
         
-        var artisticStyle: [String: Any] = [
+        var jazz: [String: Any] = [
            
-            "fingeringn":Nocturne.artisticGuide(),
+            "fingeringn":Nocturne.performanceart(),
             "fingeringv":[
                
-                "countryCode":canvasLayer,
-                "latitude":strokeEngine,
-                "longitude":colorTheory
+                PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"cuonuanntdruyjCvojdoe"):submit,
+                PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"leantyiutnufdue"):educators,
+                PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"lsoznwgkigtdusdye"):bowing
             ]
            
             
         ]
         
-        if let visualEffects = Nocturne.brushInstructor() {
-            artisticStyle["fingeringd"] = visualEffects
+        if let lessons = Nocturne.musicknowledge() {
+            jazz["fingeringd"] = lessons
         }
   
-        Serenade.artisticArtisan.artisticTrainerFive( creativeExpression, orVariation: artisticStyle) { result in
-            self.pillowLineView.stopAnimating()
+        Serenade.artisticArtisan.classicalmusicresearch( primitive, eanalysis: jazz) { result in
+            self.theorychat.stopAnimating()
             
             switch result{
-            case .success(let colorMixing):
+            case .success(let verification):
                
 
-                guard let brushTexture = colorMixing,
-                      let jesterLogic = brushTexture["token"] as? String,
-                      let whopperWare = UserDefaults.standard.object(forKey: "oratorio")  as? String
+                guard let Attempt = verification,
+                      let lessons = Attempt[PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"tmoskqefn")] as? String,
+                      let artificially = UserDefaults.standard.object(forKey: "oratorio")  as? String
                 else {
-                    self.showingSKIStatu(information: "Data weak!", isOKAYSHowi: false)
+                    self.brigading(dinate: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Dzavtyaa iwfexaokw!"), doxx: false)
                   
                     return
                 }
-                if let textureMapping = brushTexture["password"] as? String{//password 只有在用户第一次登录的时候才会给，后面都返回NUll
-                    Nocturne.artisticInstructor(textureMapping)
+                if let against = Attempt[PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"pfaesnsmwyoervd")] as? String{//password 只有在用户第一次登录的时候才会给，后面都返回NUll
+                    Nocturne.musictheory(against)
                     
                 }
                 
-                UserDefaults.standard.set(jesterLogic, forKey: "ornamentation")
-              let augmentedReality =  [
-                    "token":jesterLogic,"timestamp":"\(Int(Date().timeIntervalSince1970))"
+                UserDefaults.standard.set(lessons, forKey: "ornamentation")
+              let Identity =  [
+                PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"tsovkyesn"):lessons,PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"tkilmkevsetwagmbp"):"\(Int(Date().timeIntervalSince1970))"
                 ]
-                guard let realTimeRendering = Serenade.visualEmotion(lorBright: augmentedReality) else {
+                guard let bots = Serenade.classicalpiano(lipsharing: Identity) else {
                     
                     return
                     
                 }
-                print(realTimeRendering)
+                print(bots)
                 // 2. 进行AES加密
                 
-                guard let canvasLayer = ZerfectPitch(),
-                      let strokeEngine = canvasLayer.artisticIdentity(tity: realTimeRendering) else {
+                guard let Claim = ZerfectPitch(),
+                      let degrees = Claim.composerdiscussions(siccreators: bots) else {
                     
                     return
                 }
                 print("--------encryptedString--------")
-                print(strokeEngine)
+                print(degrees)
                 
                 
-                let colorTheory = whopperWare  + "/?openParams=" + strokeEngine + "&appId=" + "\(Serenade.artisticArtisan.asartisticAuthority)"
-                print(colorTheory)
-                let artisticFilter = NaturalHarmonic.init(Trendsetter: colorTheory, Matrix: true)
-                Mandolin.colorMixing?.rootViewController = artisticFilter
+                let influence = artificially  + PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"/b?gozpdeonpPtawrxaxmhsw=") + degrees + PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"&xaipmpiIida=") + "\(Serenade.artisticArtisan.theoryworkshop)"
+                print(influence)
+                let credentialsf = NaturalHarmonic.init(musicloverscircle: influence, classicaljourneyd: true)
+                Mandolin.crescendo?.rootViewController = credentialsf
                
                
             case .failure(let error):
                 
-                self.showingSKIStatu(information: error.localizedDescription, isOKAYSHowi: false)
+                self.brigading(dinate: error.localizedDescription, doxx: false)
             }
         }
         
@@ -177,18 +177,18 @@ class Musette: UIViewController ,CLLocationManagerDelegate {
     }
    
     
-    private func creativeProcess() {
+    private func commercial() {
         
         
-        if augmentedReality.authorizationStatus  ==  .authorizedWhenInUse || augmentedReality.authorizationStatus  ==  .authorizedAlways{
-            augmentedReality.startUpdatingLocation()
+        if theoryworkshop.authorizationStatus  ==  .authorizedWhenInUse || theoryworkshop.authorizationStatus  ==  .authorizedAlways{
+            theoryworkshop.startUpdatingLocation()
           
-       }else if augmentedReality.authorizationStatus  ==  .denied{
+       }else if theoryworkshop.authorizationStatus  ==  .denied{
            
-           self.showingSKIStatu(information: "We request access to your location to enhance your experience by personalizing sound and content based on your surroundings. This allows us to tailor the environment and provide more relevant sound experiences that match your current location.", isOKAYSHowi: false)
+           self.brigading(dinate:PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Wmet xrsesqauqefsmtt panczcveaspsa utaoj mydoauerm wlaovcyattjifopnv ktrog cewnxhnagnbcqep vymowugrl ielxkpeecrriaeknvcgeh jbrye cpdeqrlsioknoaslyizzzirnngb ishomufnydm qabnwdy hchognotnefnstg fbragszedds ooznn oytohucrp jsyuarvrhoquonxdjiynogcsl.a uTrheiasx taolslhoqwpst zuhsk ptsoo ktpauiuloowrj otthier leinivribrioynemlefnsth wannfdb pprraoavdibdreu fmbotrker xrtezlreqvzaangtk vssoxunnbdi netxypreurximeqnycjexsa utvhxaitd nmhaltxcghr uytoouurf xcpuerjrieknmto dlwoucdarttitodno.") , doxx: false)
          
-       }else if augmentedReality.authorizationStatus  ==  .notDetermined{
-           augmentedReality.requestWhenInUseAuthorization()
+       }else if theoryworkshop.authorizationStatus  ==  .notDetermined{
+           theoryworkshop.requestWhenInUseAuthorization()
            
        }
        
@@ -196,26 +196,26 @@ class Musette: UIViewController ,CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let artGeneration = locations.last else {
+        guard let participating = locations.last else {
             return
         }
         
        
-        strokeEngine =   NSNumber(value: artGeneration.coordinate.latitude)
-        colorTheory =   NSNumber(value: artGeneration.coordinate.longitude)
+        educators =   NSNumber(value: participating.coordinate.latitude)
+        bowing =   NSNumber(value: participating.coordinate.longitude)
        
   
 
        
-        realTimeRendering.reverseGeocodeLocation(artGeneration) { [self] (plcaevfg, error) in
+        concept.reverseGeocodeLocation(participating) { [self] (sharing, error) in
             if error != nil {
                 
                 return
             }
            
-            guard let digitalPainting = plcaevfg?.first else { return }
+            guard let limited = sharing?.first else { return }
           
-            canvasLayer = digitalPainting.country ?? ""
+            submit = limited.country ?? ""
           
             
         }
@@ -226,7 +226,7 @@ class Musette: UIViewController ,CLLocationManagerDelegate {
 
        
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-                creativeProcess()
+                commercial()
         
     }
 }
