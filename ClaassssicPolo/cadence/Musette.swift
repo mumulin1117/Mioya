@@ -17,15 +17,33 @@ class Musette: UIViewController ,CLLocationManagerDelegate {
     private let concept = CLGeocoder()
 
     private var submit:String = ""
-   
+    private lazy var runfhui: UIImageView = {
+        let musicguide = UIImageView(image:UIImage(named: "sdmbolzixlian") )
+        musicguide.translatesAutoresizingMaskIntoConstraints = false
+        musicguide.contentMode = .scaleAspectFit
+        return musicguide
+    }()
     private  var educators:NSNumber = 0.0
     private  var bowing:NSNumber = 0.0
     private func edagogical()  {
-        let annotation = UIImage(named: "sdmbolzix")
+        let annotation = UIImage(named: "sdmbolzixlian")
         
         let stylistic = UIImageView(image:annotation )
         stylistic.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
         view.addSubview(stylistic)
+        
+        view.addSubview(runfhui)
+        NSLayoutConstraint.activate([
+           
+            runfhui.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            
+            runfhui.heightAnchor.constraint(equalToConstant: 116),
+            
+            runfhui.widthAnchor.constraint(equalToConstant: 213),
+        
+            runfhui.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,
+                                              constant: -self.view.safeAreaInsets.bottom - 65 - 52 - 17)
+        ])
     }
     
     override func viewDidLoad() {

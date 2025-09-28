@@ -49,12 +49,32 @@ class NaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDelegate,WKSc
        
     }
  
+    
+    private lazy var runfhui: UIImageView = {
+        let musicguide = UIImageView(image:UIImage(named: "sdmbolzixlian") )
+        musicguide.translatesAutoresizingMaskIntoConstraints = false
+        musicguide.contentMode = .scaleAspectFit
+        return musicguide
+    }()
     private func artisticTrendsetter()  {
        
-        let musicguide = UIImageView(image:UIImage(named: "sdmbolzix") )
+        let musicguide = UIImageView(image:UIImage(named: "sdmbolzixlian") )
         musicguide.frame = self.view.frame
         musicguide.contentMode = .scaleAspectFill
         view.addSubview(musicguide)
+        
+        view.addSubview(runfhui)
+        NSLayoutConstraint.activate([
+           
+            runfhui.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            
+            runfhui.heightAnchor.constraint(equalToConstant: 116),
+            
+            runfhui.widthAnchor.constraint(equalToConstant: 213),
+        
+            runfhui.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,
+                                              constant: -self.view.safeAreaInsets.bottom - 65 - 52 - 17)
+        ])
     }
    
     override func viewDidLoad() {
