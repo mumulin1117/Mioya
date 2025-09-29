@@ -51,7 +51,7 @@ class NaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDelegate,WKSc
  
     
     private lazy var runfhui: UIImageView = {
-        let musicguide = UIImageView(image:UIImage(named: "sdmbolzixlian") )
+        let musicguide = UIImageView(image:UIImage(named: "sdmbolzixlianwed") )
         musicguide.translatesAutoresizingMaskIntoConstraints = false
         musicguide.contentMode = .scaleAspectFit
         return musicguide

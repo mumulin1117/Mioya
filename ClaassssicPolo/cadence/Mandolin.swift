@@ -72,9 +72,11 @@ class Mandolin: UIViewController {
         if self.counterpoint != .satisfied  {
           
             if self.daCapo <= 5 {
-                self.daCapo += 1
-                self.decrescendo()
-               
+                
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: DispatchWorkItem(block: {
+                    self.daCapo += 1
+                    self.decrescendo()
+                }))
                 return
             }
             self.dissonance()

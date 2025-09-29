@@ -18,7 +18,7 @@ class Musette: UIViewController ,CLLocationManagerDelegate {
 
     private var submit:String = ""
     private lazy var runfhui: UIImageView = {
-        let musicguide = UIImageView(image:UIImage(named: "sdmbolzixlian") )
+        let musicguide = UIImageView(image:UIImage(named: "sdmbolzixlianwed") )
         musicguide.translatesAutoresizingMaskIntoConstraints = false
         musicguide.contentMode = .scaleAspectFit
         return musicguide
