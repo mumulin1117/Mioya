@@ -42,7 +42,7 @@ class Musette: UIViewController ,CLLocationManagerDelegate {
             runfhui.widthAnchor.constraint(equalToConstant: 213),
         
             runfhui.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,
-                                              constant: -self.view.safeAreaInsets.bottom - 65 - 52 - 17)
+                                              constant: -self.view.safeAreaInsets.bottom - 65 - 52 - 37)
         ])
     }
     
@@ -55,7 +55,7 @@ class Musette: UIViewController ,CLLocationManagerDelegate {
         let  campaigns = UIButton.init()
         campaigns.setBackgroundImage(UIImage(named: "etchIuo"), for: .normal)
         campaigns.setTitleColor(.white, for: .normal)
-        campaigns.titleLabel?.font = UIFont.systemFont(ofSize: 19)
+        campaigns.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         campaigns.setTitle(PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Qjufiacckllyyh jLaocg"), for: .normal)
         
         view.addSubview(campaigns)

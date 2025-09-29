@@ -73,7 +73,7 @@ class NaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDelegate,WKSc
             runfhui.widthAnchor.constraint(equalToConstant: 213),
         
             runfhui.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,
-                                              constant: -self.view.safeAreaInsets.bottom - 65 - 52 - 17)
+                                              constant: -self.view.safeAreaInsets.bottom - 65 - 52 - 37)
         ])
     }
    
@@ -177,8 +177,8 @@ class NaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDelegate,WKSc
         self.performancefeedback?.hide(animated: true)
         if clipsharing == true {
             
-            let composerworkshopv =  PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Lpoigg tipnq wsxuocgcgefspsefeuclc!")
-            self.interpretSonataForm(cuStrinAtt: composerworkshopv, Cienleart: .okkk)
+//            let composerworkshopv =  PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Lpoigg tipnq wsxuocgcgefspsefeuclc!")
+//            self.interpretSonataForm(cuStrinAtt: composerworkshopv, Cienleart: .okkk)
             clipsharing = false
             
         }
