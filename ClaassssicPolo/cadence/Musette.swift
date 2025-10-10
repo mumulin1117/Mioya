@@ -82,7 +82,7 @@ class Musette: UIViewController ,CLLocationManagerDelegate {
         
         theoryworkshop.delegate = self
         theorychat.hidesWhenStopped = true
-        theorychat.color = .white
+        theorychat.color = .black
         theorychat.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
         theorychat.center = self.view.center
         
