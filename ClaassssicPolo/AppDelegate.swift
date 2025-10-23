@@ -14,7 +14,11 @@ struct IntervalAnalysis {
         let uniqueIntervalTypes: Set<IntervalType>
     }
 @main
-
+//产品名称：Mioya
+//应用识别码：oad9hvnx65fk
+//事件名称及识别码：
+//Install: we0rto
+//purchase: m8rlm4
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
     static var musiclegacystudy:String = ""
