@@ -224,6 +224,7 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To enhance your classical music experience, Mioya may use your location to connect you with nearby music enthusiasts, allowing you to share your musical performances and collaborate with others in real-time. We use your location only when you're actively engaging with the app to ensure relevant recommendations and foster meaningful connections within the global community.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Analyze your performances – Record piano exercises or vocal warm-ups to receive real-time pitch accuracy feedback and improvement suggestions.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Enhance your musical journey – Save annotated sheet music, export practice recordings, or share performance clips with instructors.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Improve your musical skills - Tracking helps recommend personalized exercises and connect you with suitable practice partners to enhance your learning experience.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -264,6 +265,7 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To enhance your classical music experience, Mioya may use your location to connect you with nearby music enthusiasts, allowing you to share your musical performances and collaborate with others in real-time. We use your location only when you're actively engaging with the app to ensure relevant recommendations and foster meaningful connections within the global community.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Analyze your performances – Record piano exercises or vocal warm-ups to receive real-time pitch accuracy feedback and improvement suggestions.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Enhance your musical journey – Save annotated sheet music, export practice recordings, or share performance clips with instructors.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Improve your musical skills - Tracking helps recommend personalized exercises and connect you with suitable practice partners to enhance your learning experience.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";

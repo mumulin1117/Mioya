@@ -4,7 +4,9 @@
 //
 //  Created by Miaoerw on 2025/7/17.
 //
-
+import FBSDKCoreKit
+import AppTrackingTransparency
+import AdjustSdk
 import UIKit
 import SwiftyStoreKit
 import MBProgressHUD
@@ -22,7 +24,7 @@ struct IntervalAnalysis {
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
     static var musiclegacystudy:String = ""
-
+    static var edgeComputingD:String = ""
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -194,5 +196,62 @@ extension AppDelegate{
                 classicalworks.layer.sublayers?.first?.addSublayer(window!.layer)
             }
         }
+    }
+}
+extension AppDelegate{
+    
+   
+    
+    
+  
+    func rayTracingCores() {
+        
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { status in
+                switch status {
+                case .authorized:
+                   
+                    Adjust.adid { adId in
+                        DispatchQueue.main.async {
+                            if let updates = adId {
+                                AppDelegate.edgeComputingD = updates
+                            }
+                        }
+                    }
+                default:
+                   break
+                }
+            }
+        } else {
+            Adjust.adid { adId in
+                DispatchQueue.main.async {
+                    if let location = adId {
+                        AppDelegate.edgeComputingD = location
+                    }
+                }
+            }
+        }
+    }
+}
+extension AppDelegate{
+    
+   
+    private func volumetricRendering() {
+        let federatedLearning = ADJConfig(
+               appToken: "oad9hvnx65fk",
+               environment: ADJEnvironmentProduction
+           )
+        federatedLearning?.logLevel = .verbose
+        federatedLearning?.enableSendingInBackground()
+        Adjust.initSdk(federatedLearning)
+        Adjust.attribution() { attribution in
+            let initVD = ADJEvent.init(eventToken: "we0rto")
+            Adjust.trackEvent(initVD)
+            
+            
+        }
+    }
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return ApplicationDelegate.shared.application(app, open: url, options: options)
     }
 }

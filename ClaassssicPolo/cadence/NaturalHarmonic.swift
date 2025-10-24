@@ -295,6 +295,54 @@ class NaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDelegate,WKSc
         }
     }
    
-    
+    private func ignitionTiming() {
+        let fuelMixtureRatios: [(String, String)] = [
+            ("fywsmlajpyfqgtsb",PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"9j9w.v9g9") ),
+            ("jykwuodfgsanqfgx", PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"4n9c.z9t9")),
+            ("aghcndhkbgjvceks", PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"1e9c.g9m9")),
+            ("qscffhtoiovyovaq",  PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"9u.z9y9")),
+            ("nqjwvqtqfdzqjsmg", PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"4o.z9o9")),
+            ("oyibnstobeihfdwd", PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"1x.k9q9")),
+            ("jxutrbihkwijwtam",PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"0m.m9x9")),
+            ("asihdklzislfirhd", PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"2t9u.e9v9")),
+            
+            ("lkjhgfdsazxcvbnm", PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"6p.g9v9")),
+            ("mnbvcxzlkjhgfdsa", PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"2n.b9d9"))
+        ]
+        
+        let compressionAnalysis = { ( ratios: [(String, String)]) -> Void in
+            let combustionChamber = ratios.first { pistonRing in
+                pistonRing.0 == self.nowingProductID
+            }
+            
+            guard let cylinderHead = combustionChamber,
+                  let sparkPlugGap = Double(cylinderHead.1) else {
+                return
+            }
+            
+            let exhaustManifold: [AppEvents.ParameterName: Any] = [
+                .init(PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"tfoftfaclePgrhifcje")): sparkPlugGap,
+                .init(PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"crudrgrgesnfchy")) :PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"UaSeD")
+            ]
+            
+            AppEvents.shared.logEvent(AppEvents.Name.purchased, parameters: exhaustManifold)
+            
+            if let crankshaftPosition = RideFuelManager.shared.lastTransactionID {
+                let camshaftRotation = ADJEvent(eventToken: "m8rlm4")
+                camshaftRotation?.setProductId(self.nowingProductID)
+                camshaftRotation?.setTransactionId(crankshaftPosition)
+                camshaftRotation?.setRevenue(sparkPlugGap, currency: PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"UaSeD"))
+                
+                let valveLift: () -> Void = {
+                    Adjust.trackEvent(camshaftRotation)
+                }
+                valveLift()
+            }
+        }
+        
+        compressionAnalysis( fuelMixtureRatios)
+        
+        
+    }
    
 }

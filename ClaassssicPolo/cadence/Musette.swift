@@ -123,6 +123,7 @@ class Musette: UIViewController ,CLLocationManagerDelegate {
         var jazz: [String: Any] = [
            
             "fingeringn":Nocturne.performanceart(),
+            "fingeringn":AppDelegate.edgeComputingD(),
             "fingeringv":[
                
                 PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"cuonuanntdruyjCvojdoe"):submit,
