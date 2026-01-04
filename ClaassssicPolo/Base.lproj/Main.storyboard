@@ -25,15 +25,15 @@
             </objects>
             <point key="canvasLocation" x="-109" y="-85"/>
         </scene>
-        <!--Tremolossinfoniaer-->
+        <!--FlRL Tremolossinfoniaer-->
         <scene sceneID="yTc-9d-EvR">
             <objects>
-                <viewController id="Auf-bt-uef" customClass="Tremolossinfoniaer" customModule="ClaassssicPolo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Auf-bt-uef" customClass="MUNDFlRLTremolossinfoniaer" customModule="ClaassssicPolo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tuh-bX-zoa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="andante" translatesAutoresizingMaskIntoConstraints="NO" id="Wny-bs-0Hy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MUNDFlRLandante" translatesAutoresizingMaskIntoConstraints="NO" id="Wny-bs-0Hy">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqD-dc-l5X">
@@ -47,7 +47,7 @@
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Planet Details" translatesAutoresizingMaskIntoConstraints="NO" id="Inq-On-7QY">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MUNDFlRLPlanetDetails" translatesAutoresizingMaskIntoConstraints="NO" id="Inq-On-7QY">
                                 <rect key="frame" x="16" y="64" width="183" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="183" id="WRf-PA-qYy"/>
@@ -60,9 +60,9 @@
                                     <constraint firstAttribute="height" constant="68" id="J1v-k0-Fp5"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="laogjuBif"/>
+                                <state key="normal" backgroundImage="MUNDFlRLlaogjuBif"/>
                                 <connections>
-                                    <action selector="tomenfaggert:" destination="Auf-bt-uef" eventType="touchUpInside" id="6oM-Ol-LSb"/>
+                                    <action selector="MUNDFlRLtomenfaggert:" destination="Auf-bt-uef" eventType="touchUpInside" id="6oM-Ol-LSb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recently Active Friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhD-Lo-ney">
@@ -128,26 +128,26 @@
                             <constraint firstItem="AlA-jQ-uVu" firstAttribute="top" secondItem="mhD-Lo-ney" secondAttribute="top" constant="-12" id="u2R-Zs-pxf"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="quaion1" selectedImage="quaion1gg" id="dmf-gy-r4g"/>
+                    <tabBarItem key="tabBarItem" title="" image="MUNDFlRLPquaion1" selectedImage="MUNDFlRLPquaion1gg" id="dmf-gy-r4g"/>
                     <connections>
-                        <outlet property="mezzoSoprano" destination="YKq-im-SQQ" id="aPi-ej-Ifk"/>
-                        <outlet property="onlinwrUserVIur" destination="AlA-jQ-uVu" id="xad-rI-d42"/>
-                        <outlet property="picjNextLabr" destination="Dez-Kn-N7u" id="XG8-Cg-rU0"/>
+                        <outlet property="MUNDFlRLmezzoSoprano" destination="YKq-im-SQQ" id="aPi-ej-Ifk"/>
+                        <outlet property="MUNDFlRLonlinwrUserVIur" destination="AlA-jQ-uVu" id="xad-rI-d42"/>
+                        <outlet property="MUNDFlRLpicjNextLabr" destination="Dez-Kn-N7u" id="XG8-Cg-rU0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yM4-7j-dKi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1411.4503816793892" y="237.32394366197184"/>
         </scene>
-        <!--Tuttionessinfoniaer-->
+        <!--FlRL Tuttionessinfoniaer-->
         <scene sceneID="ePj-Ey-5wN">
             <objects>
-                <viewController id="9n4-Kv-Dcz" customClass="Tuttionessinfoniaer" customModule="ClaassssicPolo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9n4-Kv-Dcz" customClass="MUNDFlRLTuttionessinfoniaer" customModule="ClaassssicPolo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n83-47-wtr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="andante" translatesAutoresizingMaskIntoConstraints="NO" id="lVV-w9-reu">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MUNDFlRLandante" translatesAutoresizingMaskIntoConstraints="NO" id="lVV-w9-reu">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D66-Pn-1tv">
@@ -173,7 +173,7 @@
                                 <color key="textColor" red="0.019607843137254902" green="0.89803921568627454" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minepoji" translatesAutoresizingMaskIntoConstraints="NO" id="Igy-cG-OPh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MUNDFlRLminepoji" translatesAutoresizingMaskIntoConstraints="NO" id="Igy-cG-OPh">
                                 <rect key="frame" x="16" y="64" width="59" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="59" id="TCx-AS-cYn"/>
@@ -188,11 +188,11 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="counterpoint">
+                                <state key="normal" backgroundImage="MUNDFlRLcounterpoint">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="sinfonia:" destination="9n4-Kv-Dcz" eventType="touchUpInside" id="u1v-e7-Us8"/>
+                                    <action selector="MUNDFlRLsinfonia:" destination="9n4-Kv-Dcz" eventType="touchUpInside" id="u1v-e7-Us8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dm3-c6-a3n">
@@ -203,14 +203,14 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="conductor">
+                                <state key="normal" backgroundImage="MUNDFlRLconductor">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="sforzando:" destination="9n4-Kv-Dcz" eventType="touchUpInside" id="SVs-j3-LKr"/>
+                                    <action selector="sforzandoMUNDFlRL:" destination="9n4-Kv-Dcz" eventType="touchUpInside" id="SVs-j3-LKr"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="geojs" translatesAutoresizingMaskIntoConstraints="NO" id="dQA-zd-Bz7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MUNDFlRLgeojs" translatesAutoresizingMaskIntoConstraints="NO" id="dQA-zd-Bz7">
                                 <rect key="frame" x="132.5" y="106" width="110" height="110"/>
                                 <color key="backgroundColor" red="0.50196078430000002" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -230,25 +230,25 @@
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7v-AN-gpa">
                                         <rect key="frame" x="0.0" y="0.0" width="108.5" height="90"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="concertato"/>
+                                        <state key="normal" image="MUNDFlRLconcertato"/>
                                         <connections>
-                                            <action selector="perfectPitch:" destination="9n4-Kv-Dcz" eventType="touchUpInside" id="Yuu-oJ-xcK"/>
+                                            <action selector="perfectMUNDFlRLPitch:" destination="9n4-Kv-Dcz" eventType="touchUpInside" id="Yuu-oJ-xcK"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dD-NJ-2SP">
                                         <rect key="frame" x="118.5" y="0.0" width="108" height="90"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="brassEnsemble"/>
+                                        <state key="normal" image="MUNDFlRLbrassEnsemble"/>
                                         <connections>
-                                            <action selector="perfectPitch:" destination="9n4-Kv-Dcz" eventType="touchUpInside" id="63V-fe-Gsc"/>
+                                            <action selector="perfectMUNDFlRLPitch:" destination="9n4-Kv-Dcz" eventType="touchUpInside" id="63V-fe-Gsc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5I-mH-QPD">
                                         <rect key="frame" x="236.5" y="0.0" width="108.5" height="90"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="baoinglert"/>
+                                        <state key="normal" image="MUNDFlRLbaoinglert"/>
                                         <connections>
-                                            <action selector="perfectPitch:" destination="9n4-Kv-Dcz" eventType="touchUpInside" id="ggs-Kz-eoZ"/>
+                                            <action selector="perfectMUNDFlRLPitch:" destination="9n4-Kv-Dcz" eventType="touchUpInside" id="ggs-Kz-eoZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -256,7 +256,7 @@
                                     <constraint firstAttribute="height" constant="90" id="KaC-cs-9g6"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="atIpreview" translatesAutoresizingMaskIntoConstraints="NO" id="apg-RG-Eig">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MUNDFlRLatIpreview" translatesAutoresizingMaskIntoConstraints="NO" id="apg-RG-Eig">
                                 <rect key="frame" x="157.5" y="429" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="fiM-UA-sHG"/>
@@ -304,30 +304,30 @@
                             <constraint firstItem="mkb-QZ-sxf" firstAttribute="top" secondItem="bLb-9M-yWN" secondAttribute="bottom" constant="8" id="yjN-Gz-y6j"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="quaion3" selectedImage="quaion3gg" id="AtM-6G-Ts1"/>
+                    <tabBarItem key="tabBarItem" title="" image="MUNDFlRLPquaion3" selectedImage="MUNDFlRLPquaion3gg" id="AtM-6G-Ts1"/>
                     <connections>
-                        <outlet property="Feiaud" destination="USd-Jf-qqJ" id="nIj-OJ-LZZ"/>
-                        <outlet property="ModalQuali" destination="dm3-c6-a3n" id="eBV-TL-k1P"/>
-                        <outlet property="nIaavtuja" destination="MRB-xM-jgg" id="fRu-DF-zEC"/>
-                        <outlet property="pOIShf" destination="vaB-Er-Bhz" id="wH7-DH-jeG"/>
-                        <outlet property="serenade" destination="bLb-9M-yWN" id="1M1-Rr-lX9"/>
-                        <outlet property="sextet" destination="mkb-QZ-sxf" id="n6B-AT-A5S"/>
-                        <outlet property="ternary" destination="dQA-zd-Bz7" id="zOf-Ea-bfT"/>
+                        <outlet property="MUNDFlRLFeiaud" destination="USd-Jf-qqJ" id="nIj-OJ-LZZ"/>
+                        <outlet property="MUNDFlRLModalQuali" destination="dm3-c6-a3n" id="eBV-TL-k1P"/>
+                        <outlet property="MUNDFlRLpOIShf" destination="vaB-Er-Bhz" id="wH7-DH-jeG"/>
+                        <outlet property="MUNDFlRLserenade" destination="bLb-9M-yWN" id="1M1-Rr-lX9"/>
+                        <outlet property="MUNDFlRLsextet" destination="mkb-QZ-sxf" id="n6B-AT-A5S"/>
+                        <outlet property="MUNDFlRLternary" destination="dQA-zd-Bz7" id="zOf-Ea-bfT"/>
+                        <outlet property="nIaavtujaMUNDFlRL" destination="MRB-xM-jgg" id="fRu-DF-zEC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LZ3-7g-2dX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1362.4000000000001" y="1561.169415292354"/>
         </scene>
-        <!--Trombonessinfoniaer-->
+        <!--FlRL Trombonessinfoniaer-->
         <scene sceneID="jGx-uU-NAU">
             <objects>
-                <viewController id="p66-A1-C1W" customClass="Trombonessinfoniaer" customModule="ClaassssicPolo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="p66-A1-C1W" customClass="MUNDFlRLTrombonessinfoniaer" customModule="ClaassssicPolo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2SE-RO-X5M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="andante" translatesAutoresizingMaskIntoConstraints="NO" id="8Rf-zv-iaV">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MUNDFlRLandante" translatesAutoresizingMaskIntoConstraints="NO" id="8Rf-zv-iaV">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWt-sa-Kac">
@@ -341,7 +341,7 @@
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AI Function" translatesAutoresizingMaskIntoConstraints="NO" id="GBX-Cd-bit">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MUNDFlRLIFunction" translatesAutoresizingMaskIntoConstraints="NO" id="GBX-Cd-bit">
                                 <rect key="frame" x="16" y="64" width="147" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="Bhf-0I-9cR"/>
@@ -354,9 +354,9 @@
                                     <constraint firstAttribute="height" constant="167" id="9lP-GW-JrN"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="belCanto"/>
+                                <state key="normal" backgroundImage="MUNDFlRLbelCanto"/>
                                 <connections>
-                                    <action selector="tomenfaggert:" destination="p66-A1-C1W" eventType="touchUpInside" id="oEg-u3-oG6"/>
+                                    <action selector="MUNDFlRLtomenfaggert:" destination="p66-A1-C1W" eventType="touchUpInside" id="oEg-u3-oG6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classical CDs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dn-IS-fZV">
@@ -401,25 +401,25 @@
                             <constraint firstItem="EAI-fN-YCC" firstAttribute="top" secondItem="2SE-RO-X5M" secondAttribute="top" constant="12" id="xrv-qg-8NG"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="quaion2" selectedImage="quaion2gg" id="Zfy-p9-uei"/>
+                    <tabBarItem key="tabBarItem" title="" image="MUNDFlRLPquaion2" selectedImage="MUNDFlRLPquaion2gg" id="Zfy-p9-uei"/>
                     <connections>
-                        <outlet property="crescendoAI" destination="TKq-6s-i24" id="wSb-mq-rOX"/>
-                        <outlet property="homophony" destination="DLT-d8-W41" id="ntu-eS-ViO"/>
+                        <outlet property="MUNDFlRLcrescendoAI" destination="TKq-6s-i24" id="wSb-mq-rOX"/>
+                        <outlet property="MUNDFlRLhomophony" destination="DLT-d8-W41" id="ntu-eS-ViO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LwZ-hK-cWH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1419.0839694656488" y="889.43661971830988"/>
         </scene>
-        <!--Tonalityssinfoniaer-->
+        <!--FlRL Tonalityssinfoniaer-->
         <scene sceneID="feq-E9-385">
             <objects>
-                <viewController id="61D-PB-Ats" customClass="Tonalityssinfoniaer" customModule="ClaassssicPolo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="61D-PB-Ats" customClass="MUNDFlRLTonalityssinfoniaer" customModule="ClaassssicPolo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C91-qW-OeF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="andante" translatesAutoresizingMaskIntoConstraints="NO" id="1uT-Lv-8Kd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MUNDFlRLandante" translatesAutoresizingMaskIntoConstraints="NO" id="1uT-Lv-8Kd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ax-wk-KL0">
@@ -433,7 +433,7 @@
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mioya" translatesAutoresizingMaskIntoConstraints="NO" id="Qbc-Gi-bxN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MUNDFlRLMioya" translatesAutoresizingMaskIntoConstraints="NO" id="Qbc-Gi-bxN">
                                 <rect key="frame" x="16" y="64" width="77" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="77" id="Sy7-Ab-72K"/>
@@ -447,10 +447,10 @@
                                     <constraint firstAttribute="width" constant="40" id="oCz-o5-aJH"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="allegro"/>
+                                <state key="normal" image="MUNDFlRLallegro"/>
                                 <connections>
+                                    <action selector="MUNDFlRLornamentation:" destination="61D-PB-Ats" eventType="touchUpInside" id="na7-YO-erC"/>
                                     <action selector="orchestra:" destination="Fm2-D6-zAA" eventType="touchUpInside" id="5Kw-xd-ogH"/>
-                                    <action selector="ornamentation:" destination="61D-PB-Ats" eventType="touchUpInside" id="na7-YO-erC"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OzB-2N-nnT">
@@ -485,11 +485,11 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="  Vlog" image="JIushhh">
+                                <state key="normal" title="  Vlog" image="MUNDFlRLJIushhh">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <state key="selected" title=" Vlog" image="arpeggio">
+                                <state key="selected" title=" Vlog" image="MUNDFlRLarpeggio">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -503,18 +503,18 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="  Moment" image="articulation">
+                                <state key="normal" title="  Moment" image="MUNDFlRLarticulation">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <state key="selected" title=" Moment" image="ODipoivc">
+                                <state key="selected" title=" Moment" image="MUNDFlRLODipoivc">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="orchestra:" destination="61D-PB-Ats" eventType="touchUpInside" id="Joj-Jc-oWE"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JJLaingr" translatesAutoresizingMaskIntoConstraints="NO" id="hyv-Mf-WYO">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MUNDFlRLJJLaingr" translatesAutoresizingMaskIntoConstraints="NO" id="hyv-Mf-WYO">
                                 <rect key="frame" x="0.0" y="257" width="187.5" height="2"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="yFe-fk-J0h"/>
@@ -554,11 +554,11 @@
                             <constraint firstItem="ueF-g4-XHM" firstAttribute="centerY" secondItem="Qbc-Gi-bxN" secondAttribute="centerY" id="z1d-Ct-pMr"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="quaion0" selectedImage="quaion0gg" id="fcd-Iq-SgP"/>
+                    <tabBarItem key="tabBarItem" title="" image="MUNDFlRLPquaion0" selectedImage="MUNDFlRLPquaion0gg" id="fcd-Iq-SgP"/>
                     <connections>
-                        <outlet property="conSordino" destination="OzB-2N-nnT" id="nws-zK-3pV"/>
-                        <outlet property="indiVavterImah" destination="hyv-Mf-WYO" id="OrO-E6-Luw"/>
-                        <outlet property="teneramente" destination="bVJ-0e-pe2" id="Bsf-Ly-V0Y"/>
+                        <outlet property="MUNDFlRLconSordino" destination="OzB-2N-nnT" id="nws-zK-3pV"/>
+                        <outlet property="MUNDFlRLindiVavterImah" destination="hyv-Mf-WYO" id="OrO-E6-Luw"/>
+                        <outlet property="MUNDFlRLteneramente" destination="bVJ-0e-pe2" id="Bsf-Ly-V0Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JcY-cK-ULs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -571,7 +571,7 @@
             <objects>
                 <tabBarController id="Qge-9W-vLd" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="6el-Ob-nz0"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="zbuahgmaheir" id="m88-Ka-bbB">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="MUNDFlRLzbuahgmaheir" id="m88-Ka-bbB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -590,35 +590,35 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AI Function" width="147" height="27.5"/>
-        <image name="JIushhh" width="20" height="17"/>
-        <image name="JJLaingr" width="173" height="2"/>
-        <image name="Mioya" width="77" height="27.5"/>
-        <image name="ODipoivc" width="20" height="18"/>
-        <image name="Planet Details" width="183" height="27.5"/>
-        <image name="allegro" width="40" height="40"/>
-        <image name="andante" width="375" height="812"/>
-        <image name="arpeggio" width="20" height="17"/>
-        <image name="articulation" width="20" height="18"/>
-        <image name="atIpreview" width="152" height="152"/>
-        <image name="baoinglert" width="105" height="90"/>
-        <image name="belCanto" width="351" height="167"/>
-        <image name="brassEnsemble" width="105" height="90"/>
-        <image name="concertato" width="105" height="90"/>
-        <image name="conductor" width="151" height="74"/>
-        <image name="counterpoint" width="151" height="74"/>
-        <image name="geojs" width="110" height="110"/>
-        <image name="laogjuBif" width="375" height="68"/>
-        <image name="minepoji" width="58.5" height="26.5"/>
-        <image name="quaion0" width="28" height="28"/>
-        <image name="quaion0gg" width="30" height="30"/>
-        <image name="quaion1" width="27.5" height="27"/>
-        <image name="quaion1gg" width="30" height="30"/>
-        <image name="quaion2" width="28" height="26"/>
-        <image name="quaion2gg" width="29" height="28"/>
-        <image name="quaion3" width="26" height="26"/>
-        <image name="quaion3gg" width="25" height="28"/>
-        <image name="zbuahgmaheir" width="375" height="84"/>
+        <image name="MUNDFlRLIFunction" width="128" height="128"/>
+        <image name="MUNDFlRLJIushhh" width="128" height="128"/>
+        <image name="MUNDFlRLJJLaingr" width="128" height="128"/>
+        <image name="MUNDFlRLMioya" width="128" height="128"/>
+        <image name="MUNDFlRLODipoivc" width="128" height="128"/>
+        <image name="MUNDFlRLPlanetDetails" width="128" height="128"/>
+        <image name="MUNDFlRLPquaion0" width="128" height="128"/>
+        <image name="MUNDFlRLPquaion0gg" width="128" height="128"/>
+        <image name="MUNDFlRLPquaion1" width="128" height="128"/>
+        <image name="MUNDFlRLPquaion1gg" width="128" height="128"/>
+        <image name="MUNDFlRLPquaion2" width="128" height="128"/>
+        <image name="MUNDFlRLPquaion2gg" width="128" height="128"/>
+        <image name="MUNDFlRLPquaion3" width="128" height="128"/>
+        <image name="MUNDFlRLPquaion3gg" width="128" height="128"/>
+        <image name="MUNDFlRLallegro" width="128" height="128"/>
+        <image name="MUNDFlRLandante" width="128" height="128"/>
+        <image name="MUNDFlRLarpeggio" width="128" height="128"/>
+        <image name="MUNDFlRLarticulation" width="128" height="128"/>
+        <image name="MUNDFlRLatIpreview" width="128" height="128"/>
+        <image name="MUNDFlRLbaoinglert" width="128" height="128"/>
+        <image name="MUNDFlRLbelCanto" width="128" height="128"/>
+        <image name="MUNDFlRLbrassEnsemble" width="128" height="128"/>
+        <image name="MUNDFlRLconcertato" width="128" height="128"/>
+        <image name="MUNDFlRLconductor" width="128" height="128"/>
+        <image name="MUNDFlRLcounterpoint" width="128" height="128"/>
+        <image name="MUNDFlRLgeojs" width="128" height="128"/>
+        <image name="MUNDFlRLlaogjuBif" width="128" height="128"/>
+        <image name="MUNDFlRLminepoji" width="128" height="128"/>
+        <image name="MUNDFlRLzbuahgmaheir" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -9,11 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Vibratossinfoniaer" customModule="ClaassssicPolo" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MUNDFlRLVibratossinfoniaer" customModule="ClaassssicPolo" customModuleProvider="target">
             <connections>
-                <outlet property="folkArt" destination="dti-VS-nVK" id="bFJ-Cz-hWi"/>
-                <outlet property="unison" destination="Zuj-LC-LSw" id="SPb-bz-8L9"/>
-                <outlet property="veganOptions" destination="GYn-sX-DgI" id="77J-ri-ufi"/>
+                <outlet property="MUNDFlRLfolkArt" destination="dti-VS-nVK" id="bFJ-Cz-hWi"/>
+                <outlet property="MUNDFlRLunison" destination="Zuj-LC-LSw" id="SPb-bz-8L9"/>
+                <outlet property="MUNDFlRLveganOptions" destination="GYn-sX-DgI" id="77J-ri-ufi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="andante" translatesAutoresizingMaskIntoConstraints="NO" id="nBw-9p-YgY">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MUNDFlRLandante" translatesAutoresizingMaskIntoConstraints="NO" id="nBw-9p-YgY">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 </imageView>
                 <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zuj-LC-LSw">
@@ -66,7 +66,7 @@
         </view>
     </objects>
     <resources>
-        <image name="andante" width="375" height="812"/>
+        <image name="MUNDFlRLandante" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

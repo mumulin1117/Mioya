@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 71;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -16,6 +16,7 @@
 			dependencies = (
 			);
 			name = AdjustSignature;
+			productName = AdjustSignature;
 		};
 		28907903AF6DD0AD321D92CD660E7E23 /* FBSDKCoreKit */ = {
 			isa = PBXAggregateTarget;
@@ -28,6 +29,7 @@
 				AC6C300312EE68424788D58BE742FA43 /* PBXTargetDependency */,
 			);
 			name = FBSDKCoreKit;
+			productName = FBSDKCoreKit;
 		};
 		479BDBD165CD08E2159181E58CD2078F /* FBAEMKit */ = {
 			isa = PBXAggregateTarget;
@@ -39,6 +41,7 @@
 				1A133FB42849AEA3975DC761FC744711 /* PBXTargetDependency */,
 			);
 			name = FBAEMKit;
+			productName = FBAEMKit;
 		};
 		8EA62FEAB23070050EFD4D4508D659E5 /* FBSDKCoreKit_Basics */ = {
 			isa = PBXAggregateTarget;
@@ -49,6 +52,7 @@
 			dependencies = (
 			);
 			name = FBSDKCoreKit_Basics;
+			productName = FBSDKCoreKit_Basics;
 		};
 /* End PBXAggregateTarget section */
 
@@ -96,7 +100,7 @@
 		3B0902D0FB1EB43CCCF98291721EB2C5 /* ADJActivityState.h in Headers */ = {isa = PBXBuildFile; fileRef = 401A347DDF91A0A303B181ED4BE4ABC2 /* ADJActivityState.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3CF61F505FA90154B902D49A2438B72C /* ADJLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C324991D1C7A8E5A909E3AB151328F3 /* ADJLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DABBFDABC03A66B4329A30A0C23BF44 /* IQToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 663D99CE298E64D9F055216466C60669 /* IQToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40BCE9228182ECD606AEE04C87DC9BB8 /* Adjust-Adjust in Resources */ = {isa = PBXBuildFile; fileRef = B6C339432292171DF9AF35D79D97FF46 /* Adjust-Adjust */; };
+		40BCE9228182ECD606AEE04C87DC9BB8 /* Adjust.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6C339432292171DF9AF35D79D97FF46 /* Adjust.bundle */; };
 		44339C00EEAC1F42F4BD9F5FC1C93FA0 /* IQPreviousNextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A16823EE289EC110804B1C26DA6AAD0 /* IQPreviousNextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44477271F4942FAD0AFE8A57C8DD996D /* ADJEventFailure.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7452545E54F722F5E1F38CA5EFD525 /* ADJEventFailure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46BB28F62F6521E1CA1BB3A729629041 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC5841B6B63C5364BD3DB412BB4254B /* QuartzCore.framework */; };
@@ -117,7 +121,7 @@
 		60F8F5D53A696B13D2E88CD5892A92CF /* IQTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = A45574C52E4F7D44F71C3AABA31F5B35 /* IQTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6161FBBB6C6F5AD11B089DD1A0419150 /* InAppReceiptVerificator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531B1667CF7CF9BFC3068D21BF3E69E /* InAppReceiptVerificator.swift */; };
 		61C01827E3BCE431FACFAF387C7485F6 /* ADJPackageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3353C2C52719BA3644F2AF8D05CE8B30 /* ADJPackageHandler.m */; };
-		626401380ADC61520BB5627C76521683 /* IQKeyboardManager-IQKeyboardManager in Resources */ = {isa = PBXBuildFile; fileRef = A5B2838E4866923F3DA717B058EBFF5D /* IQKeyboardManager-IQKeyboardManager */; };
+		626401380ADC61520BB5627C76521683 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A5B2838E4866923F3DA717B058EBFF5D /* IQKeyboardManager.bundle */; };
 		6276528BE8253C6E07B2853A3E6AD85E /* ADJAttribution.h in Headers */ = {isa = PBXBuildFile; fileRef = EA9A76B7DD5FD7EA5DCAFACF4B8DA4FA /* ADJAttribution.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62FCD4A967D743DE07DA80DACF5B14DB /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C15E4BCF216D092BC793CCD4FE7F93 /* IQUIViewController+Additions.m */; };
 		65DB6D055AAD5F89EFB33C554CA7F53B /* IQNSArray+Sort.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DE63AD894C25CD0FC8A3D42FB17CA3 /* IQNSArray+Sort.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -341,7 +345,7 @@
 		2F6538205A2A3DE4F7B871C6E61E8A20 /* ADJTimerOnce.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJTimerOnce.m; path = Adjust/Internal/ADJTimerOnce.m; sourceTree = "<group>"; };
 		302EDC47FBD5397DC6700007F9DB2D69 /* ADJSessionSuccess.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJSessionSuccess.m; path = Adjust/ADJSessionSuccess.m; sourceTree = "<group>"; };
 		30EC67CC9D842CF6AA509BFC59933DB1 /* ResourceBundle-IQKeyboardManager-IQKeyboardManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-IQKeyboardManager-IQKeyboardManager-Info.plist"; sourceTree = "<group>"; };
-		32B68D5B8C0127052BE81786F59B46F6 /* SwiftyStoreKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyStoreKit; path = SwiftyStoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B68D5B8C0127052BE81786F59B46F6 /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyStoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3353C2C52719BA3644F2AF8D05CE8B30 /* ADJPackageHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJPackageHandler.m; path = Adjust/Internal/ADJPackageHandler.m; sourceTree = "<group>"; };
 		343FAC45BCCBAC42F7008D3526BDF069 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		344A013F37CC59DBE80694E848991FD8 /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTitleBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.h; sourceTree = "<group>"; };
@@ -368,10 +372,10 @@
 		4FCEAF6192F31EA09EBF3601F9F01CAA /* ADJGlobalParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJGlobalParameters.m; path = Adjust/Internal/ADJGlobalParameters.m; sourceTree = "<group>"; };
 		50309F88BAC177EC0A2BE8B6B19DA8F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		50657386B5C85120941163094931C983 /* ADJPurchaseVerificationHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJPurchaseVerificationHandler.h; path = Adjust/Internal/ADJPurchaseVerificationHandler.h; sourceTree = "<group>"; };
-		507EA5549570372F303E1BF28DA9993C /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = FBSDKCoreKit.xcframework; path = XCFrameworks/FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
+		507EA5549570372F303E1BF28DA9993C /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = FBSDKCoreKit.xcframework; path = XCFrameworks/FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
 		50A3D66FBAD5468C6CD89816F0FD116A /* ADJSessionFailure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJSessionFailure.m; path = Adjust/ADJSessionFailure.m; sourceTree = "<group>"; };
 		50AA60E3E06D3E50643C95C502FA0F6D /* ADJAttributionHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJAttributionHandler.m; path = Adjust/Internal/ADJAttributionHandler.m; sourceTree = "<group>"; };
-		50BFC63FA707450F9E158090143C16D2 /* Pods-ClaassssicPolo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ClaassssicPolo"; path = Pods_ClaassssicPolo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50BFC63FA707450F9E158090143C16D2 /* Pods_ClaassssicPolo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClaassssicPolo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D517BEF1971EDCA57C9F734C15B459 /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTitleBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.m; sourceTree = "<group>"; };
 		53C1A82B96027AE39AD7DBD1A013DFC4 /* IQBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.m; sourceTree = "<group>"; };
 		550B31EE34E89C151A887162AAC28247 /* ADJEventSuccess.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJEventSuccess.h; path = Adjust/ADJEventSuccess.h; sourceTree = "<group>"; };
@@ -407,14 +411,14 @@
 		7B994703EF34A70CAB3B8B434E245407 /* ADJSessionFailure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJSessionFailure.h; path = Adjust/ADJSessionFailure.h; sourceTree = "<group>"; };
 		7BB7C0F3DA50C9D61988FBC8DA6A8B4F /* ADJSdkClickHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJSdkClickHandler.h; path = Adjust/Internal/ADJSdkClickHandler.h; sourceTree = "<group>"; };
 		7DF2423DEF84D20B2A6A27679D6434F0 /* SwiftyStoreKit+Types.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyStoreKit+Types.swift"; path = "Sources/SwiftyStoreKit/SwiftyStoreKit+Types.swift"; sourceTree = "<group>"; };
-		7FF5C62DF1E2D492F272FD7D2A1EF4A3 /* Adjust */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Adjust; path = AdjustSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF5C62DF1E2D492F272FD7D2A1EF4A3 /* AdjustSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdjustSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C167556DA50BEBE63A11A34A8215E7 /* RestorePurchasesController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestorePurchasesController.swift; path = Sources/SwiftyStoreKit/RestorePurchasesController.swift; sourceTree = "<group>"; };
 		8702EB88BEA6F8AA5B1B26A7DA8A26BD /* ADJAttributionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJAttributionHandler.h; path = Adjust/Internal/ADJAttributionHandler.h; sourceTree = "<group>"; };
 		87CB91EA097F85DFE43C9536BBDAD999 /* FBSDKCoreKit_Basics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSDKCoreKit_Basics.debug.xcconfig; sourceTree = "<group>"; };
 		87E3F9B8C5899DE2A6C94DD1ABCF4988 /* ADJUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJUserDefaults.h; path = Adjust/Internal/ADJUserDefaults.h; sourceTree = "<group>"; };
 		8AEE8913D1E0EE347CFDF8E020699AA7 /* ADJSdkClickHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJSdkClickHandler.m; path = Adjust/Internal/ADJSdkClickHandler.m; sourceTree = "<group>"; };
 		8AF180AB47BFD556B4AE3EED34AA3117 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D371AAC0631814678F10624CA165224 /* SKProduct+LocalizedPrice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SKProduct+LocalizedPrice.swift"; path = "Sources/SwiftyStoreKit/SKProduct+LocalizedPrice.swift"; sourceTree = "<group>"; };
 		8E81F2407ECA9E7D32B2A64A85C14126 /* ADJAppStorePurchase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJAppStorePurchase.m; path = Adjust/ADJAppStorePurchase.m; sourceTree = "<group>"; };
 		901AA6D522DEAC4996914B6421CEFFB7 /* IQKeyboardManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManager.release.xcconfig; sourceTree = "<group>"; };
@@ -427,20 +431,20 @@
 		9619832FA248A44017DC87050AE9CB8A /* ADJPackageBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJPackageBuilder.m; path = Adjust/Internal/ADJPackageBuilder.m; sourceTree = "<group>"; };
 		96A7A98B195FA8D5155C44873E98B461 /* SwiftyStoreKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyStoreKit-dummy.m"; sourceTree = "<group>"; };
 		9730BC9B4D33B9EE440BCBA2D80B721C /* IQKeyboardManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-umbrella.h"; sourceTree = "<group>"; };
-		98527D7196957AAB07B79E2E2AFDE23E /* IQKeyboardManager */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManager; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AEEC65EF7D8D1E0AC2E6FE224378740 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = IQKeyboardManager/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		98527D7196957AAB07B79E2E2AFDE23E /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AEEC65EF7D8D1E0AC2E6FE224378740 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = IQKeyboardManager/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		9B9F6A6AFAEC4B724CF2D185120A1DE7 /* ADJAdRevenue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJAdRevenue.m; path = Adjust/ADJAdRevenue.m; sourceTree = "<group>"; };
 		9BC5841B6B63C5364BD3DB412BB4254B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		9C15BFB4C2E45BC79D9BABA05FC606BF /* Pods-ClaassssicPolo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ClaassssicPolo-umbrella.h"; sourceTree = "<group>"; };
 		9CD4A4F2B65F5E29239670DD1EA96DEF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		9D1D24FD0646A1C18F65D4A9B15F283B /* CompleteTransactionsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompleteTransactionsController.swift; path = Sources/SwiftyStoreKit/CompleteTransactionsController.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F283F60AD472676DEC1406C2760B03B /* Adjust-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Adjust-prefix.pch"; sourceTree = "<group>"; };
-		A0B35C44482D923D6C54F883C1CD145E /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = FBSDKCoreKit_Basics.xcframework; path = XCFrameworks/FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
+		A0B35C44482D923D6C54F883C1CD145E /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = FBSDKCoreKit_Basics.xcframework; path = XCFrameworks/FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
 		A15F12279FAC84E9D1ECB7C8A421B2A9 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		A45574C52E4F7D44F71C3AABA31F5B35 /* IQTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTextView.h; path = IQKeyboardManager/IQTextView/IQTextView.h; sourceTree = "<group>"; };
 		A55ECEDF96B39B41173E5DAAA39755DB /* ADJAdRevenue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJAdRevenue.h; path = Adjust/ADJAdRevenue.h; sourceTree = "<group>"; };
-		A5B2838E4866923F3DA717B058EBFF5D /* IQKeyboardManager-IQKeyboardManager */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "IQKeyboardManager-IQKeyboardManager"; path = IQKeyboardManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B2838E4866923F3DA717B058EBFF5D /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IQKeyboardManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BBE66886E312C1B99C0A47373F6262 /* Pods-ClaassssicPolo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClaassssicPolo-Info.plist"; sourceTree = "<group>"; };
 		A6B0DF50759F80F51CE45254F85F566D /* Pods-ClaassssicPolo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClaassssicPolo.release.xcconfig"; sourceTree = "<group>"; };
 		A7B7E87C49EDE2CD7934EC4B5E052A17 /* IQKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardManager.m; path = IQKeyboardManager/IQKeyboardManager.m; sourceTree = "<group>"; };
@@ -453,7 +457,7 @@
 		AF7452545E54F722F5E1F38CA5EFD525 /* ADJEventFailure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJEventFailure.h; path = Adjust/ADJEventFailure.h; sourceTree = "<group>"; };
 		B1313C70648813B16298216CAFC250F6 /* ProductsInfoController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductsInfoController.swift; path = Sources/SwiftyStoreKit/ProductsInfoController.swift; sourceTree = "<group>"; };
 		B3152F9E8A8E525483227402209ED0C6 /* ADJPurchaseVerificationResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJPurchaseVerificationResult.m; path = Adjust/ADJPurchaseVerificationResult.m; sourceTree = "<group>"; };
-		B6C339432292171DF9AF35D79D97FF46 /* Adjust-Adjust */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Adjust-Adjust"; path = Adjust.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C339432292171DF9AF35D79D97FF46 /* Adjust.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Adjust.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76937032C64409F95675EC026B846F4 /* ADJAppStorePurchase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJAppStorePurchase.h; path = Adjust/ADJAppStorePurchase.h; sourceTree = "<group>"; };
 		B808AB13E4ED8B6385191FA9378DDA07 /* ADJSessionSuccess.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJSessionSuccess.h; path = Adjust/ADJSessionSuccess.h; sourceTree = "<group>"; };
 		B9142F6503DB7A9CFB59CBE6CBE1B09B /* ADJPurchaseVerificationResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJPurchaseVerificationResult.h; path = Adjust/ADJPurchaseVerificationResult.h; sourceTree = "<group>"; };
@@ -471,7 +475,7 @@
 		CAC0FBBB977404410296CD9DB78C241B /* IQKeyboardManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManager.modulemap; sourceTree = "<group>"; };
 		CC1CB2CBD6408C65B2DD3CAF099B18DA /* Adjust.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Adjust.release.xcconfig; sourceTree = "<group>"; };
 		CD3A35214512FB8C707052A939F9CD20 /* ADJConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJConfig.h; path = Adjust/ADJConfig.h; sourceTree = "<group>"; };
-		CD7669D7C1EB5482DD34DFF24E20D516 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Adjust/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		CD7669D7C1EB5482DD34DFF24E20D516 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = Adjust/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		D0E2F46DBE4E9A88F06706E9976D9016 /* FBSDKCoreKit_Basics-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FBSDKCoreKit_Basics-xcframeworks.sh"; sourceTree = "<group>"; };
 		D1DFDE4D3A56B99A66DD1182523FD8F9 /* ADJActivityKind.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJActivityKind.h; path = Adjust/Internal/ADJActivityKind.h; sourceTree = "<group>"; };
 		D1E6F83C006586B888349999A2D10F2C /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIViewController+Additions.h"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.h"; sourceTree = "<group>"; };
@@ -484,10 +488,10 @@
 		E7CFFD269C1EB0182BF2E0351FEC2E99 /* ADJLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJLogger.m; path = Adjust/ADJLogger.m; sourceTree = "<group>"; };
 		E82D578B9EE0FB1E47802E24EB191C75 /* FBSDKCoreKit_Basics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSDKCoreKit_Basics.release.xcconfig; sourceTree = "<group>"; };
 		E8B6678A2C5A8B31CA5C35174E70C367 /* PaymentQueueController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaymentQueueController.swift; path = Sources/SwiftyStoreKit/PaymentQueueController.swift; sourceTree = "<group>"; };
-		EA0A1E5FD4106C80E9BE01E3251B7BA3 /* FBAEMKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = FBAEMKit.xcframework; path = XCFrameworks/FBAEMKit.xcframework; sourceTree = "<group>"; };
+		EA0A1E5FD4106C80E9BE01E3251B7BA3 /* FBAEMKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = FBAEMKit.xcframework; path = XCFrameworks/FBAEMKit.xcframework; sourceTree = "<group>"; };
 		EA590E01F28B98CB137BA37D498C99D8 /* Pods-ClaassssicPolo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClaassssicPolo-dummy.m"; sourceTree = "<group>"; };
 		EA9A76B7DD5FD7EA5DCAFACF4B8DA4FA /* ADJAttribution.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJAttribution.h; path = Adjust/ADJAttribution.h; sourceTree = "<group>"; };
-		EE13CD6ED5D04755F6948D016DDE84C8 /* AdjustSigSdk.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AdjustSigSdk.xcframework; sourceTree = "<group>"; };
+		EE13CD6ED5D04755F6948D016DDE84C8 /* AdjustSigSdk.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = AdjustSigSdk.xcframework; sourceTree = "<group>"; };
 		F189B77D8ADE0412C8BC8F99E500CE4F /* ADJDeeplink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJDeeplink.m; path = Adjust/ADJDeeplink.m; sourceTree = "<group>"; };
 		F2C05FD0DBD25A57167812831E0729DB /* ADJLinkResolution.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJLinkResolution.h; path = Adjust/ADJLinkResolution.h; sourceTree = "<group>"; };
 		F3405E59EDE71B972125D600A5EFCCFB /* IQNSArray+Sort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQNSArray+Sort.m"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.m"; sourceTree = "<group>"; };
@@ -568,7 +572,6 @@
 				FB2AC6F37518270043E2552B10B51EC3 /* Frameworks */,
 				46245A54ED44AAFCD633B870F972AAAF /* Support Files */,
 			);
-			name = FBSDKCoreKit;
 			path = FBSDKCoreKit;
 			sourceTree = "<group>";
 		};
@@ -595,7 +598,6 @@
 				71D021B63EC5DDAC137B0073F413FEE1 /* Adjust */,
 				20BE57E645952E9B5D195F86355BF8E8 /* Support Files */,
 			);
-			name = Adjust;
 			path = Adjust;
 			sourceTree = "<group>";
 		};
@@ -649,7 +651,6 @@
 				BEDA881A3A03F3111196A65BB919CC9C /* Resources */,
 				788829FF0A0D685C0E4E950E8B201D0A /* Support Files */,
 			);
-			name = IQKeyboardManager;
 			path = IQKeyboardManager;
 			sourceTree = "<group>";
 		};
@@ -659,7 +660,6 @@
 				FFBD6B577497BF05B6A81C4A3155503A /* Frameworks */,
 				4B79C59BC7495A18EEC85C25305B078B /* Support Files */,
 			);
-			name = FBSDKCoreKit_Basics;
 			path = FBSDKCoreKit_Basics;
 			sourceTree = "<group>";
 		};
@@ -819,20 +819,19 @@
 				DC8EB19CF139D32CED6594E883F507AE /* Frameworks */,
 				A8DEEF9993FD47A813FD5DF93D3756EE /* Support Files */,
 			);
-			name = FBAEMKit;
 			path = FBAEMKit;
 			sourceTree = "<group>";
 		};
 		8C37648AAD176805FE0FD42B83A0F512 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7FF5C62DF1E2D492F272FD7D2A1EF4A3 /* Adjust */,
-				B6C339432292171DF9AF35D79D97FF46 /* Adjust-Adjust */,
-				98527D7196957AAB07B79E2E2AFDE23E /* IQKeyboardManager */,
-				A5B2838E4866923F3DA717B058EBFF5D /* IQKeyboardManager-IQKeyboardManager */,
-				8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD */,
-				50BFC63FA707450F9E158090143C16D2 /* Pods-ClaassssicPolo */,
-				32B68D5B8C0127052BE81786F59B46F6 /* SwiftyStoreKit */,
+				7FF5C62DF1E2D492F272FD7D2A1EF4A3 /* AdjustSdk.framework */,
+				B6C339432292171DF9AF35D79D97FF46 /* Adjust.bundle */,
+				98527D7196957AAB07B79E2E2AFDE23E /* IQKeyboardManager.framework */,
+				A5B2838E4866923F3DA717B058EBFF5D /* IQKeyboardManager.bundle */,
+				8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */,
+				50BFC63FA707450F9E158090143C16D2 /* Pods_ClaassssicPolo.framework */,
+				32B68D5B8C0127052BE81786F59B46F6 /* SwiftyStoreKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -852,7 +851,6 @@
 				343FAC45BCCBAC42F7008D3526BDF069 /* MBProgressHUD.m */,
 				DB27A75D517343F0483E17E5239AB7A3 /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -926,7 +924,6 @@
 				E2DD5F9084FF440A6403DE6AFB079A03 /* Frameworks */,
 				ACE366D066A4F161BE737FFD996B2725 /* Support Files */,
 			);
-			name = AdjustSignature;
 			path = AdjustSignature;
 			sourceTree = "<group>";
 		};
@@ -981,7 +978,6 @@
 				7DF2423DEF84D20B2A6A27679D6434F0 /* SwiftyStoreKit+Types.swift */,
 				A4A6E4743106D2327319E52B0A117696 /* Support Files */,
 			);
-			name = SwiftyStoreKit;
 			path = SwiftyStoreKit;
 			sourceTree = "<group>";
 		};
@@ -1124,7 +1120,7 @@
 			);
 			name = "IQKeyboardManager-IQKeyboardManager";
 			productName = IQKeyboardManager;
-			productReference = A5B2838E4866923F3DA717B058EBFF5D /* IQKeyboardManager-IQKeyboardManager */;
+			productReference = A5B2838E4866923F3DA717B058EBFF5D /* IQKeyboardManager.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		471352CEDDB3183F0E470F770197C032 /* Adjust-Adjust */ = {
@@ -1141,7 +1137,7 @@
 			);
 			name = "Adjust-Adjust";
 			productName = Adjust;
-			productReference = B6C339432292171DF9AF35D79D97FF46 /* Adjust-Adjust */;
+			productReference = B6C339432292171DF9AF35D79D97FF46 /* Adjust.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		7111F362EA0D14BECD8B96EA1EAA5F79 /* Adjust */ = {
@@ -1161,7 +1157,7 @@
 			);
 			name = Adjust;
 			productName = AdjustSdk;
-			productReference = 7FF5C62DF1E2D492F272FD7D2A1EF4A3 /* Adjust */;
+			productReference = 7FF5C62DF1E2D492F272FD7D2A1EF4A3 /* AdjustSdk.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */ = {
@@ -1179,7 +1175,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = 8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD */;
+			productReference = 8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C0BDC385D0C1741647DBD2B7A9CB3502 /* Pods-ClaassssicPolo */ = {
@@ -1205,7 +1201,7 @@
 			);
 			name = "Pods-ClaassssicPolo";
 			productName = Pods_ClaassssicPolo;
-			productReference = 50BFC63FA707450F9E158090143C16D2 /* Pods-ClaassssicPolo */;
+			productReference = 50BFC63FA707450F9E158090143C16D2 /* Pods_ClaassssicPolo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FBA456CB50E371584C11231929A0971E /* IQKeyboardManager */ = {
@@ -1224,7 +1220,7 @@
 			);
 			name = IQKeyboardManager;
 			productName = IQKeyboardManager;
-			productReference = 98527D7196957AAB07B79E2E2AFDE23E /* IQKeyboardManager */;
+			productReference = 98527D7196957AAB07B79E2E2AFDE23E /* IQKeyboardManager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FCD4F1901DD86FEB184BFDD6673F4A7B /* SwiftyStoreKit */ = {
@@ -1242,7 +1238,7 @@
 			);
 			name = SwiftyStoreKit;
 			productName = SwiftyStoreKit;
-			productReference = 32B68D5B8C0127052BE81786F59B46F6 /* SwiftyStoreKit */;
+			productReference = 32B68D5B8C0127052BE81786F59B46F6 /* SwiftyStoreKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1263,8 +1259,6 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 8C37648AAD176805FE0FD42B83A0F512 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1326,7 +1320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40BCE9228182ECD606AEE04C87DC9BB8 /* Adjust-Adjust in Resources */,
+				40BCE9228182ECD606AEE04C87DC9BB8 /* Adjust.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1334,7 +1328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				626401380ADC61520BB5627C76521683 /* IQKeyboardManager-IQKeyboardManager in Resources */,
+				626401380ADC61520BB5627C76521683 /* IQKeyboardManager.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1642,7 +1636,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/Adjust/Adjust-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1698,7 +1692,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/SwiftyStoreKit/SwiftyStoreKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1800,7 +1794,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardManager/IQKeyboardManager-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1839,7 +1833,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/Adjust/Adjust-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1922,7 +1916,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Adjust";
 				IBSC_MODULE = AdjustSdk;
 				INFOPLIST_FILE = "Target Support Files/Adjust/ResourceBundle-Adjust-Adjust-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				PRODUCT_NAME = Adjust;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1950,7 +1944,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardManager/IQKeyboardManager-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2044,7 +2038,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2185,7 +2179,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2253,7 +2247,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Adjust";
 				IBSC_MODULE = AdjustSdk;
 				INFOPLIST_FILE = "Target Support Files/Adjust/ResourceBundle-Adjust-Adjust-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				PRODUCT_NAME = Adjust;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2280,7 +2274,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/SwiftyStoreKit/SwiftyStoreKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

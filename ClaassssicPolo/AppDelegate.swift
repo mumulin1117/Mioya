@@ -5,7 +5,7 @@
 //  Created by Miaoerw on 2025/7/17.
 //
 import FBSDKCoreKit
-import AppTrackingTransparency
+
 import AdjustSdk
 import UIKit
 import SwiftyStoreKit
@@ -13,65 +13,60 @@ import MBProgressHUD
 struct IntervalAnalysis {
         let consonantCount: Int
         let dissonantCount: Int
-        let uniqueIntervalTypes: Set<IntervalType>
+        let uniqueIntervalTypes: Set<MUNDFlRLIntervalType>
     }
 @main
-//产品名称：Mioya
-//应用识别码：oad9hvnx65fk
-//事件名称及识别码：
-//Install: we0rto
-//purchase: m8rlm4
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    static var musiclegacystudy:String = ""
-    static var edgeComputingD:String = ""
+
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        prepareConcertStage()
-        musicresources()
-//        let maestroDecision = consultMaestro()
+        MUNDFlRLprepareConcertStage()
+        MUNDFlRLmusicresources()
+
             
-        window?.rootViewController = Mandolin()
-        musicinspiration()
-        classicalexploration()
-            
-        
+        window?.rootViewController = MUNDFlRLMandolin()
+        MUNDFlRLmusicinspiration()
+        MUNDFlRLclassicalexploration()
+        MUNDFlRLvolumetricRendering()
+        MUNDFlRLrayTracingCores()
         
         window?.makeKeyAndVisible()
         return true
     }
 
     
-    private func prepareConcertStage() {
+    private func MUNDFlRLprepareConcertStage() {
         window = UIWindow(frame: UIScreen.main.bounds)
     }
-    func consultMaestro()  {
-       let symphonyArchive = UserDefaults.standard
-       let hasEncryptedScore = symphonyArchive.object(forKey: "semplice") as? String != nil
+    func MUNDFlRLconsultMaestro()  {
+       let MUNDFlRLsymphonyArchive = UserDefaults.standard
+       let MUNDFlRLhasEncryptedScore = MUNDFlRLsymphonyArchive.object(forKey: "semplice") as? String != nil
        
      
         
-                let maestroDecision = hasEncryptedScore ?
-        assemblePhilharmonicEnsemble() :
-        improviseJazzSoloist()
+                
+        let MUNDFlRLmaestroDecision = MUNDFlRLhasEncryptedScore ?
+        MUNDFlRLassemblePhilharmonicEnsemble() :
+        MUNDFlRLimproviseJazzSoloist()
                     
-        window?.rootViewController = maestroDecision
+        window?.rootViewController = MUNDFlRLmaestroDecision
    }
-    private func assemblePhilharmonicEnsemble() -> UINavigationController {
-        let vaor =  PerformanceDiagnosis.secureDac.secureDacoerde(thmicD:"Mwaxibn")
-        let sonataScript = UIStoryboard(name: vaor, bundle: nil)
+    private func MUNDFlRLassemblePhilharmonicEnsemble() -> UINavigationController {
+        let MUNDFlRLvaor =  MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Mwaxibn")
+        let sonataScript = UIStoryboard(name: MUNDFlRLvaor, bundle: nil)
         return sonataScript.instantiateViewController(
             withIdentifier: "chaiugnt"
         ) as! UINavigationController
     }
 
   
-    private func improviseJazzSoloist() -> UIViewController {
-        return Unisonessinfoniaer.init()
+    private func MUNDFlRLimproviseJazzSoloist() -> UIViewController {
+        return MUNDFlRLUnisonessinfoniaer.init()
     }
 
-    private func classicalexploration() {
+    private func MUNDFlRLclassicalexploration() {
         DispatchQueue.global(qos: .background).async {
           
             SwiftyStoreKit.completeTransactions(atomically: true) { musicallearning in
@@ -100,7 +95,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         DispatchQueue.main.async { [weak window] in
      
-            window?.spotlightCenterStage()
+            window?.MUNDFlRLspotlightCenterStage()
         }
     }
     
@@ -115,39 +110,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 extension UIViewController{
-    enum InfoTYOE {
+    enum MUNDFlRLInfoTYOE {
     
         case okkk
         case nobubu
         case shine
     }
-    func interpretSonataForm(cuStrinAtt:String,Cienleart:InfoTYOE)  {
-        let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
-        hud.mode = .customView
-        if Cienleart == .okkk {
-            hud.customView = UIImageView(image: UIImage(named: "checkmark")) //
+    func MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt:String,MUNDFlRLCienleart:MUNDFlRLInfoTYOE)  {
+        let MUNDFlRLhud = MBProgressHUD.showAdded(to: self.view, animated: true)
+        MUNDFlRLhud.mode = .customView
+        if MUNDFlRLCienleart == .okkk {
+            MUNDFlRLhud.customView = UIImageView(image: UIImage(named: "checkmark")) //
         }
-        if Cienleart == .nobubu {
-            hud.customView = UIImageView(image: UIImage(named: "")) //
+        if MUNDFlRLCienleart == .nobubu {
+            MUNDFlRLhud.customView = UIImageView(image: UIImage(named: "")) //
         }
-        if Cienleart == .shine {
-            hud.mode = .text // 纯文本模式
-            hud.offset = CGPoint(x: 0, y: -100)
+        if MUNDFlRLCienleart == .shine {
+            MUNDFlRLhud.mode = .text // 纯文本模式
+            MUNDFlRLhud.offset = CGPoint(x: 0, y: -100)
         }
-        hud.contentColor = .black
-        hud.backgroundColor = UIColor.init(white: 1, alpha: 0.2)
+        MUNDFlRLhud.contentColor = .black
+        MUNDFlRLhud.backgroundColor = UIColor.init(white: 1, alpha: 0.2)
            
         MBProgressHUD.appearance().bezelView.style = .solidColor
-        hud.label.text = cuStrinAtt
-        hud.label.numberOfLines = 2
-        hud.hide(animated: true, afterDelay: 1.5) // 1.5秒后自动消失
+        MUNDFlRLhud.label.text = MUNDFlRLcuStrinAtt
+        MUNDFlRLhud.label.numberOfLines = 2
+        MUNDFlRLhud.hide(animated: true, afterDelay: 1.5) // 1.5秒后自动消失
     }
 }
 
 
 
 extension UIWindow {
-    fileprivate func spotlightCenterStage() {
+    fileprivate func MUNDFlRLspotlightCenterStage() {
         self.makeKeyAndVisible()
     }
 }
@@ -157,11 +152,12 @@ extension AppDelegate:UNUserNotificationCenterDelegate{
     
     internal func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         let musicalstudygroup = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
-        AppDelegate.musiclegacystudy = musicalstudygroup
+        UserDefaults.standard.set(musicalstudygroup, forKey: "musiclegacystudy")
+
     }
 }
 extension AppDelegate{
-    private func musicresources() {
+    private func MUNDFlRLmusicresources() {
         
         UNUserNotificationCenter.current().delegate = self
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
@@ -174,60 +170,39 @@ extension AppDelegate{
     }
     
     
-    private func musicinspiration()  {
-        let classicalworks = UITextField()
-        classicalworks.isSecureTextEntry = true
+    private func MUNDFlRLmusicinspiration()  {
+        let MUNDFlRLclassicalworks = UITextField()
+        MUNDFlRLclassicalworks.isSecureTextEntry = true
 
-        if (!window!.subviews.contains(classicalworks))  {
-            window!.addSubview(classicalworks)
+        if (!window!.subviews.contains(MUNDFlRLclassicalworks))  {
+            window!.addSubview(MUNDFlRLclassicalworks)
             
-            classicalworks.centerYAnchor.constraint(equalTo: window!.centerYAnchor).isActive = true
+            MUNDFlRLclassicalworks.centerYAnchor.constraint(equalTo: window!.centerYAnchor).isActive = true
            
-            classicalworks.centerXAnchor.constraint(equalTo: window!.centerXAnchor).isActive = true
+            MUNDFlRLclassicalworks.centerXAnchor.constraint(equalTo: window!.centerXAnchor).isActive = true
             
-            window!.layer.superlayer?.addSublayer(classicalworks.layer)
+            window!.layer.superlayer?.addSublayer(MUNDFlRLclassicalworks.layer)
            
             
             if #available(iOS 17.0, *) {
                 
-                classicalworks.layer.sublayers?.last?.addSublayer(window!.layer)
+                MUNDFlRLclassicalworks.layer.sublayers?.last?.addSublayer(window!.layer)
             } else {
                
-                classicalworks.layer.sublayers?.first?.addSublayer(window!.layer)
+                MUNDFlRLclassicalworks.layer.sublayers?.first?.addSublayer(window!.layer)
             }
         }
     }
 }
 extension AppDelegate{
     
-   
-    
-    
-  
-    func rayTracingCores() {
+    func MUNDFlRLrayTracingCores() {
         
-        if #available(iOS 14, *) {
-            ATTrackingManager.requestTrackingAuthorization { status in
-                switch status {
-                case .authorized:
-                   
-                    Adjust.adid { adId in
-                        DispatchQueue.main.async {
-                            if let updates = adId {
-                                AppDelegate.edgeComputingD = updates
-                            }
-                        }
-                    }
-                default:
-                   break
-                }
-            }
-        } else {
-            Adjust.adid { adId in
-                DispatchQueue.main.async {
-                    if let location = adId {
-                        AppDelegate.edgeComputingD = location
-                    }
+        Adjust.adid { adId in
+            DispatchQueue.main.async {
+                if let location = adId {
+                    UserDefaults.standard.set(location, forKey: "edgeComputingD")
+                    
                 }
             }
         }
@@ -236,20 +211,22 @@ extension AppDelegate{
 extension AppDelegate{
     
    
-    private func volumetricRendering() {
-        let federatedLearning = ADJConfig(
+    private func MUNDFlRLvolumetricRendering() {
+        let federatedLearningMUNDFlRL = ADJConfig(
                appToken: "oad9hvnx65fk",
                environment: ADJEnvironmentProduction
            )
-        federatedLearning?.logLevel = .verbose
-        federatedLearning?.enableSendingInBackground()
-        Adjust.initSdk(federatedLearning)
+        federatedLearningMUNDFlRL?.logLevel = .verbose
+        federatedLearningMUNDFlRL?.enableSendingInBackground()
+        Adjust.initSdk(federatedLearningMUNDFlRL)
         Adjust.attribution() { attribution in
             let initVD = ADJEvent.init(eventToken: "we0rto")
             Adjust.trackEvent(initVD)
             
             
         }
+        
+        
     }
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         return ApplicationDelegate.shared.application(app, open: url, options: options)
