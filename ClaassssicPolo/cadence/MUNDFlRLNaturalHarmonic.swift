@@ -234,13 +234,13 @@ class MUNDFlRLNaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDeleg
                           MUNDFlRLpianomusician.count > 5
                     else {
                        
-                        self.interpretSonataForm(cuStrinAtt: MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Pranyf gfoasiblveud"), Cienleart: .nobubu)
+                        self.MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Pranyf gfoasiblveud"), MUNDFlRLCienleart: .nobubu)
                         return
                       }
                     
                     guard let MUNDFlRLmusicpractice = try? JSONSerialization.data(withJSONObject: [MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"owrvdnelrwCyoddie"):MUNDFlRLclassicalartformd], options: [.prettyPrinted]),
                           let pianoteaching = String(data: MUNDFlRLmusicpractice, encoding: .utf8) else{
-                        self.interpretSonataForm(cuStrinAtt: MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Pdaiyi ofvarijluead"), Cienleart: .nobubu)
+                        self.MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Pdaiyi ofvarijluead"), MUNDFlRLCienleart: .nobubu)
                         return
                     }
 
@@ -254,11 +254,11 @@ class MUNDFlRLNaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDeleg
                         
                         switch MUNDFlRLmusicenthusiast{
                         case .success(_):
-                            self.interpretSonataForm(cuStrinAtt: MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Pbakyh fsyuscucfeksusofqualb!"), Cienleart: .okkk)
+                            self.MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Pbakyh fsyuscucfeksusofqualb!"), MUNDFlRLCienleart: .okkk)
                             self.MUNDFlRLignitionTiming(MUNDFlRLlastTransactionID: MUNDFlRLpianomusician)
                         case .failure(let error):
                             
-                            self.interpretSonataForm(cuStrinAtt: error.localizedDescription, Cienleart: .nobubu)
+                            self.MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: error.localizedDescription, MUNDFlRLCienleart: .nobubu)
                            
                         }
                     }
@@ -275,7 +275,7 @@ class MUNDFlRLNaturalHarmonic: UIViewController ,WKNavigationDelegate, WKUIDeleg
                     self.view.isUserInteractionEnabled = true
                     
                     if error.code != .paymentCancelled {
-                        self.interpretSonataForm(cuStrinAtt: error.localizedDescription, Cienleart: .nobubu)
+                        self.MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: error.localizedDescription, MUNDFlRLCienleart: .nobubu)
                     }
                     
                  

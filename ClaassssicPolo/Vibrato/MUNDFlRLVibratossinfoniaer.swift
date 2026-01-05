@@ -190,14 +190,14 @@ class MUNDFlRLVibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNav
             portableMUNDFlRLCharger()
             self.MUNDFlRLresultLabel.textAlignment = .center
             if case .success( _) = psResult {
-                self.interpretSonataForm(cuStrinAtt: MUNDFlRLdhu, Cienleart: .okkk)
+                self.MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: MUNDFlRLdhu, MUNDFlRLCienleart: .okkk)
                 self.MUNDFlRLresultLabel.textColor = .white
                 self.MUNDFlRLbisbigliando()
             }else if case .error(let error) = psResult {
                 self.view.isUserInteractionEnabled = true
                 self.MUNDFlRLresultLabel.textAlignment = .center
                 if error.code != .paymentCancelled {
-                    self.interpretSonataForm(cuStrinAtt: error.localizedDescription, Cienleart: .nobubu)
+                    self.MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: error.localizedDescription, MUNDFlRLCienleart: .nobubu)
                   
                 }
                 

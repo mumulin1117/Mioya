@@ -38,7 +38,7 @@ class MUNDFlRLTremolossinfoniaer: UIViewController, UICollectionViewDataSource ,
         let MUNDFlRLdabet = indexPath.row
         let letvskdjf = UILabel.init(frame: .zero)
         let preparation = "souvenirIdeas"
-        let gooole = MUNDFlRLHomophony.MUNDFlRLbariolage.lusingando(morendo: "\(MUNDFlRLdabet)")
+        let gooole = MUNDFlRLHomophony.MUNDFlRLariolage.MUNDFlRLlusingando(MUNDFlRLmorendo: "\(MUNDFlRLdabet)")
         letvskdjf.text = gooole
         let contri = MUNDFlRLVibratossinfoniaer.init(nobileLMUNDFlRLL: letvskdjf, morendoOOMUNDFlRL: (preparation,preparation,false))
         self.navigationController?.pushViewController(contri, animated: true)
@@ -183,7 +183,7 @@ class MUNDFlRLTremolossinfoniaer: UIViewController, UICollectionViewDataSource ,
                 } else {
                     let lilian = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
                     let v2 = CGVector(dx: MUNDFlRLpoints[2].x - MUNDFlRLpoints[1].x, dy: MUNDFlRLpoints[2].y - MUNDFlRLpoints[1].y)
-                    self.interpretSonataForm(cuStrinAtt: lilian, Cienleart: .shine)
+                    self.MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: lilian, MUNDFlRLCienleart: .shine)
                     if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                         return
                     }

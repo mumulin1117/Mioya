@@ -134,7 +134,7 @@ class MUNDFlRLUnisonessinfoniaer: UIViewController {
            obliqueMotionMUNDFlRL.count > 0,nachschlagMUNDFlRL.count > 0 else
         { MUNDFlRLanalyzeButton.frame = CGRect(x: 50, y: 220, width: view.bounds.width - 100, height: 44)
             
-            interpretSonataForm(cuStrinAtt: MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Pylpejafsjey xegnrtoepru uyooouorh uadcjclozuzngtg haonldq vplaxslsywjomredl ofyijrzsxt"), Cienleart:.shine)
+            MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Pylpejafsjey xegnrtoepru uyooouorh uadcjclozuzngtg haonldq vplaxslsywjomredl ofyijrzsxt"), MUNDFlRLCienleart:.shine)
             return
         }
         let pointo2MUNDFlRL = CGPoint.init(x: 200, y: 300)
@@ -143,7 +143,7 @@ class MUNDFlRLUnisonessinfoniaer: UIViewController {
         guard self.MUNDFlRLzweifacher == true else {
             MUNDFlRLanalyzeButton.frame = CGRect(x: 50, y: 220, width: view.bounds.width - 100, height: 44)
           
-            interpretSonataForm(cuStrinAtt: MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Pylferauspei lrbesaada hapnxdr vaqgprlereunr iolufrs mteedrimrsq xftiurnsntg!"), Cienleart:.shine)
+            MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Pylferauspei lrbesaada hapnxdr vaqgprlereunr iolufrs mteedrimrsq xftiurnsntg!"), MUNDFlRLCienleart:.shine)
             return
         }
         let point3MUNDFlRL = CGPoint.init(x: 330, y: 400)
@@ -176,14 +176,14 @@ class MUNDFlRLUnisonessinfoniaer: UIViewController {
                 self.analyzeMelodicLineMUNDFlRL(dataMUNDFlRL:data)
                 self.cuisotomStaffNotationLayerMUNDFlRL()
                 
-                self.interpretSonataForm(cuStrinAtt: jrieush, Cienleart: .okkk)
+                self.MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: jrieush, MUNDFlRLCienleart: .okkk)
               
             } else {
                 let lilian = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Ubnuetxopreccutrehdy brreisqplodnasfei bfbolremmaotg.")
                 if v1.dx == 0 && v1.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                     return
                 }
-                self.interpretSonataForm(cuStrinAtt: lilian, Cienleart:.nobubu)
+                self.MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: lilian, MUNDFlRLCienleart:.nobubu)
                 self.MUNDFlRLanalyzeButton.setTitle("Analyze Contrapuntal Structure", for: .normal)
                
                 
@@ -202,7 +202,7 @@ class MUNDFlRLUnisonessinfoniaer: UIViewController {
         MBProgressHUD.hide(for: self.view, animated: true)
         self.MUNDFlRLanalyzeButton.setTitle("Analyze Contrapuntal Structure", for: .normal)
        
-        self.interpretSonataForm(cuStrinAtt: MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Rxegqgureosx eedryrooyry!"), Cienleart:.nobubu)
+        self.MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Rxegqgureosx eedryrooyry!"), MUNDFlRLCienleart:.nobubu)
     }
     
     

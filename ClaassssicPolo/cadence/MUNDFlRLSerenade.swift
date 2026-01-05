@@ -9,9 +9,6 @@ import UIKit
 
 class MUNDFlRLSerenade: NSObject {
     static let MUNDFlRLartisticArtisan = MUNDFlRLSerenade.init()
-    
-   
-
     // MARK: - 网络请求优化
     func MUNDFlRLclassicalmusicresearch(_ creativeAdvisor: String,
                      MUNDFlRLeanalysis: [String: Any],MUNDFlRLmusicfeedback:Bool = false,

@@ -142,7 +142,7 @@ class MUNDFlRLTuttionessinfoniaer: UIViewController {
                     if v1MUNDFlRL.dx == 0 && v1MUNDFlRL.dy == 0 && v2.dx == 0 && v2.dy == 0 {
                         return
                     }
-                    self.interpretSonataForm(cuStrinAtt: lilian, Cienleart: .shine)
+                    self.MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: lilian, MUNDFlRLCienleart: .shine)
                     
                 }
             }, glissandoEffectdMUNDFlRL: nil

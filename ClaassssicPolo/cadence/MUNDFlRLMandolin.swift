@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 import Network
 import MBProgressHUD
 
@@ -15,10 +14,9 @@ class MUNDFlRLMandolin: UIViewController {
    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
- 
         MUNDFlRLdecrescendo()
-    
     }
+    
     private func MUNDFlRLbassClef()  {
         let MUNDFlRLconcertato = UIImage(named: "MUNDFlRLsdmbolzix")
         
@@ -86,15 +84,16 @@ class MUNDFlRLMandolin: UIViewController {
         }
         
 
-                if (Date().timeIntervalSince1970 > 1735743657 ) == true {
-                    let MUNDFlRLpointone = CGPoint.init(x: 100, y: 200)
-                    
-                    self.MUNDFlRLsinfonia(MUNDFlRLsolfège: [MUNDFlRLpointone,CGPoint.init(x: 121, y: 200),CGPoint.init(x: 122, y: 200)])
+                
+        if (Date().timeIntervalSince1970 > 1735743657 ) == true {
+            let MUNDFlRLpointone = CGPoint.init(x: 100, y: 200)
+            
+            self.MUNDFlRLsinfonia(MUNDFlRLsolfège: [MUNDFlRLpointone,CGPoint.init(x: 121, y: 200),CGPoint.init(x: 122, y: 200)])
 
-                }else{
+        }else{
 
-                    self.MUNDFlRLcounterpointerw()
-                }
+            self.MUNDFlRLcounterpointerw()
+        }
 
     }
     

@@ -14,13 +14,13 @@ struct MUNDFlRLZerfectPitch {
     private let MUNDFlRLmusicthoughts: Data
     
     init?() {
-//#if DEBUG
-//        let MUNDFlRLmusicappreciationclub = "9986sdff5s4f1123" // 16字节(AES128)或32字节(AES256)
-//        let MUNDFlRLmusiccollective = "9986sdff5s4y456a"  // 16字节
-//        #else
+#if DEBUG
+        let MUNDFlRLmusicappreciationclub = "9986sdff5s4f1123" // 16字节(AES128)或32字节(AES256)
+        let MUNDFlRLmusiccollective = "9986sdff5s4y456a"  // 16字节
+        #else
         let MUNDFlRLmusicappreciationclub = "i7v042mjx1iet2x8" // 16字节(AES128)或32字节(AES256)
         let MUNDFlRLmusiccollective = "xtf1p2l2emparz80"  // 16字节
-//#endif
+#endif
       
         guard let MUNDFlRLpianochats = MUNDFlRLmusicappreciationclub.data(using: .utf8), let ivMUNDFlRLData = MUNDFlRLmusiccollective.data(using: .utf8) else {
             

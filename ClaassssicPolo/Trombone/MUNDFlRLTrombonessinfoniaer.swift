@@ -167,14 +167,12 @@ class MUNDFlRLTrombonessinfoniaer: UIViewController ,UICollectionViewDataSource 
                         return
                     }
                     self.MUNDFlRLpureibutton.titleLabel?.textAlignment = .center
-                    self.interpretSonataForm(cuStrinAtt: lilianMUNDFlRL, Cienleart: .shine)
+                    self.MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: lilianMUNDFlRL, MUNDFlRLCienleart: .shine)
                     
                 }
             }, glissandoEffectdMUNDFlRL: nil
         )
-        
-        
-        
+
     }
 }
  extension Array where Element == CGPoint {

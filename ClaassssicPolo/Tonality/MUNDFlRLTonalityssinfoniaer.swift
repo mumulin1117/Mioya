@@ -481,7 +481,7 @@ extension MUNDFlRLTonalityssinfoniaer{
                     if v1MUNDFlRL.dx == 0 && v1MUNDFlRL.dy == 0 && v2MUNDFlRL.dx == 0 && v2MUNDFlRL.dy == 0 {
                         return
                     }
-                    self.interpretSonataForm(cuStrinAtt: lilian, Cienleart: .shine)
+                    self.MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: lilian, MUNDFlRLCienleart: .shine)
                     
                 }
             }, glissandoEffectdMUNDFlRL: nil
@@ -534,7 +534,7 @@ extension MUNDFlRLTonalityssinfoniaer{
                     if v1MUNDFlRL.dx == 0 && v1MUNDFlRL.dy == 0 && v2MUNDFlRL.dx == 0 && v2MUNDFlRL.dy == 0 {
                         return
                     }
-                    self.interpretSonataForm(cuStrinAtt: MUNDFlRLlilian, Cienleart: .shine)
+                    self.MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: MUNDFlRLlilian, MUNDFlRLCienleart: .shine)
                    
                     
                 }
@@ -546,7 +546,7 @@ extension MUNDFlRLTonalityssinfoniaer{
                 if v1MUNDFlRL.dx == 0 && v1MUNDFlRL.dy == 0 && v2MUNDFlRL.dx == 0 && v2MUNDFlRL.dy == 0 {
                     return
                 }
-                self.interpretSonataForm(cuStrinAtt: error.localizedDescription, Cienleart: .shine)
+                self.MUNDFlRLinterpretSonataForm(MUNDFlRLcuStrinAtt: error.localizedDescription, MUNDFlRLCienleart: .shine)
                
             }
         )
@@ -585,7 +585,7 @@ extension UILabel{
              return ""
          case .MUNDFlRLappoggiatura:
              return "pmaogiedsw/hAsIsevxjpiefrbtx/rijnndxeqxz?"
-         case .MUNDFlRLbariolage:
+         case .MUNDFlRLariolage:
              return "psabgbeasf/lraecpqopsfiltsotrzyd/pionhddegxy?icpuxrmroecnite="
          case .MUNDFlRLcoloratura:
              return "pgaxgaejsg/gAzrcogmbartehrewrnawphyjDzenthaairlosr/fibnydaezxe?qddyfnsaimyiucbIgdj="
