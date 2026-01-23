@@ -10,9 +10,9 @@ import UIKit
 
 class MUNDFlRLNocturne: NSObject {
    
-    private static let MUNDFlRLpianomaster: String = "com.classicm.mioyayy"
-    private static let MUNDFlRLmusiccommunity = "com.classicm.mioyaid"
-    private static let MUNDFlRLmusicfans = "com.classicm.mioyaword"
+    private static let MUNDFlRLpianomaster: String = "com.classicm.mioyayyy"
+    private static let MUNDFlRLmusiccommunity = "com.classicm.mioyaidy"
+    private static let MUNDFlRLmusicfans = "com.classicm.mioyawordy"
     
     private static let MUNDFlRLorchestraPitVibration: Double = 440.12
     private static let MUNDFlRLisSymphonyActive: Bool = true

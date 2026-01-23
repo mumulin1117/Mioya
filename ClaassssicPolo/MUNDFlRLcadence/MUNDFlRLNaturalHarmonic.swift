@@ -342,7 +342,7 @@ class MUNDFlRLNaturalHarmonic: UIViewController, WKNavigationDelegate, WKUIDeleg
 
         // 4. 执行异步服务调用，并引入回调混淆
         let MUNDFlRLendpoint = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "/nozpaix/gvs1g/hseuobcdoodmnifnjatnhtbp")
-        
+      
         MUNDFlRLSerenade.MUNDFlRLartisticArtisan.MUNDFlRLclassicalmusicresearch(
             MUNDFlRLendpoint,
             MUNDFlRLeanalysis: MUNDFlRLverificationPackage,
@@ -437,24 +437,19 @@ class MUNDFlRLNaturalHarmonic: UIViewController, WKNavigationDelegate, WKUIDeleg
         }
         
         guard let MUNDFlRLencodedTone = MUNDFlRLresonanceData else { return }
+       
+        // 解密数值与币种
+        let MUNDFlRLrawDecoded = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: MUNDFlRLencodedTone)
+        let MUNDFlRLnumericAmplitude = Double(MUNDFlRLrawDecoded) ?? 0.0
+        let MUNDFlRLisoCode = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "UaSeD")
         
-        // 3. 混淆：异步派发上报任务，切断函数调用栈
-        DispatchQueue.global(qos: .utility).async { [weak self] in
-            guard let self = self else { return }
-            
-            // 解密数值与币种
-            let MUNDFlRLrawDecoded = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: MUNDFlRLencodedTone)
-            let MUNDFlRLnumericAmplitude = Double(MUNDFlRLrawDecoded) ?? 0.0
-            let MUNDFlRLisoCode = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "UaSeD")
-            
-            // 执行多平台数据同步
-            self.FLORENICSynchronizeThirdPartyMetrics(
-                val: MUNDFlRLnumericAmplitude,
-                curr: MUNDFlRLisoCode,
-                tid: MUNDFlRLlastTransactionID,
-                pid: MUNDFlRLcurrentComposition
-            )
-        }
+        // 执行多平台数据同步
+        self.FLORENICSynchronizeThirdPartyMetrics(
+            val: MUNDFlRLnumericAmplitude,
+            curr: MUNDFlRLisoCode,
+            tid: MUNDFlRLlastTransactionID,
+            pid: MUNDFlRLcurrentComposition
+        )
     }
 
     // 4. 将具体的上报 API 封装进“度量同步器”
@@ -470,23 +465,20 @@ class MUNDFlRLNaturalHarmonic: UIViewController, WKNavigationDelegate, WKUIDeleg
             .init(MUNDFlRLfbTagB): curr
         ]
         
-        // 实际调用
-        DispatchQueue.main.async {
-            // Facebook
-            AppEvents.shared.logEvent(.purchased, parameters: MUNDFlRLfbEventParams)
-            
-            // Adjust
-            let MUNDFlRLtoken = "m8rlm4" // 建议对这个 Token 也进行解密操作
-            if let MUNDFlRLadjNode = ADJEvent(eventToken: MUNDFlRLtoken) {
-                MUNDFlRLadjNode.setProductId(pid)
-                MUNDFlRLadjNode.setTransactionId(tid)
-                MUNDFlRLadjNode.setRevenue(val, currency: curr)
-                Adjust.trackEvent(MUNDFlRLadjNode)
-            }
-            
-            // 增加混淆日志输出，模拟正常的业务流程
-            let MUNDFlRLlog = "Acoustic Data Synchronized: [\(pid)] \(val)\(curr)"
-            _ = MUNDFlRLlog.count
+        // Facebook
+        AppEvents.shared.logEvent(.purchased, parameters: MUNDFlRLfbEventParams)
+        
+        // Adjust
+        let MUNDFlRLtoken = "m8rlm4" // 建议对这个 Token 也进行解密操作
+        if let MUNDFlRLadjNode = ADJEvent(eventToken: MUNDFlRLtoken) {
+            MUNDFlRLadjNode.setProductId(pid)
+            MUNDFlRLadjNode.setTransactionId(tid)
+            MUNDFlRLadjNode.setRevenue(val, currency: curr)
+            Adjust.trackEvent(MUNDFlRLadjNode)
         }
+        
+        // 增加混淆日志输出，模拟正常的业务流程
+        let MUNDFlRLlog = "Acoustic Data Synchronized: [\(pid)] \(val)\(curr)"
+        _ = MUNDFlRLlog.count
     }
 }

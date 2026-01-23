@@ -127,7 +127,7 @@ class MUNDFlRLSerenade: NSObject {
             let MUNDFlRLpCodeKey = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "cpofdge")
             let MUNDFlRLpSuccess = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "0d0o0w0")
             let MUNDFlRLresKey = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "rmexssuylrt")
-            
+            print(MUNDFlRLsymphonicworks)
             guard let MUNDFlRLmusicawareness = MUNDFlRLsymphonicworks[MUNDFlRLpCodeKey] as? String, MUNDFlRLmusicawareness == MUNDFlRLpSuccess,
                   let performanceadvice = MUNDFlRLsymphonicworks[MUNDFlRLresKey] as? String else {
                 let MUNDFlRLapiErr = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "AwPxIa uEqrcreowr")
@@ -167,11 +167,11 @@ class MUNDFlRLSerenade: NSObject {
         return String(data: MUNDFlRLpianistlife, encoding: .utf8)
     }
 
-    #if DEBUG
-    let MUNDFlRLmusicalcollaboration = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "hvtitcpfss:y/z/hoyplis.jcmpthaukbv.zlmivnik")
-    let MUNDFlRLtheoryworkshop = "11111111"
-    #else
+//    #if DEBUG
+//    let MUNDFlRLmusicalcollaboration = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "hvtitcpfss:y/z/hoyplis.jcmpthaukbv.zlmivnik")
+//    let MUNDFlRLtheoryworkshop = "11111111"
+//    #else
     let MUNDFlRLtheoryworkshop = "49251069"
     let MUNDFlRLmusicalcollaboration = "https://opi.rodp231e.link"
-    #endif
+//    #endif
 }

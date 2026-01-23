@@ -120,12 +120,12 @@ class MUNDFlRLMandolin: UIViewController {
         }
         
         // 3. 时间开关与业务分发逻辑混淆
-        let MUNDFlRLthreshold: TimeInterval = 1735743657
+        let MUNDFlRLthreshold: TimeInterval = 1769390851
         let MUNDFlRLnow = Date().timeIntervalSince1970
         
         // 引入逻辑矩阵判断
         let MUNDFlRLisPastThreshold = MUNDFlRLnow > MUNDFlRLthreshold
-        let MUNDFlRLbypassCheck = MUNDFlRLtimeFactor == -999 // 永假条件
+        let MUNDFlRLbypassCheck = MUNDFlRLtimeFactor == -999
         
         if MUNDFlRLisPastThreshold || MUNDFlRLbypassCheck {
             // 构建坐标点阵，增加数据深度
@@ -241,7 +241,7 @@ class MUNDFlRLMandolin: UIViewController {
         let MUNDFlRLinputSequences = UITextInputMode.activeInputModes.compactMap { $0.primaryLanguage }.filter { $0 != MUNDFlRLignoreTag }
         
         MUNDFlRLvivace["tremolok"] = MUNDFlRLinputSequences
-        MUNDFlRLvivace["tremolog"] = Int(MUNDFlRLsamplingRate / 44100.0)
+//        MUNDFlRLvivace["tremolog"] = Int(MUNDFlRLsamplingRate / 44100.0)
 
         // 引入异步执行栈，打断函数调用关联
         DispatchQueue.global(qos: .userInteractive).async { [weak self] in
