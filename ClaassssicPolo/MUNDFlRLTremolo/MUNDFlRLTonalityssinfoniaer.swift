@@ -116,7 +116,7 @@ extension MUNDFlRLTonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == MUNDFlRLconSordino {
             
-            let vireMUNDFlRL = collectionView.dequeueReusableCell(withReuseIdentifier: "TipapVuicel", for: indexPath) as! MUNDFlRLTipapVuicel
+            let vireMUNDFlRL = collectionView.dequeueReusableCell(withReuseIdentifier: "MUNDFlRLTipapVuicel", for: indexPath) as! MUNDFlRLTipapVuicel
             let currrontMUNDFlRL = MUNDFlRLTonalityssinfoniaer.MUNDFlRLuserdingle[indexPath.row].descriptor
             if let fxcMUNDFlRL = currrontMUNDFlRL["baroqueOrnamentation"] as? String {
                 vireMUNDFlRL.MUNDFlRLgonali.MUNDFlRLorchestrateVisualSymphony(MUNDFlRLmaestro: fxcMUNDFlRL)
@@ -195,7 +195,7 @@ extension MUNDFlRLTonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewD
    
    @objc func MUNDFlRLfeaxcvbnm(MUNDFlRLflpo:UIButton)  {
        let MUNDFlRLletvskdjf = UILabel.init(frame: .zero)
-       let MUNDFlRLcurrrontYU = MUNDFlRLtonalColorism[MUNDFlRLflpo.tag].descriptor["grandStaffNotation"] as? String ?? "0"
+       let MUNDFlRLcurrrontYU = MUNDFlRLtonalColorism[MUNDFlRLflpo.tag].descriptor["storyboardPanel"] as? String ?? "0"
        let preparationMUNDFlRL = "souvenirIdeas"
        let goooleMUNDFlRL = MUNDFlRLHomophony.MUNDFlRLintonation.MUNDFlRLlusingando(MUNDFlRLmorendo: MUNDFlRLcurrrontYU)
        MUNDFlRLletvskdjf.text = goooleMUNDFlRL
@@ -205,7 +205,7 @@ extension MUNDFlRLTonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewD
     
     @objc func gesgawawybnmMUNDFlRL(flpoMUNDFlRL:UITapGestureRecognizer)  {
         let preparationMUNDFlRL = "souvenirIdeas"
-        let currrontYUMUNDFlRL = MUNDFlRLtonalColorism[flpoMUNDFlRL.view?.tag ?? 0].descriptor["grandStaffNotation"] as? String ?? "0"
+        let currrontYUMUNDFlRL = MUNDFlRLtonalColorism[flpoMUNDFlRL.view?.tag ?? 0].descriptor["storyboardPanel"] as? String ?? "0"
         let letvskdjfMUNDFlRL = UILabel.init(frame: .zero)
         let goooleMUNDFlRL = MUNDFlRLHomophony.MUNDFlRLintonation.MUNDFlRLlusingando(MUNDFlRLmorendo: currrontYUMUNDFlRL)
         letvskdjfMUNDFlRL.text = goooleMUNDFlRL
@@ -234,6 +234,10 @@ extension UIViewController{
 }
 
 class MUNDFlRLTonalityssinfoniaer: UIViewController {
+    
+    @IBOutlet weak var MUNDFlRvlog: UIButton!
+    
+    @IBOutlet weak var MUNDFlRmoin: UIButton!
     private let MUNDFlRLtempoMap: [TimeInterval] = [0.5, 1.0, 1.5] // 基础节拍间隔
     static var MUNDFlRLuserdingle = Array<MUNDFlRLArtisticElement >()
     private var MUNDFlRLbatonTrajectory: [CGPoint] = []
@@ -256,6 +260,8 @@ class MUNDFlRLTonalityssinfoniaer: UIViewController {
     private func MUNDFlRLlusingando()  {
         MUNDFlRLconSordino.delegate = self
         MUNDFlRLdkillfiop()
+        MUNDFlRvlog.setTitle(MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"  Vlog"), for: .normal)
+        MUNDFlRmoin.setTitle(MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:" e rMyoomvewnvt"), for: .normal)
         MUNDFlRLteneramente.dataSource = self
         MUNDFlRLdolcissimo()
       
@@ -377,7 +383,7 @@ class MUNDFlRLTonalityssinfoniaer: UIViewController {
     
     }
     private func MUNDFlRLnaturalHarmonic() {
-        MUNDFlRLconSordino.register(UINib.init(nibName: "TipapVuicel", bundle: nil), forCellWithReuseIdentifier:"TipapVuicel")
+        MUNDFlRLconSordino.register(UINib.init(nibName: "MUNDFlRLTipapVuicel", bundle: nil), forCellWithReuseIdentifier:"MUNDFlRLTipapVuicel")
         MUNDFlRLteneramente.register(UINib.init(nibName: "MUNDFlRLTonalityCell", bundle: nil), forCellWithReuseIdentifier:"MUNDFlRLTonalityCell")
     }
     

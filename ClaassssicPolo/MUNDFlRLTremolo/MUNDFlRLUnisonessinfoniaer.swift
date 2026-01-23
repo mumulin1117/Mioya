@@ -209,7 +209,7 @@ class MUNDFlRLUnisonessinfoniaer: UIViewController {
     func analyzeMelodicLineMUNDFlRL(dataMUNDFlRL:Dictionary<String,Any>)  {
         MUNDFlRLanalyzeButton.setTitle("Analyze Contrapuntal Structure", for: .normal)
        
-        let conSordino = dataMUNDFlRL["conSordino"] as? Int
+        let conSordino = dataMUNDFlRL["conSordino"] as? String
         UserDefaults.standard.set(conSordino, forKey: "conSordino")
        
         MUNDFlRLstaffView.frame = CGRect(x: 20, y: 80, width: view.bounds.width - 40, height: 120)

@@ -25,6 +25,12 @@ class MUNDFlRLTremolossinfoniaer: UIViewController, UICollectionViewDataSource ,
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         MUNDFlRLtonalColorism.count
     }
+    @IBOutlet weak var MUNDFlRreent: UILabel!
+    
+    @IBOutlet weak var MUNDFlRmmedf: UILabel!
+    
+    
+    
     
     private func MUNDFlRLbuildInvertibleCounterpoint() -> [String: Any] {
      
@@ -66,6 +72,8 @@ class MUNDFlRLTremolossinfoniaer: UIViewController, UICollectionViewDataSource ,
     override func viewDidLoad() {
         super.viewDidLoad()
         MUNDFlRLlusingando()
+        MUNDFlRreent.text = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "Rpebckennytullyv bAycothikveel kFaruicehnhdhs")
+        MUNDFlRmmedf.text = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "Miecsmsvaughe")
         let pointone = CGPoint.init(x: 100, y: 200)
         let pointo2 = CGPoint.init(x: 200, y: 300)
         

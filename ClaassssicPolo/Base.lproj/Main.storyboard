@@ -65,18 +65,18 @@
                                     <action selector="MUNDFlRLtomenfaggert:" destination="Auf-bt-uef" eventType="touchUpInside" id="6oM-Ol-LSb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recently Active Friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhD-Lo-ney">
-                                <rect key="frame" x="12" y="126" width="131" height="14.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhD-Lo-ney">
+                                <rect key="frame" x="12" y="126" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dez-Kn-N7u">
-                                <rect key="frame" x="337" y="122" width="17" height="52"/>
+                                <rect key="frame" x="304" y="126" width="50" height="44"/>
                                 <color key="backgroundColor" red="0.023529411764705882" green="0.035294117647058823" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="ntT-ZQ-urU"/>
-                                    <constraint firstAttribute="width" constant="17" id="x8b-D0-Ynk"/>
+                                    <constraint firstAttribute="height" constant="44" id="ntT-ZQ-urU"/>
+                                    <constraint firstAttribute="width" constant="50" id="x8b-D0-Ynk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -93,8 +93,8 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmx-aX-stL">
-                                <rect key="frame" x="12" y="145.5" width="78" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmx-aX-stL">
+                                <rect key="frame" x="12" y="131" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -133,6 +133,8 @@
                         <outlet property="MUNDFlRLmezzoSoprano" destination="YKq-im-SQQ" id="aPi-ej-Ifk"/>
                         <outlet property="MUNDFlRLonlinwrUserVIur" destination="AlA-jQ-uVu" id="xad-rI-d42"/>
                         <outlet property="MUNDFlRLpicjNextLabr" destination="Dez-Kn-N7u" id="XG8-Cg-rU0"/>
+                        <outlet property="MUNDFlRmmedf" destination="wmx-aX-stL" id="oHx-fg-b8J"/>
+                        <outlet property="MUNDFlRreent" destination="mhD-Lo-ney" id="dND-M9-gZ2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yM4-7j-dKi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -161,8 +163,8 @@
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaB-Er-Bhz">
-                                <rect key="frame" x="13" y="369" width="42.5" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaB-Er-Bhz">
+                                <rect key="frame" x="13" y="369" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.8980392157" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -312,6 +314,7 @@
                         <outlet property="MUNDFlRLserenade" destination="bLb-9M-yWN" id="1M1-Rr-lX9"/>
                         <outlet property="MUNDFlRLsextet" destination="mkb-QZ-sxf" id="n6B-AT-A5S"/>
                         <outlet property="MUNDFlRLternary" destination="dQA-zd-Bz7" id="zOf-Ea-bfT"/>
+                        <outlet property="MUNDFlRpoassfte" destination="vaB-Er-Bhz" id="4Nx-4v-CF9"/>
                         <outlet property="nIaavtujaMUNDFlRL" destination="MRB-xM-jgg" id="fRu-DF-zEC"/>
                     </connections>
                 </viewController>
@@ -485,7 +488,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="  Vlog" image="MUNDFlRLJIushhh">
+                                <state key="normal" image="MUNDFlRLJIushhh">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -503,7 +506,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="  Moment" image="MUNDFlRLarticulation">
+                                <state key="normal" image="MUNDFlRLarticulation">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -559,6 +562,8 @@
                         <outlet property="MUNDFlRLconSordino" destination="OzB-2N-nnT" id="nws-zK-3pV"/>
                         <outlet property="MUNDFlRLindiVavterImah" destination="hyv-Mf-WYO" id="OrO-E6-Luw"/>
                         <outlet property="MUNDFlRLteneramente" destination="bVJ-0e-pe2" id="Bsf-Ly-V0Y"/>
+                        <outlet property="MUNDFlRmoin" destination="9il-kl-dcv" id="VF2-D7-LPp"/>
+                        <outlet property="MUNDFlRvlog" destination="QxL-d3-bWG" id="NVQ-s9-jD8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JcY-cK-ULs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -590,35 +595,35 @@
         </scene>
     </scenes>
     <resources>
-        <image name="MUNDFlRLIFunction" width="128" height="128"/>
-        <image name="MUNDFlRLJIushhh" width="128" height="128"/>
-        <image name="MUNDFlRLJJLaingr" width="128" height="128"/>
-        <image name="MUNDFlRLMioya" width="128" height="128"/>
-        <image name="MUNDFlRLODipoivc" width="128" height="128"/>
-        <image name="MUNDFlRLPlanetDetails" width="128" height="128"/>
-        <image name="MUNDFlRLPquaion0" width="128" height="128"/>
-        <image name="MUNDFlRLPquaion0gg" width="128" height="128"/>
-        <image name="MUNDFlRLPquaion1" width="128" height="128"/>
-        <image name="MUNDFlRLPquaion1gg" width="128" height="128"/>
-        <image name="MUNDFlRLPquaion2" width="128" height="128"/>
-        <image name="MUNDFlRLPquaion2gg" width="128" height="128"/>
-        <image name="MUNDFlRLPquaion3" width="128" height="128"/>
-        <image name="MUNDFlRLPquaion3gg" width="128" height="128"/>
-        <image name="MUNDFlRLallegro" width="128" height="128"/>
-        <image name="MUNDFlRLandante" width="128" height="128"/>
-        <image name="MUNDFlRLarpeggio" width="128" height="128"/>
-        <image name="MUNDFlRLarticulation" width="128" height="128"/>
-        <image name="MUNDFlRLatIpreview" width="128" height="128"/>
-        <image name="MUNDFlRLbaoinglert" width="128" height="128"/>
-        <image name="MUNDFlRLbelCanto" width="128" height="128"/>
-        <image name="MUNDFlRLbrassEnsemble" width="128" height="128"/>
-        <image name="MUNDFlRLconcertato" width="128" height="128"/>
-        <image name="MUNDFlRLconductor" width="128" height="128"/>
-        <image name="MUNDFlRLcounterpoint" width="128" height="128"/>
-        <image name="MUNDFlRLgeojs" width="128" height="128"/>
-        <image name="MUNDFlRLlaogjuBif" width="128" height="128"/>
-        <image name="MUNDFlRLminepoji" width="128" height="128"/>
-        <image name="MUNDFlRLzbuahgmaheir" width="128" height="128"/>
+        <image name="MUNDFlRLIFunction" width="147" height="27.5"/>
+        <image name="MUNDFlRLJIushhh" width="20" height="17"/>
+        <image name="MUNDFlRLJJLaingr" width="173" height="2"/>
+        <image name="MUNDFlRLMioya" width="77" height="27.5"/>
+        <image name="MUNDFlRLODipoivc" width="20" height="18"/>
+        <image name="MUNDFlRLPlanetDetails" width="183" height="27.5"/>
+        <image name="MUNDFlRLPquaion0" width="28" height="28"/>
+        <image name="MUNDFlRLPquaion0gg" width="30" height="30"/>
+        <image name="MUNDFlRLPquaion1" width="27.5" height="27"/>
+        <image name="MUNDFlRLPquaion1gg" width="30" height="30"/>
+        <image name="MUNDFlRLPquaion2" width="28" height="26"/>
+        <image name="MUNDFlRLPquaion2gg" width="29" height="28"/>
+        <image name="MUNDFlRLPquaion3" width="26" height="26"/>
+        <image name="MUNDFlRLPquaion3gg" width="25" height="28"/>
+        <image name="MUNDFlRLallegro" width="40" height="40"/>
+        <image name="MUNDFlRLandante" width="375" height="812"/>
+        <image name="MUNDFlRLarpeggio" width="20" height="17"/>
+        <image name="MUNDFlRLarticulation" width="20" height="18"/>
+        <image name="MUNDFlRLatIpreview" width="152" height="152"/>
+        <image name="MUNDFlRLbaoinglert" width="105" height="90"/>
+        <image name="MUNDFlRLbelCanto" width="351" height="167"/>
+        <image name="MUNDFlRLbrassEnsemble" width="105" height="90"/>
+        <image name="MUNDFlRLconcertato" width="105" height="90"/>
+        <image name="MUNDFlRLconductor" width="151" height="74"/>
+        <image name="MUNDFlRLcounterpoint" width="151" height="74"/>
+        <image name="MUNDFlRLgeojs" width="110" height="110"/>
+        <image name="MUNDFlRLlaogjuBif" width="375" height="68"/>
+        <image name="MUNDFlRLminepoji" width="58.5" height="26.5"/>
+        <image name="MUNDFlRLzbuahgmaheir" width="375" height="84"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

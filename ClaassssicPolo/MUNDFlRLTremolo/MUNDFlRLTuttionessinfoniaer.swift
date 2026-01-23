@@ -30,6 +30,7 @@ class MUNDFlRLTuttionessinfoniaer: UIViewController {
     
     @IBOutlet weak var MUNDFlRLternary: UIImageView!
     
+    @IBOutlet weak var MUNDFlRpoassfte: UILabel!
     
     @IBOutlet weak var MUNDFlRLserenade: UILabel!
     
@@ -39,6 +40,8 @@ class MUNDFlRLTuttionessinfoniaer: UIViewController {
     private var MUNDFlRLzenzeng:String = "homophony"
     override func viewDidLoad() {
         super.viewDidLoad()
+        nIaavtujaMUNDFlRL.text = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Pjouskt")
+        
         MUNDFlRLternary.MUNDFlRLmasklingColrm(MUNDFlRLclore: 55, MUNDFlRLisO: true)
         MUNDFlRLwineTasting()
         nIaavtujaMUNDFlRL.text = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"Nmof udnabtnav yabvlavidlgaubolbek.")
@@ -102,9 +105,9 @@ class MUNDFlRLTuttionessinfoniaer: UIViewController {
         self.navigationController?.pushViewController(contri, animated: true)
     }
     func MUNDFlRLretrieveFloridPassages()->Dictionary<String,Any> {
-        let ggg = UserDefaults.standard.object(forKey: "conSordino") as? Int
+        let ggg = UserDefaults.standard.object(forKey: "conSordino") as? String ?? "0"
         return [
-            "klangfarben":ggg ?? 0
+            "klangfarben":ggg //?? 0
         ]
     }
     
@@ -125,7 +128,7 @@ class MUNDFlRLTuttionessinfoniaer: UIViewController {
         let sevureMUNDFlRL = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "dnaltba")
         let ggg = UserDefaults.standard.object(forKey: "conSordino") as? Int
         self.MUNDFlRLsextet.text = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "UtIlDi:") + " \(ggg ?? 0)"
-        MUNDFlRLAudioSonata.MUNDFlRLacousticResonance(MUNDFlRLmusicVenues:55,MUNDFlRLsanitizerWipes:self.MUNDFlRLsextet,
+        MUNDFlRLAudioSonata.MUNDFlRLacousticResonance(MUNDFlRLmusicVenues:55,MUNDFlRLsanitizerWipes:MUNDFlRLretrieveFloridPassages(),
             MUNDFlRLbelCantoPhrasing: "/inkwjohixvz/jwrxzqzsemem",
             MUNDFlRLamentation: MUNDFlRLretrieveFloridPassages(),
             contrapuntaMUNDFlRL: { ureDaco in

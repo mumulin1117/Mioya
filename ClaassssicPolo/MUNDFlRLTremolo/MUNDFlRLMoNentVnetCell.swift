@@ -31,6 +31,7 @@ class MUNDFlRLMoNentVnetCell: UICollectionViewCell {
         super.awakeFromNib()
         MUNDFlRLpaheiter.layer.cornerRadius = 17
         MUNDFlRLbarcarolle()
+        MUNDFlRLpaheiter.setTitle(MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"+aFoollzlmozw"), for: .normal)
         MUNDFlRLneapolitan.MUNDFlRLmasklingColrm(MUNDFlRLclore: 14, MUNDFlRLisO: true)
     }
     
