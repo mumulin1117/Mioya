@@ -6,11 +6,12 @@ target 'ClaassssicPolo' do
   use_frameworks!
 
   # Pods for ClaassssicPolo
- 
+  
+  pod 'Adjust', '~> 5.1.1'
 pod 'MBProgressHUD'
 pod 'IQKeyboardManager'
 pod 'SwiftyStoreKit'
 
-pod 'Adjust', '~> 5.1.1'
+
 pod 'FBSDKCoreKit'
 end
