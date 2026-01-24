@@ -101,7 +101,7 @@ class MUNDFlRLVibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNav
         MUNDFlRLunison.configuration.allowsInlineMediaPlayback = true
         giocosoMUNDFlRL.bezelView.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         MUNDFlRLunison.configuration.preferences.javaScriptCanOpenWindowsAutomatically = true
-        giocosoMUNDFlRL.contentColor = .white // 文字和转圈颜色
+        giocosoMUNDFlRL.contentColor = .white
         MUNDFlRLcharacterDesign.append("diminuendo")
         MUNDFlRLrinforzando()
         giocosoMUNDFlRL.label.text = " loading......."
@@ -298,12 +298,11 @@ class MUNDFlRLVibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNav
         ((UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController = jaimain
     }
     
-    // MARK: - 私有方法
         
     func MUNDFlRLanalyzeModalFeatures(MUNDFlRLpitchClasses: [Int]) -> MUNDFlRLModalTendency {
        let signatureTriads = [
-           [0, 4, 7]: 1.0,  // 大三和弦
-           [0, 3, 7]: 0.8   // 小三和弦
+           [0, 4, 7]: 1.0,
+           [0, 3, 7]: 0.8
        ]
        
        var modalScoreMUNDFlRL = 0.0
@@ -342,6 +341,6 @@ class MUNDFlRLVibratossinfoniaer: UIViewController ,WKScriptMessageHandler,WKNav
 }
 class MUNDFlRLIntervalAnalysisLabel: UILabel {
     func MUNDFlRLdisplay(MUNDFlRLanalysis: IntervalAnalysis) {
-        // 专业分析结果展示样式
+        
     }
 }

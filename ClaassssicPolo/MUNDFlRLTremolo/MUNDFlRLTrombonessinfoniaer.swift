@@ -56,8 +56,7 @@ class MUNDFlRLTrombonessinfoniaer: UIViewController ,UICollectionViewDataSource 
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let jaioMUNDFlRL = collectionView.dequeueReusableCell(withReuseIdentifier: "MUNDFlRLTremoloCell", for: indexPath) as! MUNDFlRLTremoloCell
-//        jaio.melisma.isHidden = true
-        
+
         if let fxcMUNDFlRL = (tonalMUNDFlRLColorism[indexPath.row].descriptor["passageworkPractice"] as? Array<String>)?.first {
             jaioMUNDFlRL.MUNDFlRLneapolitan.MUNDFlRLorchestrateVisualSymphony(MUNDFlRLmaestro: fxcMUNDFlRL)
         }

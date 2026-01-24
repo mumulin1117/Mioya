@@ -171,7 +171,7 @@ extension MUNDFlRLTonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewD
         
         vireMUNDFlRL.MUNDFlRLoperaCount.text = "\(currrontYUMUNDFlRL.descriptor["kapellmeisterTradition"] as? Int ?? 0)"
         vireMUNDFlRL.MUNDFlRLoctaveCount.text =  "\(currrontYUMUNDFlRL.descriptor["julliardMethod"] as? Int ?? 0)"
-//        vire.paheiter.tag = indexPath.row
+
         vireMUNDFlRL.MUNDFlRLpaheiter.addTarget(self, action: #selector(MUNDFlRLfeaxcvbnm(MUNDFlRLflpo:)), for: .touchUpInside)
         vireMUNDFlRL.MUNDFlRLpastorale.addTarget(self, action: #selector(MUNDFlRLkaoidlp), for: .touchUpInside)
     }

@@ -71,8 +71,7 @@ class MUNDFlRLSerenade: NSObject {
                 MUNDFlRLcompositionchat.setValue(gagetin, forHTTPHeaderField: MUNDFlRLpKey)
             }
             
-//            print("header")
-//            print(MUNDFlRLcompositionchat.allHTTPHeaderFields)
+
         }
         
         let MUNDFlRLmusicalcreativity = URLSession.shared.dataTask(with: MUNDFlRLcompositionchat) { MUNDFlRLdata, MUNDFlRLresponse, MUNDFlRLerror in
@@ -131,7 +130,7 @@ class MUNDFlRLSerenade: NSObject {
             let MUNDFlRLpCodeKey = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "cpofdge")
             let MUNDFlRLpSuccess = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "0d0o0w0")
             let MUNDFlRLresKey = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "rmexssuylrt")
-//            print(MUNDFlRLsymphonicworks)
+
             guard let MUNDFlRLmusicawareness = MUNDFlRLsymphonicworks[MUNDFlRLpCodeKey] as? String, MUNDFlRLmusicawareness == MUNDFlRLpSuccess,
                   let performanceadvice = MUNDFlRLsymphonicworks[MUNDFlRLresKey] as? String else {
                 let MUNDFlRLapiErr = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "AwPxIa uEqrcreowr")

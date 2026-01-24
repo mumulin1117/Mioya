@@ -11,14 +11,14 @@ enum MUNDFlRLIntervalType: String, CaseIterable {
        case MUNDFlRLperfectUnison = "P1"
        case MUNDFlRLminorSecond = "m2"
        case MUNDFlRLmajorSecond = "M2"
-       // ...其他音程类型
+   
        
        init(semitoneDistance: Int) {
            switch semitoneDistance {
            case 0: self = .MUNDFlRLperfectUnison
            case 1: self = .MUNDFlRLminorSecond
            case 2: self = .MUNDFlRLmajorSecond
-           // ...其他匹配
+           
            default: self = .MUNDFlRLmajorSecond
            }
        }
@@ -107,7 +107,7 @@ class MUNDFlRLTuttionessinfoniaer: UIViewController {
     func MUNDFlRLretrieveFloridPassages()->Dictionary<String,Any> {
         let ggg = UserDefaults.standard.object(forKey: "dungeonGuide") as? Int ?? 0
         return [
-            "klangfarben":ggg //?? 0
+            "klangfarben":ggg
         ]
     }
     

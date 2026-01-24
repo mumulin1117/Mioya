@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>FacebookAdvertiserIDCollectionEnabled</key>
-	<true/>
+	<false/>
 	<key>FacebookAppID</key>
 	<string>1155142642709671</string>
 	<key>FacebookAutoLogAppEventsEnabled</key>
-	<true/>
+	<false/>
 	<key>FacebookClientToken</key>
 	<string>6c59ad98c1eaf262c4768bea8aeda7e3</string>
 	<key>FacebookDisplayName</key>

@@ -60,6 +60,7 @@
 		000B7CF92F1A0FC654C3FD59E8D83952 /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 169FE00A45472B1DD0BCB61C7B8DEFF2 /* IQPreviousNextView.m */; };
 		00B3B41EF6522AFC9F3C08BE4DCDDACE /* ADJThirdPartySharing.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BACD843AB9EB28FD52EBBB905454E88 /* ADJThirdPartySharing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01C77470BC42C1D247E5DC9A93C84BF7 /* Adjust-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 157CEB52A94194B0379AAC1C9C600578 /* Adjust-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04AA65EC2F2472C70027F819 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 04AA65EB2F2472C70027F819 /* PrivacyInfo.xcprivacy */; };
 		0744FF91BD34CBF21804DD175227A3D0 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C205856B9F85073E58A474E4E3A64508 /* IQUITextFieldView+Additions.m */; };
 		0779AF24F61A31A18ACB57E985FB9479 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40164E566E25EA399A13C66A4C041ECB /* SystemConfiguration.framework */; };
 		08269F8A0C71701DB703D2C1F87D53B7 /* ADJSdkClickHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEE8913D1E0EE347CFDF8E020699AA7 /* ADJSdkClickHandler.m */; };
@@ -309,6 +310,7 @@
 
 /* Begin PBXFileReference section */
 		01004E17C9E66DD9CF73C6DAB563EF2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		04AA65EB2F2472C70027F819 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		083BE1DD36DB00826C49E79007794BAF /* ADJPurchaseVerificationHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJPurchaseVerificationHandler.m; path = Adjust/Internal/ADJPurchaseVerificationHandler.m; sourceTree = "<group>"; };
 		0962D5329ADFA5BE499ABA628C80933F /* FBSDKCoreKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSDKCoreKit.release.xcconfig; sourceTree = "<group>"; };
 		09D78A6C5ABB2AE343E7CE98E5CCE4DD /* ADJAttribution.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJAttribution.m; path = Adjust/ADJAttribution.m; sourceTree = "<group>"; };
@@ -931,6 +933,7 @@
 			isa = PBXGroup;
 			children = (
 				285F1EBE47D31D33E1779EB9DBB52D12 /* MBProgressHUD.modulemap */,
+				04AA65EB2F2472C70027F819 /* PrivacyInfo.xcprivacy */,
 				94733C3C373D075B3AE6190FA64283C4 /* MBProgressHUD-dummy.m */,
 				5B430BA4CC39549FCA9C20505D51203C /* MBProgressHUD-Info.plist */,
 				8AF180AB47BFD556B4AE3EED34AA3117 /* MBProgressHUD-prefix.pch */,
@@ -1313,6 +1316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AA65EC2F2472C70027F819 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
