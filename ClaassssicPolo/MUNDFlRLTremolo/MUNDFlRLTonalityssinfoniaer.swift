@@ -164,7 +164,7 @@ extension MUNDFlRLTonalityssinfoniaer:UICollectionViewDelegate,UICollectionViewD
             vireMUNDFlRL.MUNDFlRLneapolitan.MUNDFlRLorchestrateVisualSymphony(MUNDFlRLmaestro: fxcMUNDFlRL)
         }
         vireMUNDFlRL.MUNDFlRLnocturne.text = currrontYUMUNDFlRL.descriptor["hemiolaPattern"] as? String
-        vireMUNDFlRL.MUNDFlRLobbligato.text = self.dismissMUNDFlRLConductorStand(MUNDFlRLtimestReati: Int64((currrontYUMUNDFlRL.descriptor["oboeReedWork"] as? Int ?? 0)))
+        vireMUNDFlRL.MUNDFlRLobbligato.text = self.dismissMUNDFlRLConductorStand(MUNDFlRLtimestReati: Int64((currrontYUMUNDFlRL.descriptor["coconutButton"] as? Int ?? 0)))
         
         
         vireMUNDFlRL.MUNDFlRLpianissimo.text = currrontYUMUNDFlRL.descriptor["fugalExposition"] as? String

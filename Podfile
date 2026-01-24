@@ -7,11 +7,13 @@ target 'ClaassssicPolo' do
 
   # Pods for ClaassssicPolo
   
-  pod 'Adjust', '~> 5.1.1'
+pod 'Adjust', '~> 5.1.1'
 pod 'MBProgressHUD'
-pod 'IQKeyboardManager'
+
 pod 'SwiftyStoreKit'
 
 
 pod 'FBSDKCoreKit'
+
+pod 'IQKeyboardManager'
 end
