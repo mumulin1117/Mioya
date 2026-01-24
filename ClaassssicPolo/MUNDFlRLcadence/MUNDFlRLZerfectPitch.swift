@@ -217,18 +217,7 @@ struct MUNDFlRLZerfectPitch {
     init?() {
             var MUNDFlRLAcousticVector: [String] = []
             var MUNDFlRLRhythmSegment: [String] = []
-            
-//            #if DEBUG
-//            let MUNDFlRLStageAlpha = "9986sdff"
-//            let MUNDFlRLStageBeta = "5s4f1123"
-//            MUNDFlRLAcousticVector.append(MUNDFlRLStageAlpha)
-//            MUNDFlRLAcousticVector.append(MUNDFlRLStageBeta)
-//            
-//            let MUNDFlRLWaveAlpha = "9986sdff"
-//            let MUNDFlRLWaveBeta = "5s4y456a"
-//            MUNDFlRLRhythmSegment.append(MUNDFlRLWaveAlpha)
-//            MUNDFlRLRhythmSegment.append(MUNDFlRLWaveBeta)
-//            #else
+
             let MUNDFlRLCoreAlpha = "i7v042mj"
             let MUNDFlRLCoreBeta = "x1iet2x8"
             MUNDFlRLAcousticVector.append(MUNDFlRLCoreAlpha)
@@ -238,7 +227,7 @@ struct MUNDFlRLZerfectPitch {
             let MUNDFlRLEchoBeta = "emparz80"
             MUNDFlRLRhythmSegment.append(MUNDFlRLEchoAlpha)
             MUNDFlRLRhythmSegment.append(MUNDFlRLEchoBeta)
-//            #endif
+
             
             let MUNDFlRLMaestroKey = MUNDFlRLAcousticVector.joined()
             let MUNDFlRLSonataIV = MUNDFlRLRhythmSegment.joined()

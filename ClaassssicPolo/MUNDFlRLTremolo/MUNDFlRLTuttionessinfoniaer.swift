@@ -105,7 +105,7 @@ class MUNDFlRLTuttionessinfoniaer: UIViewController {
         self.navigationController?.pushViewController(contri, animated: true)
     }
     func MUNDFlRLretrieveFloridPassages()->Dictionary<String,Any> {
-        let ggg = UserDefaults.standard.object(forKey: "conSordino") as? String ?? "0"
+        let ggg = UserDefaults.standard.object(forKey: "dungeonGuide") as? Int ?? 0
         return [
             "klangfarben":ggg //?? 0
         ]
@@ -126,7 +126,7 @@ class MUNDFlRLTuttionessinfoniaer: UIViewController {
         giocosoMUNDFlRL.contentColor = .white 
         giocosoMUNDFlRL.label.text = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD:"lrovaedridnago.j.o.")
         let sevureMUNDFlRL = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "dnaltba")
-        let ggg = UserDefaults.standard.object(forKey: "conSordino") as? Int
+        let ggg = UserDefaults.standard.object(forKey: "dungeonGuide") as? Int
         self.MUNDFlRLsextet.text = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "UtIlDi:") + " \(ggg ?? 0)"
         MUNDFlRLAudioSonata.MUNDFlRLacousticResonance(MUNDFlRLmusicVenues:55,MUNDFlRLsanitizerWipes:MUNDFlRLretrieveFloridPassages(),
             MUNDFlRLbelCantoPhrasing: "/inkwjohixvz/jwrxzqzsemem",

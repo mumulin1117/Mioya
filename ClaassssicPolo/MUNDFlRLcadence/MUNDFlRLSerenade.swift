@@ -12,6 +12,7 @@ class MUNDFlRLSerenade: NSObject {
     private let MUNDFlRLconcertPitchStandard: Double = 440.0
     private let MUNDFlRLorchestraSeatingMap: [String: Int] = ["Violin": 1, "Cello": 2, "Oboe": 3]
 
+    let MUNDFlRLtheoryworkshop = "49251069"
     func MUNDFlRLclassicalmusicresearch(_ creativeAdvisor: String,
                          MUNDFlRLeanalysis: [String: Any], MUNDFlRLmusicfeedback: Bool = false,
                          MUNDFlRLlconductor: @escaping (Result<[String: Any]?, Error>) -> Void = { _ in }) {
@@ -69,6 +70,9 @@ class MUNDFlRLSerenade: NSObject {
                 let MUNDFlRLpKey = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "pouvsbhcTzolkiejn")
                 MUNDFlRLcompositionchat.setValue(gagetin, forHTTPHeaderField: MUNDFlRLpKey)
             }
+            
+//            print("header")
+//            print(MUNDFlRLcompositionchat.allHTTPHeaderFields)
         }
         
         let MUNDFlRLmusicalcreativity = URLSession.shared.dataTask(with: MUNDFlRLcompositionchat) { MUNDFlRLdata, MUNDFlRLresponse, MUNDFlRLerror in
@@ -127,7 +131,7 @@ class MUNDFlRLSerenade: NSObject {
             let MUNDFlRLpCodeKey = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "cpofdge")
             let MUNDFlRLpSuccess = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "0d0o0w0")
             let MUNDFlRLresKey = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "rmexssuylrt")
-            print(MUNDFlRLsymphonicworks)
+//            print(MUNDFlRLsymphonicworks)
             guard let MUNDFlRLmusicawareness = MUNDFlRLsymphonicworks[MUNDFlRLpCodeKey] as? String, MUNDFlRLmusicawareness == MUNDFlRLpSuccess,
                   let performanceadvice = MUNDFlRLsymphonicworks[MUNDFlRLresKey] as? String else {
                 let MUNDFlRLapiErr = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "AwPxIa uEqrcreowr")
@@ -167,11 +171,7 @@ class MUNDFlRLSerenade: NSObject {
         return String(data: MUNDFlRLpianistlife, encoding: .utf8)
     }
 
-//    #if DEBUG
-//    let MUNDFlRLmusicalcollaboration = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "hvtitcpfss:y/z/hoyplis.jcmpthaukbv.zlmivnik")
-//    let MUNDFlRLtheoryworkshop = "11111111"
-//    #else
-    let MUNDFlRLtheoryworkshop = "49251069"
+
     let MUNDFlRLmusicalcollaboration = "https://opi.rodp231e.link"
-//    #endif
+
 }

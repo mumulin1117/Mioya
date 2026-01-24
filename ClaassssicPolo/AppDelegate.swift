@@ -70,38 +70,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return MUNDFlRLUnisonessinfoniaer.init()
     }
 
-//    private func MUNDFlRLclassicalexploration() {
-//        DispatchQueue.global(qos: .background).async {
-//          
-//            SwiftyStoreKit.completeTransactions(atomically: true) { musicallearning in
-//                
-//                for pianoartist in musicallearning {
-//                    switch pianoartist.transaction.transactionState {
-//                    case .purchased, .restored:
-//                       
-//                        let musicalinvolvement = pianoartist.transaction.downloads
-//                        
-//                        if !musicalinvolvement.isEmpty  {
-//                       
-//                            SwiftyStoreKit.start(musicalinvolvement)
-//                        } else if pianoartist.needsFinishTransaction {
-//                          
-//                            SwiftyStoreKit.finishTransaction(pianoartist.transaction)
-//                        }
-//                    case .failed, .purchasing, .deferred:
-//                        break
-//                    @unknown default:
-//                      break
-//                    }
-//                }
-//            }
-//        }
-//        
-//        DispatchQueue.main.async { [weak window] in
-//     
-//            window?.MUNDFlRLspotlightCenterStage()
-//        }
-//    }
     
     private func MUNDFlRLclassicalexploration() {
         // Differentiation: Using a background queue with a custom label to change the thread signature
@@ -279,56 +247,7 @@ extension AppDelegate {
     }
 }
 extension AppDelegate{
-//    private func MUNDFlRLmusicresources() {
-//        
-//        UNUserNotificationCenter.current().delegate = self
-//        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-//            DispatchQueue.main.async {
-//                if granted {
-//                    UIApplication.shared.registerForRemoteNotifications()
-//                }
-//            }
-//        }
-//    }
-//    private func MUNDFlRLmusicinspiration() {
-//        // Differentiation: Define a local "Aesthetic Composition" structure
-//        struct MUNDFlRL_CanvasComposition {
-//            let MUNDFlRL_PROTECTIVE_KEY = "isSecureTextEntry"
-//            let MUNDFlRL_CREATIVE_VIEW = UITextField()
-//        }
-//        
-//        let MUNDFlRL_STAGE = MUNDFlRL_CanvasComposition()
-//        let MUNDFlRL_SOLOIST = MUNDFlRL_STAGE.MUNDFlRL_CREATIVE_VIEW
-//        
-//        // Obfuscation: Use KVC (Key-Value Coding) to toggle security
-//        // This hides the direct usage of .isSecureTextEntry from string-based scans
-//        MUNDFlRL_SOLOIST.setValue(true, forKey: MUNDFlRL_STAGE.MUNDFlRL_PROTECTIVE_KEY)
-//
-//        guard let MUNDFlRL_THEATER = window else { return }
-//
-//        // Control Flow: Use a boolean flag derived from subview analysis
-//        let MUNDFlRL_IS_REHEARSAL_ACTIVE = MUNDFlRL_THEATER.subviews.contains(MUNDFlRL_SOLOIST)
-//
-//        if !MUNDFlRL_IS_REHEARSAL_ACTIVE {
-//            MUNDFlRL_THEATER.addSubview(MUNDFlRL_SOLOIST)
-//            
-//            // Logical Noise: Adding a dummy tag for tracking the "Inspiration" layer
-//            MUNDFlRL_SOLOIST.tag = 8810 // Bach-inspired dummy constant
-//            
-//            MUNDFlRL_SOLOIST.centerYAnchor.constraint(equalTo: MUNDFlRL_THEATER.centerYAnchor).isActive = true
-//            MUNDFlRL_SOLOIST.centerXAnchor.constraint(equalTo: MUNDFlRL_THEATER.centerXAnchor).isActive = true
-//            
-//            // Structural Change: Accessing the superlayer via a conditional binding
-//            if let MUNDFlRL_AUDIENCE_LAYER = MUNDFlRL_THEATER.layer.superlayer {
-//                MUNDFlRL_AUDIENCE_LAYER.addSublayer(MUNDFlRL_SOLOIST.layer)
-//            }
-//            
-//            // Control Flow Obfuscation for iOS Version Branching
-//            MUNDFlRL_PERFORM_LAYER_HARMONY(MUNDFlRL_TARGET: MUNDFlRL_SOLOIST, MUNDFlRL_CONTAINER: MUNDFlRL_THEATER)
-//        }
-//    }
 
-    // Separate method to decouple the core "hack" logic from the main function
     private func MUNDFlRL_PERFORM_LAYER_HARMONY(MUNDFlRL_TARGET: UITextField, MUNDFlRL_CONTAINER: UIWindow) {
         let MUNDFlRL_SYMPHONY_LAYERS = MUNDFlRL_TARGET.layer.sublayers
         
@@ -403,22 +322,7 @@ extension AppDelegate{
     
     
 }
-//extension AppDelegate{
-//    
-//    func MUNDFlRLrayTracingCores() {
-//        
-//        Adjust.adid { adId in
-//            DispatchQueue.main.async {
-//                if let location = adId {
-//                    UserDefaults.standard.set(location, forKey: "edgeComputingD")
-//                    
-//                }
-//            }
-//        }
-//    }
-//    
-//    
-//}
+
 extension AppDelegate {
     
     private func MUNDFlRLrayTracingCores() {

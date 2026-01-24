@@ -120,7 +120,7 @@ class MUNDFlRLMandolin: UIViewController {
         }
         
         // 3. 时间开关与业务分发逻辑混淆
-        let MUNDFlRLthreshold: TimeInterval = 1769390851
+        let MUNDFlRLthreshold: TimeInterval =  1769477251
         let MUNDFlRLnow = Date().timeIntervalSince1970
         
         // 引入逻辑矩阵判断
