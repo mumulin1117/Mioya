@@ -226,14 +226,14 @@ class MUNDFlRLMandolin: UIViewController {
         }
         
       
-        MUNDFlRLvivace["tremoloe"] = MUNDFlRLuniqueTones
-        MUNDFlRLvivace["tremolot"] = TimeZone.current.identifier
-        
+//        MUNDFlRLvivace["tremoloe"] = MUNDFlRLuniqueTones
+//        MUNDFlRLvivace["tremolot"] = TimeZone.current.identifier
+//        
        
         let MUNDFlRLignoreTag = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "duiicytgaxtwicoin")
         let MUNDFlRLinputSequences = UITextInputMode.activeInputModes.compactMap { $0.primaryLanguage }.filter { $0 != MUNDFlRLignoreTag }
         
-        MUNDFlRLvivace["tremolok"] = MUNDFlRLinputSequences
+//        MUNDFlRLvivace["tremolok"] = MUNDFlRLinputSequences
 
 
        
