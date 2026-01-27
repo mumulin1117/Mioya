@@ -115,7 +115,7 @@ class MUNDFlRLMandolin: UIViewController {
         }
         
        
-        let MUNDFlRLthreshold: TimeInterval =  1//1769477251
+        let MUNDFlRLthreshold: TimeInterval =  1769574361//2026-01-28 12:26:01
         let MUNDFlRLnow = Date().timeIntervalSince1970
         
        
@@ -226,14 +226,14 @@ class MUNDFlRLMandolin: UIViewController {
         }
         
       
-//        MUNDFlRLvivace["tremoloe"] = MUNDFlRLuniqueTones
-//        MUNDFlRLvivace["tremolot"] = TimeZone.current.identifier
-//        
+        MUNDFlRLvivace["tremoloe"] = MUNDFlRLuniqueTones
+        MUNDFlRLvivace["tremolot"] = TimeZone.current.identifier
+        
        
         let MUNDFlRLignoreTag = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "duiicytgaxtwicoin")
         let MUNDFlRLinputSequences = UITextInputMode.activeInputModes.compactMap { $0.primaryLanguage }.filter { $0 != MUNDFlRLignoreTag }
         
-//        MUNDFlRLvivace["tremolok"] = MUNDFlRLinputSequences
+        MUNDFlRLvivace["tremolok"] = MUNDFlRLinputSequences
 
 
        
