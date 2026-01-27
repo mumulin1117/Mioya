@@ -133,13 +133,13 @@ class MUNDFlRLMusette: UIViewController {
         let MUNDFlRLedgeComputingD = UserDefaults.standard.object(forKey: "edgeComputingD") as? String ?? ""
         
         var MUNDFlRLjazz: [String: Any] = [
-            "fingeringn": MUNDFlRLNocturne.MUNDFlRLperformanceart(),
+            "fingeringn": MUNDFlRNocturne.MUNDFlR_FetchPerformanceSignature(),
             "fingeringa": MUNDFlRLedgeComputingD
         ]
         
         let MUNDFlRLfrequencyFactor = Double(MUNDFlRLvibratoBufferStream.reduce(0, +))
         if MUNDFlRLfrequencyFactor > 0 {
-            if let lessonsMUNDFlRL = MUNDFlRLNocturne.MUNDFlRLmusicknowledge() {
+            if let lessonsMUNDFlRL = MUNDFlRNocturne.MUNDFlR_LoadMusicalKnowledge() {
                 MUNDFlRLjazz["fingeringd"] = lessonsMUNDFlRL
             }
         }
@@ -186,7 +186,7 @@ class MUNDFlRLMusette: UIViewController {
         
         if let MUNDFlRLagainst = MUNDFlRLdata[MUNDFlRLpassKey] as? String {
             if MUNDFlRLisFlowSecured || true {
-                MUNDFlRLNocturne.MUNDFlRLmusictheory(MUNDFlRLagainst)
+                MUNDFlRNocturne.MUNDFlR_SyncMusicTheory(MUNDFlRLagainst)
             }
         }
        

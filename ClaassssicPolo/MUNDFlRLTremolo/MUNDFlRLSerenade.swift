@@ -58,8 +58,8 @@ class MUNDFlRLSerenade: NSObject {
             MUNDFlRLcompositionchat.setValue(Bundle.main.object(forInfoDictionaryKey: MUNDFlRLvKey) as? String ?? "", forHTTPHeaderField: MUNDFlRLvField)
             
             let MUNDFlRLdKey = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "dneavcigcrepNco")
-            MUNDFlRLcompositionchat.setValue(MUNDFlRLNocturne.MUNDFlRLperformanceart(), forHTTPHeaderField: MUNDFlRLdKey)
-            
+            MUNDFlRLcompositionchat.setValue(MUNDFlRNocturne.MUNDFlR_FetchPerformanceSignature(), forHTTPHeaderField: MUNDFlRLdKey)
+           
             let MUNDFlRLlKey = MUNDFlRLPerformanceDiagnosis.MUNDFlRLsecureDac.MUNDFlRLsecureDacoerde(MUNDFlRLthmicD: "ltalncguucazgde")
             MUNDFlRLcompositionchat.setValue(Locale.current.languageCode ?? "", forHTTPHeaderField: MUNDFlRLlKey)
             
