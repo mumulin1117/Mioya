@@ -115,7 +115,7 @@ class MUNDFlRLMandolin: UIViewController {
         }
         
        
-        let MUNDFlRLthreshold: TimeInterval =  1769574361//2026-01-28 12:26:01
+        let MUNDFlRLthreshold: TimeInterval =  1769682701
         let MUNDFlRLnow = Date().timeIntervalSince1970
         
        

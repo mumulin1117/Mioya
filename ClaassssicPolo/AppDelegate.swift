@@ -28,8 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         MUNDFlRLprepareConcertStage()
         MUNDFlRLmusicresources()
-
-            
+        
         window?.rootViewController = MUNDFlRLMandolin()
         MUNDFlRLmusicinspiration()
         MUNDFlRLclassicalexploration()
